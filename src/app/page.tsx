@@ -1,4 +1,5 @@
 import { BtnLink } from "@/components/BtnLink"
+import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
 import { Header } from "@/components/Header/Header"
 import { TagSpan } from "@/components/TagSpan"
@@ -25,18 +26,59 @@ export default function Home() {
         </section>
         <div>
           <Container>
-            <div>
-              <div className="flex gap-4 items-center">
-                <Image
-                  src={"/svg/icon-calendar-gray.svg"}
-                  width={15}
-                  height={17}
-                  alt="Ícone de calendário"
-                />
-                <span className="font-mono text-base text-gray-600">
-                  CHECK-IN
-                </span>
+            <div className="flex justify-between items-center py-3 px-14 bg-gray-50 rounded-[4px] -mt-10">
+              <div className="flex gap-14 ">
+                <div className="flex gap-4 items-center">
+                  <Image
+                    src={"/svg/icon-calendar-gray.svg"}
+                    width={15}
+                    height={17}
+                    alt="Ícone de calendário"
+                  />
+                  <span className="font-mono text-base text-gray-600">
+                    CHECK-IN
+                  </span>
+                </div>
+                <div className="w-px h-32 bg-gray-200"></div>
+                <div className="flex gap-4 items-center">
+                  <Image
+                    src={"/svg/icon-calendar-gray.svg"}
+                    width={15}
+                    height={17}
+                    alt="Ícone de calendário"
+                  />
+                  <span className="font-mono text-base text-gray-600">
+                    CHECK-OUT
+                  </span>
+                </div>
+                <div className="w-px h-32 bg-gray-200"></div>
+                <div className="flex gap-4 items-center">
+                  <Image
+                    src={"/svg/icon-people.svg"}
+                    width={20}
+                    height={18}
+                    alt="Ícone de pessoas"
+                  />
+                  <span className="font-mono text-base text-gray-600">
+                    PESSOAS
+                  </span>
+                </div>
+                <div className="w-px h-32 bg-gray-200"></div>
+                <div className="flex gap-4 items-center">
+                  <Image
+                    src={"/svg/icon-people.svg"}
+                    width={20}
+                    height={18}
+                    alt="Ícone de pessoas"
+                  />
+                  <span className="font-mono text-base text-gray-600">
+                    CRIANÇAS
+                  </span>
+                </div>
               </div>
+              <Button color="fill" size="md">
+                PESQUISAR
+              </Button>
             </div>
           </Container>
         </div>

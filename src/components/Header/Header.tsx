@@ -26,7 +26,7 @@ export function Header() {
               <nav>
                 <NavList />
               </nav>
-              <Button icon>RESERVAR</Button>
+              <Button color="outline" size="sm" icon>RESERVAR</Button>
             </div>
           </div>
         </Container>

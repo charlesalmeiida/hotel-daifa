@@ -3,7 +3,7 @@ import React from "react"
 import { tv } from "tailwind-variants"
 
 const button = tv({
-  base: "font-mono text-base rounded-[4px] leading-5 flex gap-3",
+  base: "font-mono text-base rounded-[4px] leading-5 flex gap-3 h-fit",
   variants: {
     color: {
       outline:
@@ -21,11 +21,13 @@ const button = tv({
 interface ButtonProps {
   icon?: boolean
   children: React.ReactNode
+  color?: "outline" | "fill"
+  size?: "sm" | "md" | "lg"
 }
 
-export function Button({ icon, children }: ButtonProps) {
+export function Button({ icon, children, color, size }: ButtonProps) {
   return (
-    <button className={button({ color: "outline", size: "sm" })}>
+    <button className={button({ size: size, color: color })}>
       {icon && (
         <Image
           src={"/svg/icon-calendar.svg"}
