@@ -1,101 +1,107 @@
-import Image from "next/image";
-
+import { BtnLink } from "@/components/BtnLink"
+import { Container } from "@/components/Container"
+import { Header } from "@/components/Header/Header"
+import { TagSpan } from "@/components/TagSpan"
+import Image from "next/image"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <Header />
+      <main>
+        <section className="bg-hero bg-no-repeat bg-cover py-52">
+          <Container>
+            <div className="space-y-6">
+              <h1 className="text-center text-gray-50 max-w-[893px] mx-auto">
+                Estadia no Coração de Florianópolis com descontos exclusivos
+                imperdíveis.
+              </h1>
+              <p className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-xl font-semibold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+              </p>
+            </div>
+          </Container>
+        </section>
+        <div>
+          <Container>
+            <div>
+              <div className="flex gap-4 items-center">
+                <Image
+                  src={"/svg/icon-calendar-gray.svg"}
+                  width={15}
+                  height={17}
+                  alt="Ícone de calendário"
+                />
+                <span className="font-mono text-base text-gray-600">
+                  CHECK-IN
+                </span>
+              </div>
+            </div>
+          </Container>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <section className="py-[120px]">
+        <Container>
+          <div className="flex items-center justify-center">
+            <div>
+              <Image
+                src={"/img/baia-sul.png"}
+                width={696}
+                height={400}
+                alt="Vista da Baía Sul do Hotel Daifa"
+              />
+            </div>
+            <div className="space-y-4 -ml-40">
+              <TagSpan>hotel</TagSpan>
+              <h3 className="max-w-[472px] text-gray-900">
+                Com vista panorâmica para a Baía Sul e Ponte Hercílio Luz,
+                cartão postal de Florianópolis.
+              </h3>
+              <BtnLink>saiba mais</BtnLink>
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <div className="flex justify-between">
+            <div className="space-y-14">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
+                  <h4 className="max-w-[472px]">
+                    Hotel próximo ao centro da cidade, ao Mercado Público e à
+                    Ponte Hercílio Luz, facilitando o acesso a vários pontos
+                    turísticos, ao comércio e a restaurantes de Florianópolis.
+                  </h4>
+                </div>
+                <BtnLink>saiba mais</BtnLink>
+              </div>
+              <Image
+                src={"/img/image-mercado.png"}
+                width={488}
+                height={280}
+                alt="Foto do Mercado Público em Florianópolis"
+              />
+            </div>
+            <div className="space-y-10">
+              <Image
+                src={"/img/image-ponte-hercilio.png"}
+                width={696}
+                height={400}
+                alt="Foto da Ponte Hercílio Luz em Florianópolis"
+              />
+              <Image
+                src={"/img/image-piscina.png"}
+                width={312}
+                height={295}
+                alt="Foto da piscina do Hotel Daifa em Floripa"
+              />
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  )
 }

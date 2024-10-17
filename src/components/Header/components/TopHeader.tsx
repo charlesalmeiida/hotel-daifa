@@ -1,0 +1,33 @@
+import Image from "next/image"
+import { Container } from "../../Container"
+import Link from "next/link"
+import { LinkLang } from "./LinkLang"
+
+export function TopHeader() {
+  return (
+    <div className="bg-blue w-full">
+      <Container>
+        <div className="flex justify-end gap-20">
+          <div className="flex gap-2 items-center">
+            <LinkLang />
+          </div>
+          <Link
+            target="_blank"
+            href="https://wa.me/+5548988643952"
+            className="flex items-center gap-2"
+          >
+            <Image
+              src={"svg/icon-whatsapp.svg"}
+              width={16}
+              height={17}
+              alt="Ícone do WhatsApp"
+            />
+            <span className="font-sans text-sm text-gray-300 font-semibold">
+              (48) 98864-3952
+            </span>
+          </Link>
+        </div>
+      </Container>
+    </div>
+  )
+}

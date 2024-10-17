@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -8,12 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["var(--font-inter)"],
+        sans: ["var(--font-raleway)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        blue: "#2E376A",
+        blueLight: "#16A0C7",
+        red: "#BF1717",
+        orange: "#EF6926",
+        yellow: "#F3D500",
+      },
+      backgroundImage: {
+        hero: "url('/img/bg-hero.png')",
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
