@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        shaddowShape:
+          "0px 27px 56px 0px rgba(0, 0, 0, 0.08), 0px 3.381px 7.012px 0px rgba(0, 0, 0, 0.04)",
+      },
       fontFamily: {
         mono: ["var(--font-inter)"],
         sans: ["var(--font-raleway)"],

@@ -1,5 +1,7 @@
+import { ItemAmenity } from "@/components/Amenities/ItemAmenity"
+import { Amenities } from "@/components/Amenities/ArrayAmenities"
+import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
 import { BtnLink } from "@/components/BtnLink"
-import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
 import { Header } from "@/components/Header/Header"
 import { TagSpan } from "@/components/TagSpan"
@@ -24,64 +26,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
-        <div>
-          <Container>
-            <div className="flex justify-between items-center py-3 px-14 bg-gray-50 rounded-[4px] -mt-10">
-              <div className="flex gap-14 ">
-                <div className="flex gap-4 items-center">
-                  <Image
-                    src={"/svg/icon-calendar-gray.svg"}
-                    width={15}
-                    height={17}
-                    alt="Ícone de calendário"
-                  />
-                  <span className="font-mono text-base text-gray-600">
-                    CHECK-IN
-                  </span>
-                </div>
-                <div className="w-px h-32 bg-gray-200"></div>
-                <div className="flex gap-4 items-center">
-                  <Image
-                    src={"/svg/icon-calendar-gray.svg"}
-                    width={15}
-                    height={17}
-                    alt="Ícone de calendário"
-                  />
-                  <span className="font-mono text-base text-gray-600">
-                    CHECK-OUT
-                  </span>
-                </div>
-                <div className="w-px h-32 bg-gray-200"></div>
-                <div className="flex gap-4 items-center">
-                  <Image
-                    src={"/svg/icon-people.svg"}
-                    width={20}
-                    height={18}
-                    alt="Ícone de pessoas"
-                  />
-                  <span className="font-mono text-base text-gray-600">
-                    PESSOAS
-                  </span>
-                </div>
-                <div className="w-px h-32 bg-gray-200"></div>
-                <div className="flex gap-4 items-center">
-                  <Image
-                    src={"/svg/icon-people.svg"}
-                    width={20}
-                    height={18}
-                    alt="Ícone de pessoas"
-                  />
-                  <span className="font-mono text-base text-gray-600">
-                    CRIANÇAS
-                  </span>
-                </div>
-              </div>
-              <Button color="fill" size="md">
-                PESQUISAR
-              </Button>
-            </div>
-          </Container>
-        </div>
+        <BookSearchForm />
       </main>
       <section className="py-[120px]">
         <Container>
@@ -141,6 +86,24 @@ export default function Home() {
                 alt="Foto da piscina do Hotel Daifa em Floripa"
               />
             </div>
+          </div>
+        </Container>
+      </section>
+      <section className="py-28">
+        <Container>
+          <div className="mx-auto space-y-4 text-center">
+            <h3>Comodidades</h3>
+            <span className="w-14 h-px mx-auto bg-orange block"></span>
+          </div>
+          <div className="flex mt-10 flex-wrap max-w-[1072px] justify-center items-center gap-y-10 gap-x-16 mx-auto">
+            {Amenities.map((item) => (
+              <ItemAmenity
+                key={item.title}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </div>
         </Container>
       </section>
