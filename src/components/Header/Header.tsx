@@ -1,11 +1,18 @@
+"use client"
+
 import Image from "next/image"
-import { Container } from "../Container"
+import { Container } from "../global/Container"
 import { TopHeader } from "./components/TopHeader"
 import Link from "next/link"
 import { NavList } from "./components/NavList"
-import { Button } from "../Button"
+import { Button } from "../global/Button"
+import { Turn as Hamburger } from "hamburger-react"
+import { useState } from "react"
+import { MenuMobile } from "./components/MenuMobile"
 
 export function Header() {
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <>
       <TopHeader />
@@ -23,12 +30,18 @@ export function Header() {
               </Link>
             </div>
             <div className="flex items-center gap-16">
-              <nav>
+              <div className="lg:hidden">
+                <Hamburger color="#F9FAFB" toggled={isOpen} toggle={setOpen} />
+              </div>
+              {isOpen && <MenuMobile />}
+              <nav className="hidden lg:flex">
                 <NavList />
               </nav>
-              <Button color="outline" size="sm" icon>
-                RESERVAR
-              </Button>
+              <div className="hidden md:block">
+                <Button color="outline" size="sm" icon>
+                  RESERVAR
+                </Button>
+              </div>
             </div>
           </div>
         </Container>

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container } from "../../Container"
+import { Container } from "../../global/Container"
 import Link from "next/link"
 import { LinkLang } from "./LinkLang"
 
@@ -7,7 +7,7 @@ export function TopHeader() {
   return (
     <div className="bg-blue w-full">
       <Container>
-        <div className="flex justify-end gap-20">
+        <div className="flex-row-reverse flex lg:flex-row lg:flex justify-between lg:justify-end gap-0 lg:gap-20">
           <div className="flex gap-2 items-center">
             <LinkLang />
           </div>

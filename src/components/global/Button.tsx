@@ -3,12 +3,12 @@ import React from "react"
 import { tv } from "tailwind-variants"
 
 const button = tv({
-  base: "font-mono text-base rounded-[4px] leading-5 flex gap-3 h-fit",
+  base: "font-mono text-base rounded-[4px] leading-5 flex gap-3 h-fit transition-all",
   variants: {
     color: {
       outline:
         "bg-transparent border text-gray-100 border-gray-100 hover:bg-blue hover:text-gray-50",
-      fill: "bg-blue text-gray-100",
+      fill: "bg-blue text-gray-100 hover:bg-orange",
     },
     size: {
       sm: "py-3 px-4",

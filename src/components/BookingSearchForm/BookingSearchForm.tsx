@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { Container } from "../Container";
-import { Button } from "../Button";
+import Image from "next/image"
+import { Container } from "../global/Container"
+import { Button } from "../global/Button"
 
 export function BookSearchForm() {
   return (
