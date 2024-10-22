@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container } from "../../Global/Container"
+import { Container } from "../../GlobalComponents/Container"
 import Link from "next/link"
 import { LinkLang } from "./LinkLang"
 
