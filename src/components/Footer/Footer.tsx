@@ -92,21 +92,19 @@ export function Footer() {
                 Acomodações
               </ItemNav>
               <ItemNav color="text-gray-200" link="/">
-                Standard Sem Vista​
+                Standard Sem Vista
               </ItemNav>
               <ItemNav color="text-gray-200" link="/">
-                Standard com Vista Parcial da Baía Sul​ ​
+                Standard com Vista Parcial da Baía Sul
               </ItemNav>
               <ItemNav color="text-gray-200" link="/">
-                Standard com Vista da Baía Sul ​ ​
+                Standard com Vista da Baía Sul
               </ItemNav>
               <ItemNav color="text-gray-200" link="/">
-                <ItemNav color="text-gray-200" link="/">
-                  Standard com Vista da Baía Sul ​ ​
-                </ItemNav>
+                Standard com Vista da Baía Sul
               </ItemNav>
               <ItemNav color="text-gray-200" link="/">
-                Deluxe com Vista e Hidro dupla​
+                Deluxe com Vista e Hidro dupla
               </ItemNav>
             </div>
             <div className="space-y-6">
@@ -126,7 +124,10 @@ export function Footer() {
             Hotel Daifa - Copyright © 2024 - Todos os direitos reservados
           </span>
           <span className="block">
-            Feito por <Link className="underline" href={"/"}>Flid Marketing</Link>
+            Feito por{" "}
+            <Link className="underline" href={"/"}>
+              Flid Marketing
+            </Link>
           </span>
         </div>
       </Container>

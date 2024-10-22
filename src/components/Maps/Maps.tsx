@@ -17,7 +17,7 @@ export function Maps() {
     setIsClient(true)
   }, [])
 
-  if (!isClient) return null
+  if (!isClient || !apiKey) return null
 
   return (
     <div className="w-full h-[50vh] rounded-[4px] mt-16">

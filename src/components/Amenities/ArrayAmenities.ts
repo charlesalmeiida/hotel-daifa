@@ -23,7 +23,7 @@ export const Amenities = [
   },
   {
     icon: "svg/icon-coffee.svg",
-    title: "Estacionamento",
+    title: "Café da manhã",
     description:
       "Diária com café da manhã cortesia e com vista privilegiada para a Baia Sul",
   },

@@ -11,6 +11,7 @@ import { Maps } from "@/components/Maps/Maps"
 import { ArrayFaq } from "@/components/ItemFaq/ArrayFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
 import { Footer } from "@/components/Footer/Footer"
+import Link from "next/link"
 export default function Home() {
   return (
     <>
@@ -240,6 +241,17 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <div className="fixed bottom-10 right-10">
+        <Link href={"https://wa.me/555199999999"}>
+          <Image
+            src={"svg/logo-whatsapp.svg"}
+            width={72}
+            height={60}
+            alt="Logo do WhatsApp"
+          />
+        </Link>
+      </div>
 
       <Footer />
     </>
