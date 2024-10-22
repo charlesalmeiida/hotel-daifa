@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container } from "../GlobalComponents/Container"
+import { Container } from "../Global/Container"
 import Link from "next/link"
 import { ItemNav } from "../Header/components/ItemNav"
 

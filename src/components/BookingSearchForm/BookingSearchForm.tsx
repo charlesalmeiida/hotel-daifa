@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { Container } from "../GlobalComponents/Container"
-import { Button } from "../GlobalComponents/Button"
+import { Container } from "../Global/Container"
+import { Button } from "../Global/Button"
 import { useState } from "react"
 import { DateRange, DayPicker } from "react-day-picker"
 import { format } from "date-fns"

@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import { Container } from "../GlobalComponents/Container"
+import { Container } from "../Global/Container"
 import { TopHeader } from "./components/TopHeader"
 import Link from "next/link"
 import { NavList } from "./components/NavList"
-import { Button } from "../GlobalComponents/Button"
+import { Button } from "../Global/Button"
 import { Turn as Hamburger } from "hamburger-react"
 import { useState } from "react"
 import { MenuMobile } from "./components/MenuMobile"
