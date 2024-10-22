@@ -14,22 +14,30 @@ export function NavList() {
   return (
     <ul className="flex gap-16">
       <li className="relative">
-        <ItemNav handleModal={handleModal} icon link="/">
+        <ItemNav large handleModal={handleModal} icon link="/">
           O hotel
         </ItemNav>
         {isModalOpen && <ModalMenu handleModal={handleModal} />}
       </li>
       <li>
-        <ItemNav link="/">Promoções</ItemNav>
+        <ItemNav large link="/">
+          Promoções
+        </ItemNav>
       </li>
       <li>
-        <ItemNav link="/acomodacoes">Acomodações</ItemNav>
+        <ItemNav large link="/acomodacoes">
+          Acomodações
+        </ItemNav>
       </li>
       <li>
-        <ItemNav link="/blog">Blog</ItemNav>
+        <ItemNav large link="/blog">
+          Blog
+        </ItemNav>
       </li>
       <li>
-        <ItemNav link="/contato">Contato</ItemNav>
+        <ItemNav large link="/contato">
+          Contato
+        </ItemNav>
       </li>
     </ul>
   )

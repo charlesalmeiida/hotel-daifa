@@ -1,15 +1,16 @@
 import { ItemAmenity } from "@/components/Amenities/ItemAmenity"
 import { Amenities } from "@/components/Amenities/ArrayAmenities"
 import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
-import { BtnLink } from "@/components/global/BtnLink"
-import { Container } from "@/components/global/Container"
+import { BtnLink } from "@/components/Global/BtnLink"
+import { Container } from "@/components/Global/Container"
 import { Header } from "@/components/Header/Header"
-import { TagSpan } from "@/components/global/TagSpan"
+import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { GalleryImageColumn } from "@/components/Gallery/Gallery"
 import { Maps } from "@/components/Maps/Maps"
 import { ArrayFaq } from "@/components/ItemFaq/ArrayFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
+import { Footer } from "@/components/Footer/Footer"
 export default function Home() {
   return (
     <>
@@ -239,6 +240,8 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <Footer />
     </>
   )
 }

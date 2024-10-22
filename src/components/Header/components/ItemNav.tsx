@@ -7,6 +7,8 @@ interface ItemNavProps {
   icon?: boolean
   link: string
   color?: string
+  bold?: boolean
+  large?: boolean
   handleModal?: () => void
 }
 
@@ -15,6 +17,8 @@ export function ItemNav({
   icon,
   link,
   color = "text-gray-100",
+  bold = false,
+  large = false,
   handleModal,
 }: ItemNavProps) {
   return (
@@ -22,7 +26,11 @@ export function ItemNav({
       onClick={handleModal}
       onMouseOver={handleModal}
       href={link}
-      className={`flex gap-2 ${color} hover:text-gray-300 font-mono text-lg relative group`}
+      className={`flex gap-2 ${color} ${
+        bold ? "font-bold" : ""
+      } hover:text-gray-300 font-mono ${
+        large ? "text-lg" : "text-base"
+      } relative group`}
     >
       {children}
       {icon && (

@@ -4,7 +4,7 @@ const inter_font = Inter({
   display: "swap",
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400", "500"],
+  weight: ["400", "500", "700"],
 })
 
 const raleway_font = Raleway({

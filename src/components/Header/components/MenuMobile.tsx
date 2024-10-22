@@ -1,4 +1,4 @@
-import { Button } from "@/components/global/Button"
+import { Button } from "@/components/Global/Button"
 import { ItemNav } from "./ItemNav"
 
 export function MenuMobile() {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { inter, raleway } from "./utils/fonts"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Hotel Daifa - Florianópolis",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={`${inter} ${raleway} antialiased`}>{children}</body>
+      <body className={`${inter} ${raleway} antialiased`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   )
 }
