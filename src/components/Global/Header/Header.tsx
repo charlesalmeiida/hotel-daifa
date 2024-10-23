@@ -1,14 +1,14 @@
 "use client"
 
 import Image from "next/image"
-import { Container } from "../Global/Container"
 import { TopHeader } from "./components/TopHeader"
 import Link from "next/link"
 import { NavList } from "./components/NavList"
-import { Button } from "../Global/Button"
 import { Turn as Hamburger } from "hamburger-react"
 import { useState } from "react"
 import { MenuMobile } from "./components/MenuMobile"
+import { Container } from "../Container"
+import { Button } from "../Button"
 
 interface HeaderProps {
   logo?: "white" | "color"

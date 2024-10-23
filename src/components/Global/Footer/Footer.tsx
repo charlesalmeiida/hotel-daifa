@@ -4,6 +4,7 @@ import { Contacts } from "./Contacts"
 import { Socials } from "./Socials"
 import { Copyright } from "./Copyright"
 import { ItemNav } from "../Header/components/ItemNav"
+import { ArrayLinks } from "./ArrayLinks"
 
 export function Footer() {
   return (
@@ -29,34 +30,19 @@ export function Footer() {
             </div>
           </div>
           <div className="flex justify-between gap-14">
-            <div className="space-y-6">
-              <ItemNav bold link="/">
-                O hotel
-              </ItemNav>
-              <ItemNav link="/">Galeria</ItemNav>
-              <ItemNav link="/">Localização</ItemNav>
-              <ItemNav link="/">FAQ</ItemNav>
-            </div>
-            <div className="space-y-6">
-              <ItemNav bold link="/">
-                Acomodações
-              </ItemNav>
-              <ItemNav link="/">Standard Sem Vista</ItemNav>
-              <ItemNav link="/">Standard com Vista Parcial da Baía Sul</ItemNav>
-              <ItemNav link="/">Standard com Vista da Baía Sul</ItemNav>
-              <ItemNav link="/">Standard com Vista da Baía Sul</ItemNav>
-              <ItemNav link="/">Deluxe com Vista e Hidro dupla</ItemNav>
-            </div>
-            <div className="space-y-6">
-              <ItemNav bold link="/">
-                Blog
-              </ItemNav>
-            </div>
-            <div className="space-y-6">
-              <ItemNav bold link="/">
-                Contato
-              </ItemNav>
-            </div>
+            {ArrayLinks.map((section) => (
+              <div key={section.page} className="space-y-6">
+                <ItemNav color="secondary" bold link="/">
+                  {section.page}
+                </ItemNav>
+                {section.links &&
+                  section.links.map((item) => (
+                    <ItemNav color="secondary" key={item.name} link={item.link}>
+                      {item.name}
+                    </ItemNav>
+                  ))}
+              </div>
+            ))}
           </div>
         </div>
         <Copyright />

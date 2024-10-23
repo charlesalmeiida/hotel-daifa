@@ -4,7 +4,7 @@ import React from "react"
 import { tv } from "tailwind-variants"
 
 const button = tv({
-  base: "font-mono text-base rounded-[4px] leading-5 flex gap-3 h-fit transition-all",
+  base: "font-mono text-base rounded-[4px] leading-5 flex justify-center gap-3 h-fit transition-all",
   variants: {
     color: {
       outlineWhite:
