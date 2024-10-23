@@ -11,7 +11,12 @@ export function MenuMobile() {
       <ItemNav link="/">Blog</ItemNav>
       <ItemNav link="/contato">Contato</ItemNav>
       <div className="md:hidden">
-        <Button color="outlineWhite" size="sm" icon>
+        <Button
+          link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+          color="outlineWhite"
+          size="sm"
+          icon
+        >
           RESERVAR
         </Button>
       </div>
