@@ -11,7 +11,7 @@ export function MenuMobile() {
       <ItemNav link="/">Blog</ItemNav>
       <ItemNav link="/contato">Contato</ItemNav>
       <div className="md:hidden">
-        <Button color="outline" size="sm" icon>
+        <Button color="outlineWhite" size="sm" icon>
           RESERVAR
         </Button>
       </div>
