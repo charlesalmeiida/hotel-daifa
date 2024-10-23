@@ -3,7 +3,6 @@ import { Amenities } from "@/components/Amenities/ArrayAmenities"
 import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
-import { Header } from "@/components/Header/Header"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { GalleryImageColumn } from "@/components/Gallery/Gallery"
@@ -13,6 +12,7 @@ import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
 
 import Link from "next/link"
 import { Footer } from "@/components/Global/Footer/Footer"
+import { Header } from "@/components/Global/Header/Header"
 export default function Home() {
   return (
     <>

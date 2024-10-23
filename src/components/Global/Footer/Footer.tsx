@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { Container } from "../Container"
-import { ItemNav } from "@/components/Header/components/ItemNav"
 import { Contacts } from "./Contacts"
 import { Socials } from "./Socials"
 import { Copyright } from "./Copyright"
+import { ItemNav } from "../Header/components/ItemNav"
 
 export function Footer() {
   return (

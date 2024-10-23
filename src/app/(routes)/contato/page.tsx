@@ -1,7 +1,7 @@
 import { Container } from "@/components/Global/Container"
 import { Contacts } from "@/components/Global/Footer/Contacts"
 import { Footer } from "@/components/Global/Footer/Footer"
-import { Header } from "@/components/Header/Header"
+import { Header } from "@/components/Global/Header/Header"
 
 export default function Contact() {
   return (
