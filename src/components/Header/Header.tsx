@@ -38,7 +38,12 @@ export function Header() {
                 <NavList />
               </nav>
               <div className="hidden md:block">
-                <Button color="outline" size="sm" icon>
+                <Button
+                  link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+                  color="outline"
+                  size="sm"
+                  icon
+                >
                   RESERVAR
                 </Button>
               </div>

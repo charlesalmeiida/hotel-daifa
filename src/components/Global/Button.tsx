@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 import { tv } from "tailwind-variants"
 
@@ -23,11 +24,16 @@ interface ButtonProps {
   children: React.ReactNode
   color?: "outline" | "fill"
   size?: "sm" | "md" | "lg"
+  link: string
 }
 
-export function Button({ icon, children, color, size }: ButtonProps) {
+export function Button({ icon, children, color, size, link }: ButtonProps) {
   return (
-    <button className={button({ size: size, color: color })}>
+    <Link
+      href={link}
+      target="_blank"
+      className={button({ size: size, color: color })}
+    >
       {icon && (
         <Image
           src={"/svg/icon-calendar.svg"}
@@ -37,6 +43,6 @@ export function Button({ icon, children, color, size }: ButtonProps) {
         />
       )}
       {children}
-    </button>
+    </Link>
   )
 }

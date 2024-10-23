@@ -16,6 +16,10 @@ export function BookSearchForm() {
   const handleDateRangeOpen = () => {
     setDateRangeOpen(!isDateRangeOpen)
   }
+  const checkinDate =
+    eventDate?.from && format(new Date(eventDate.from), "yyyy-MM-dd")
+  const checkoutDate =
+    eventDate?.to && format(new Date(eventDate.to), "yyyy-MM-dd")
 
   return (
     <div>
@@ -75,7 +79,11 @@ export function BookSearchForm() {
 
             <LabelForm icon="people" title="CRIANÇAS" />
           </div>
-          <Button color="fill" size="md">
+          <Button
+            link={`https://reservas.desbravador.com.br/hotel-app/hotel-daifa/reservation?checkin=${checkinDate}&checkout=${checkoutDate}&guests=2&adults=2&child1=0&voucher=&origin=google&roomCode=&rateCode=&chdage=_`}
+            color="fill"
+            size="md"
+          >
             PESQUISAR
           </Button>
         </div>

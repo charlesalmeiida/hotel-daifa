@@ -10,8 +10,9 @@ import { GalleryImageColumn } from "@/components/Gallery/Gallery"
 import { Maps } from "@/components/Maps/Maps"
 import { ArrayFaq } from "@/components/ItemFaq/ArrayFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
-import { Footer } from "@/components/Footer/Footer"
+
 import Link from "next/link"
+import { Footer } from "@/components/Global/Footer/Footer"
 export default function Home() {
   return (
     <>
