@@ -7,8 +7,10 @@ const button = tv({
   base: "font-mono text-base rounded-[4px] leading-5 flex gap-3 h-fit transition-all",
   variants: {
     color: {
-      outline:
+      outlineWhite:
         "bg-transparent border text-gray-100 border-gray-100 hover:bg-blue hover:text-gray-50",
+      outlineGray:
+        "bg-transparent border text-gray-700 border-gray-700 hover:bg-orange hover:border-orange",
       fill: "bg-blue text-gray-100 hover:bg-orange",
     },
     size: {
@@ -22,7 +24,7 @@ const button = tv({
 interface ButtonProps {
   icon?: boolean
   children: React.ReactNode
-  color?: "outline" | "fill"
+  color?: "outlineWhite" | "outlineGray" | "fill"
   size?: "sm" | "md" | "lg"
   link: string
 }
@@ -36,7 +38,11 @@ export function Button({ icon, children, color, size, link }: ButtonProps) {
     >
       {icon && (
         <Image
-          src={"/svg/icon-calendar.svg"}
+          src={`${
+            color === "outlineGray"
+              ? "svg/icon-calendar-gray.svg"
+              : "svg/icon-calendar.svg"
+          }`}
           width={15}
           height={17}
           alt="Ícone de calendário"

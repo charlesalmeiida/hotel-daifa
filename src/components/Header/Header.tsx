@@ -10,7 +10,17 @@ import { Turn as Hamburger } from "hamburger-react"
 import { useState } from "react"
 import { MenuMobile } from "./components/MenuMobile"
 
-export function Header() {
+interface HeaderProps {
+  logo?: "white" | "color"
+  color?: "primary" | "secondary"
+  btnColor?: "outlineWhite" | "outlineGray" | "fill"
+}
+
+export function Header({
+  logo = "color",
+  color = "primary",
+  btnColor = "outlineGray",
+}: HeaderProps) {
   const [isOpen, setOpen] = useState(false)
 
   return (
@@ -22,7 +32,9 @@ export function Header() {
             <div>
               <Link href="/">
                 <Image
-                  src={"/svg/logo-white.svg"}
+                  src={`${
+                    logo === "white" ? "svg/logo-white.svg" : "svg/logo.svg"
+                  }`}
                   width={72}
                   height={61}
                   alt="Logo do Hotel Daifa"
@@ -35,12 +47,12 @@ export function Header() {
               </div>
               {isOpen && <MenuMobile />}
               <nav className="hidden lg:flex">
-                <NavList />
+                <NavList color={color} />
               </nav>
               <div className="hidden md:block">
                 <Button
                   link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
-                  color="outline"
+                  color={btnColor}
                   size="sm"
                   icon
                 >

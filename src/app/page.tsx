@@ -16,7 +16,7 @@ import { Footer } from "@/components/Global/Footer/Footer"
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header logo="white" color="secondary" btnColor="outlineWhite" />
 
       <main>
         <section className="bg-hero bg-no-repeat bg-cover py-52">

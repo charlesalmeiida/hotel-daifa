@@ -4,7 +4,11 @@ import { useState } from "react"
 import { ItemNav } from "./ItemNav"
 import { ModalMenu } from "./ModalMenu"
 
-export function NavList() {
+interface NavListProps {
+  color?: "primary" | "secondary"
+}
+
+export function NavList({ color = "primary" }: NavListProps) {
   const [isModalOpen, setModalOpen] = useState(false)
 
   const handleModal = () => {
@@ -14,28 +18,28 @@ export function NavList() {
   return (
     <ul className="flex gap-16">
       <li className="relative">
-        <ItemNav large handleModal={handleModal} icon link="/">
+        <ItemNav color={color} large handleModal={handleModal} icon link="/">
           O hotel
         </ItemNav>
         {isModalOpen && <ModalMenu handleModal={handleModal} />}
       </li>
       <li>
-        <ItemNav large link="/">
+        <ItemNav color={color} large link="/">
           Promoções
         </ItemNav>
       </li>
       <li>
-        <ItemNav large link="/acomodacoes">
+        <ItemNav color={color} large link="/acomodacoes">
           Acomodações
         </ItemNav>
       </li>
       <li>
-        <ItemNav large link="/blog">
+        <ItemNav color={color} large link="/blog">
           Blog
         </ItemNav>
       </li>
       <li>
-        <ItemNav large link="/contato">
+        <ItemNav color={color} large link="/contato">
           Contato
         </ItemNav>
       </li>
