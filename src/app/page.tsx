@@ -1,18 +1,18 @@
-import { ItemAmenity } from "@/components/Amenities/ItemAmenity"
-import { Amenities } from "@/components/Amenities/ArrayAmenities"
 import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { GalleryImageColumn } from "@/components/Gallery/Gallery"
-import { Maps } from "@/components/Maps/Maps"
 import { ArrayFaq } from "@/components/ItemFaq/ArrayFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
-
-import Link from "next/link"
 import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
+import { AmenitiesSection } from "@/components/Amenities/Amenities"
+import { Location } from "@/components/Maps/Location"
+import { BtnWpp } from "@/components/Global/BtnWpp"
+import { CardPostDefault } from "@/components/Blog/CardPostDefault"
+import { CardPostSM } from "@/components/Blog/CardPostSM"
 export default function Home() {
   return (
     <>
@@ -103,22 +103,7 @@ export default function Home() {
       </section>
 
       <section className="py-28">
-        <Container>
-          <div className="mx-auto space-y-4 text-center">
-            <h3>Comodidades</h3>
-            <span className="w-14 h-px mx-auto bg-orange block"></span>
-          </div>
-          <div className="flex mt-10 flex-wrap max-w-[1072px] justify-center items-center gap-y-10 gap-x-16 mx-auto">
-            {Amenities.map((item) => (
-              <ItemAmenity
-                key={item.title}
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
-          </div>
-        </Container>
+        <AmenitiesSection />
       </section>
 
       <section>
@@ -201,18 +186,27 @@ export default function Home() {
         </Container>
       </section>
 
-      <section>
+      <section className="pt-28">
         <Container>
-          <div className="pt-28 text-center space-y-6">
-            <TagSpan>LOCALIZAÇÃO</TagSpan>
-            <h3 className="max-w-sm mx-auto">
-              Perto de tudo o que Florianópolis oferece
-            </h3>
+          <div className="space-y-6 mb-8">
+            <TagSpan>BLOG</TagSpan>
+            <h2>Posts recentes</h2>
           </div>
-          <div>
-            <Maps />
+          <div className="flex justify-between">
+            <div>
+              <CardPostDefault />
+            </div>
+            <div className="flex flex-col gap-8">
+              <CardPostSM />
+              <CardPostSM />
+              <CardPostSM />
+            </div>
           </div>
         </Container>
+      </section>
+
+      <section className="pt-28">
+        <Location />
       </section>
 
       <section className="py-28">
@@ -243,16 +237,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <div className="fixed bottom-10 right-10">
-        <Link href={"https://wa.me/555199999999"}>
-          <Image
-            src={"svg/logo-whatsapp.svg"}
-            width={72}
-            height={60}
-            alt="Logo do WhatsApp"
-          />
-        </Link>
-      </div>
+      <BtnWpp />
 
       <Footer />
     </>
