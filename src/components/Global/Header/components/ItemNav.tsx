@@ -38,8 +38,8 @@ export function ItemNav({
         <Image
           src={`${
             color === "primary"
-              ? "svg/chevron-down-gray.svg"
-              : "svg/chevron-down.svg"
+              ? "/svg/chevron-down-gray.svg"
+              : "/svg/chevron-down.svg"
           }`}
           width={12}
           height={6}

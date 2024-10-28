@@ -6,7 +6,7 @@ export function Socials() {
     <>
       <Link href={"https://www.instagram.com/hoteldaifa/"} target={"_blank"}>
         <Image
-          src={"svg/icon-instagram.svg"}
+          src={"/svg/icon-instagram.svg"}
           width={20}
           height={20}
           alt="Logo do Instagram"
@@ -14,7 +14,7 @@ export function Socials() {
       </Link>
       <Link href={"https://www.facebook.com/hoteldaifa/"} target={"_blank"}>
         <Image
-          src={"svg/icon-facebook.svg"}
+          src={"/svg/icon-facebook.svg"}
           width={11}
           height={20}
           alt="Logo do Facebook"

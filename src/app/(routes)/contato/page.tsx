@@ -10,9 +10,9 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <section className="pt-[207px] pb-28">
+      <section className="pt-32 lg:pt-[207px] pb-14 lg:pb-28">
         <Container>
-          <div className="flex justify-between">
+          <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-0 justify-between">
             <div className="space-y-10">
               <div className="space-y-8">
                 <div className="space-y-4 max-w-lg">
@@ -22,7 +22,7 @@ export default function Contact() {
                   </h3>
                   <p className="max-w-[416px]">
                     Entre em contato com nossa equipe, faça sua reserva e
-                    aproveite o melhor custobenefício de Floripa!
+                    aproveite o melhor custo benefício de Floripa!
                   </p>
                 </div>
                 <div>
@@ -42,7 +42,7 @@ export default function Contact() {
                 </Link>
               </div>
             </div>
-            <div className="p-6 max-w-[488px] rounded-[4px] space-y-6 border border-gray-200">
+            <div className="p-6 w-full lg:max-w-[488px] rounded-[4px] space-y-6 border border-gray-200">
               <h4>Entre em contato</h4>
               <form className="space-y-4">
                 <Input id="name" placeholder="Digite seu nome" type="text" />

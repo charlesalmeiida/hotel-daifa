@@ -40,8 +40,8 @@ export function Button({ icon, children, color, size, link }: ButtonProps) {
         <Image
           src={`${
             color === "outlineGray"
-              ? "svg/icon-calendar-gray.svg"
-              : "svg/icon-calendar.svg"
+              ? "/svg/icon-calendar-gray.svg"
+              : "/svg/icon-calendar.svg"
           }`}
           width={15}
           height={17}

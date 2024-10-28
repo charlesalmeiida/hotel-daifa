@@ -16,7 +16,9 @@ export function Contacts({ color = "primary" }: ContactsProps) {
       >
         <Image
           src={`${
-            color === "primary" ? "svg/icon-call.svg" : "svg/icon-call-gray.svg"
+            color === "primary"
+              ? "/svg/icon-call.svg"
+              : "/svg/icon-call-gray.svg"
           }`}
           width={19}
           height={19}
@@ -33,8 +35,8 @@ export function Contacts({ color = "primary" }: ContactsProps) {
         <Image
           src={`${
             color === "primary"
-              ? "svg/icon-whatsapp.svg"
-              : "svg/icon-whatsapp-gray.svg"
+              ? "/svg/icon-whatsapp.svg"
+              : "/svg/icon-whatsapp-gray.svg"
           }`}
           width={21}
           height={21}

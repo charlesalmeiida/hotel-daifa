@@ -8,17 +8,17 @@ import { ArrayLinks } from "./ArrayLinks"
 
 export function Footer() {
   return (
-    <footer className="bg-blue pt-20 pb-4">
+    <footer className="bg-blue pt-14 lg:pt-20 pb-4">
       <Container>
-        <div className="flex justify-between items-start">
-          <div className="space-y-10">
+        <div className="flex flex-col lg:flex-row gap-14 lg:gap-0 justify-between items-start">
+          <div className="space-y-10 flex flex-col items-center justify-center mx-auto lg:mx-0 lg:block">
             <Image
-              src={"svg/logo-white.svg"}
+              src={"/svg/logo-white.svg"}
               width={72}
               height={61}
               alt="Logo do Hotel Daifa"
             />
-            <p className="text-gray-50 max-w-80">
+            <p className="text-gray-50 text-center lg:text-left max-w-80">
               Profa. Maria Júlia Franco, 294 – Prainha, Florianópolis – SC,
               88020-280
             </p>
@@ -29,7 +29,7 @@ export function Footer() {
               <Contacts />
             </div>
           </div>
-          <div className="flex justify-between gap-14">
+          <div className="flex flex-col md:flex-row justify-between mx-auto lg:mx-0 gap-10 lg:gap-14">
             {ArrayLinks.map((section) => (
               <div key={section.page} className="space-y-6">
                 <ItemNav color="secondary" bold link="/">

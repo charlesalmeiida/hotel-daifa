@@ -17,7 +17,7 @@ export function TopHeader() {
             className="flex items-center gap-2"
           >
             <Image
-              src={"svg/icon-whatsapp.svg"}
+              src={"/svg/icon-whatsapp.svg"}
               width={16}
               height={17}
               alt="Ícone do WhatsApp"
