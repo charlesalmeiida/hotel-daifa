@@ -1,4 +1,6 @@
+import { CardPostMD } from "@/components/Blog/CardPostMD"
 import { DateAndTheme } from "@/components/Blog/DateAndTheme"
+import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
@@ -8,7 +10,7 @@ export default function BlogPost() {
   return (
     <>
       <Header />
-      <section className="pt-52 pb-28">
+      <section className="pt-40 pb-28">
         <Container>
           <div className="text-center flex flex-col items-center gap-6 mb-14">
             <DateAndTheme />
@@ -47,11 +49,11 @@ export default function BlogPost() {
             />
             <p className="text-gray-700 leading-7">
               Uma curiosidade sobre o Folianópolis é que ele é conhecido como o
-              &quot;carnaval fora de época mais animado do Brasil&quot;, atraindo foliões
-              de todas as regiões para viver uma experiência única de festa,
-              música e alegria, na cidade mais charmosa do país. Para quem quer
-              aproveitar a folia sem se preocupar com longos deslocamentos, o
-              Hotel Daifa é a melhor escolha!
+              &quot;carnaval fora de época mais animado do Brasil&quot;,
+              atraindo foliões de todas as regiões para viver uma experiência
+              única de festa, música e alegria, na cidade mais charmosa do país.
+              Para quem quer aproveitar a folia sem se preocupar com longos
+              deslocamentos, o Hotel Daifa é a melhor escolha!
               <br />
               <br />
               Localizado a apenas 5 minutos da Passarela do Nego Quirido, o
@@ -67,6 +69,27 @@ export default function BlogPost() {
           </div>
         </Container>
       </section>
+
+      <section className="pb-28">
+        <Container>
+          <div className="space-y-14">
+            <div className="flex items-center justify-between">
+              <h4 className="text-gray-700 text-[28px]">
+                Artigos relacionados
+              </h4>
+              <BtnLink>VER MAIS PUBLICAÇÕES</BtnLink>
+            </div>
+            <div className="flex flex-wrap gap-y-14 justify-between">
+              {Array(3)
+                .fill(0)
+                .map((_, index) => (
+                  <CardPostMD key={index} />
+                ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
       <Footer />
     </>
   )

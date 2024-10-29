@@ -1,7 +1,9 @@
 import { CardPostLG } from "@/components/Blog/CardPostLG"
+import { RecentPosts } from "@/components/Blog/RecentPosts"
+import { InputSearchBlog } from "@/components/Forms/InputSearchBlog"
 import { Container } from "@/components/Global/Container"
+import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
-import Image from "next/image"
 
 export default function Blog() {
   return (
@@ -9,25 +11,11 @@ export default function Blog() {
       <Header />
       <section>
         <Container>
-          <section className="pt-52">
+          <div className="pt-52">
             <div className="flex items-end justify-between">
               <div className="space-y-6">
                 <h2 className="text-orange">Blog</h2>
-                <div className="flex w-full max-w-[488px] justify-between py-4 pl-6 pr-3 rounded-[4px] bg-gray-100 border border-gray-300">
-                  <input
-                    className="bg-transparent w-[488px] text-gray-600 font-mono text-base"
-                    type="text"
-                    placeholder="Pesquisar por tema, palavra-chave ou tag..."
-                  />
-                  <button>
-                    <Image
-                      src={"/svg/icon-search.svg"}
-                      width={18}
-                      height={18}
-                      alt="Ícone de pesquisa"
-                    />
-                  </button>
-                </div>
+                <InputSearchBlog />
               </div>
               <span className="text-gray-900 block opacity-80 font-mono text-base max-w-md">
                 Garanta sua reserva com preços econômicos. Descubra todas as
@@ -35,7 +23,7 @@ export default function Blog() {
                 Florianópolis.
               </span>
             </div>
-          </section>
+          </div>
         </Container>
       </section>
 
@@ -44,6 +32,14 @@ export default function Blog() {
           <CardPostLG />
         </Container>
       </section>
+
+      <section className="pt-14 pb-28">
+        <Container>
+          <RecentPosts />
+        </Container>
+      </section>
+
+      <Footer />
     </>
   )
 }
