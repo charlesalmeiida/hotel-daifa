@@ -11,7 +11,7 @@ const raleway_font = Raleway({
   display: "swap",
   subsets: ["latin"],
   variable: "--font-raleway",
-  weight: ["600"],
+  weight: ["400", "600"],
 })
 
 export const inter = inter_font.variable

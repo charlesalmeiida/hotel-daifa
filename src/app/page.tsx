@@ -4,7 +4,7 @@ import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { GalleryImageColumn } from "@/components/Gallery/Gallery"
-import { ArrayFaq } from "@/components/ItemFaq/ArrayFaq"
+import { itemsFaq } from "@/app/data/itemsFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
 import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
             <div>
               <div className="space-y-6">
-                {ArrayFaq.map((item, index) => (
+                {itemsFaq.map((item, index) => (
                   <ItemFaq
                     key={index}
                     question={item.question}

@@ -1,6 +1,6 @@
 import { Container } from "../Global/Container"
 import { ItemAmenity } from "./ItemAmenity"
-import { Amenities } from "./ArrayAmenities"
+import amenitiesData from "@/app/data/amenitiesData.json"
 
 export function AmenitiesSection() {
   return (
@@ -11,7 +11,7 @@ export function AmenitiesSection() {
           <span className="w-14 h-px mx-auto bg-orange block"></span>
         </div>
         <div className="flex mt-10 flex-wrap max-w-[1072px] justify-center items-center gap-y-10 gap-x-16 mx-auto">
-          {Amenities.map((item) => (
+          {amenitiesData.map((item) => (
             <ItemAmenity
               key={item.title}
               icon={item.icon}

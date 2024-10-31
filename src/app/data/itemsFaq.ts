@@ -1,4 +1,4 @@
-export const ArrayFaq = [
+export const itemsFaq = [
   {
     question: "Qual o horário de check-in e check-out?",
     answer: "As diárias iniciam a partir das 14 hrs e encerram às 11h",

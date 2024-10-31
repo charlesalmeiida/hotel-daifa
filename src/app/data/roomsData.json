@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Standard sem vista para a Baía Sul",
+    "description": "Quer economizar? Veja nossas melhores opções para hospedagens curtas e economicas",
+    "benefits": [
+      "Ar-condicionado Quente e Frio",
+      "Ventilador de teto",
+      "TV tela plana com canais locais",
+      "Wi-fi",
+      "Mesa de trabalho",
+      "Frigobar",
+      "Cofre",
+      "Banheiro privativo",
+      "Sem sacada"
+    ],
+    "hospeds": 3,
+    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
+  },
+  {
+    "title": "Standard com vista parcial da Baía Sul",
+    "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
+    "benefits": [
+      "Ar-condicionado Quente e Frio",
+      "Ventilador de teto",
+      "TV tela plana com canais locais",
+      "Wi-fi",
+      "Mesa de trabalho",
+      "Frigobar",
+      "Cofre",
+      "Banheiro privativo",
+      "Sem sacada",
+      "Vista lateral da Baía Sul e Ponte"
+    ],
+    "hospeds": 3,
+    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
+  },
+  {
+    "title": "Standard com vista para a Baía Sul",
+    "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
+    "benefits": [
+      "Ar-condicionado Quente e Frio",
+      "Ventilador de teto",
+      "TV tela plana com canais locais",
+      "Wi-fi",
+      "Mesa de trabalho",
+      "Frigobar",
+      "Cofre",
+      "Banheiro privativo",
+      "Com sacada",
+      "Vista de frente da Baía Sul e Ponte"
+    ],
+    "hospeds": 4,
+    "beds": "Cama casal + Cama solteiro + Cama Baixa OU 04 camas de solteiro (uma baixa)"
+  },
+  {
+    "title": "Quarto superior com vista e hidromassagem single",
+    "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
+    "benefits": [
+      "Ar-condicionado Quente e Frio",
+      "Ventilador de teto",
+      "TV tela plana com canais locais",
+      "Wi-fi",
+      "Mesa de trabalho",
+      "Frigobar",
+      "Cofre",
+      "Banheiro privativo",
+      "Com sacada",
+      "Vista de frente da Baía Sul e Ponte",
+      "Hidromassagem tamanho individual"
+    ],
+    "hospeds": 3,
+    "beds": "Cama casal + Cama Baixa"
+  },
+  {
+    "title": "Quarto deluxe com vista e hidromassagem dupla",
+    "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
+    "benefits": [
+      "Ar-condicionado Quente e Frio",
+      "Ventilador de teto",
+      "TV tela plana com canais locais",
+      "Wi-fi",
+      "Mesa de trabalho",
+      "Frigobar",
+      "Cofre",
+      "Banheiro privativo",
+      "Com sacada",
+      "Vista de frente da Baía Sul e Ponte",
+      "Hidromassagem tamanho individual"
+    ],
+    "hospeds": 3,
+    "beds": "Cama casal + Cama Baixa"
+  }
+]
