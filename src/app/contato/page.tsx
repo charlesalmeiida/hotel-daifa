@@ -1,5 +1,4 @@
-import { Input } from "@/components/Forms/Input"
-import { Button } from "@/components/Global/Button"
+import { ContactForm } from "@/components/Forms/ContactForm"
 import { Container } from "@/components/Global/Container"
 import { Contacts } from "@/components/Global/Footer/Contacts"
 import { Footer } from "@/components/Global/Footer/Footer"
@@ -44,19 +43,7 @@ export default function Contact() {
             </div>
             <div className="p-6 w-full lg:max-w-[488px] rounded-[4px] space-y-6 border border-gray-200">
               <h4>Entre em contato</h4>
-              <form className="space-y-4">
-                <Input id="name" placeholder="Digite seu nome" type="text" />
-                <Input
-                  id="email"
-                  placeholder="Digite seu e-mail"
-                  type="email"
-                />
-                <Input id="number" placeholder="Celular" type="number" />
-                <Input id="message" placeholder="Mensagem" type="textarea" />
-                <Button link="/" color="fill" size="lg">
-                  ENVIAR
-                </Button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </Container>

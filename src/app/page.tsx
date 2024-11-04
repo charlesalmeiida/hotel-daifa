@@ -10,9 +10,7 @@ import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
-import { BtnWpp } from "@/components/Global/BtnWpp"
-import { CardPostDefault } from "@/components/Blog/CardPostDefault"
-import { CardPostSM } from "@/components/Blog/CardPostSM"
+import { BlogSection } from "@/components/Blog/BlogSection"
 export default function Home() {
   return (
     <>
@@ -194,24 +192,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="pt-14 lg:pt-28">
-        <Container>
-          <div className="space-y-6 mb-8">
-            <TagSpan>BLOG</TagSpan>
-            <h2>Posts recentes</h2>
-          </div>
-          <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
-            <div>
-              <CardPostDefault />
-            </div>
-            <div className="flex flex-col gap-8">
-              <CardPostSM />
-              <CardPostSM />
-              <CardPostSM />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <BlogSection />
 
       <section className="pt-14 lg:pt-28">
         <Location />
@@ -246,8 +227,6 @@ export default function Home() {
           </div>
         </Container>
       </section>
-
-      <BtnWpp />
 
       <Footer />
     </>

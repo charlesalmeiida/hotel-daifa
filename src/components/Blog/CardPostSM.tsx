@@ -1,31 +1,41 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export function CardPostSM() {
+interface CardPostSMProps {
+  slug: string
+  date: string
+  title: string
+  description: string
+  image: string
+}
+
+export function CardPostSM({
+  slug,
+  date,
+  title,
+  description,
+  image,
+}: CardPostSMProps) {
   return (
-    <Link href={"/"}>
+    <Link href={`/blog/${slug}`}>
       <div className="flex items-center gap-8">
         <div className="overflow-hidden rounded-lg">
-          <Image
-            className="hover:scale-105 transition-all object-cover rounded-lg"
-            src={"/img/image-post-sm.png"}
-            width={208}
-            height={166}
-            alt="Foto do post do blog"
-          />
+          {image && (
+            <Image
+              className="hover:scale-105 transition-all h-[166px] w-full object-cover rounded-lg"
+              src={image}
+              width={208}
+              height={166}
+              alt="Foto do post do blog"
+            />
+          )}
         </div>
         <div>
           <span className="text-sm text-gray-800 opacity-80 font-mono">
-            9 de março de 2023
+            {date}
           </span>
-          <h4 className="my-2">FOLIANÓPOLIS</h4>
-          <p className="line-clamp-3 opacity-80 max-w-[289px]">
-            O Folianópolis 2024 chega à sua 17ª edição com o tema FOLIA ASTRAL,
-            prometendo muita alegria e diversão no Sul do Brasil. O evento
-            aconteceu nos dias 14, 15 e 16 de novembro, durante o feriado da
-            Proclamação da República, na famosa Passarela do Nego Quirido, no
-            centro de Florianópolis.
-          </p>
+          <h4 className="my-2">{title}</h4>
+          <p className="line-clamp-3 opacity-80 max-w-[289px]">{description}</p>
         </div>
       </div>
     </Link>

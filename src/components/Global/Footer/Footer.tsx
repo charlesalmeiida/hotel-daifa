@@ -5,6 +5,7 @@ import { Socials } from "./Socials"
 import { Copyright } from "./Copyright"
 import { ItemNav } from "../Header/components/ItemNav"
 import { ArrayLinks } from "./ArrayLinks"
+import { BtnWpp } from "../BtnWpp"
 
 export function Footer() {
   return (
@@ -47,6 +48,7 @@ export function Footer() {
         </div>
         <Copyright />
       </Container>
+      <BtnWpp />
     </footer>
   )
 }
