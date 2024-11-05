@@ -3,7 +3,6 @@ import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
-import { GalleryImageColumn } from "@/components/Gallery/Gallery"
 import { itemsFaq } from "@/app/data/itemsFaq"
 import { ItemFaq } from "@/components/ItemFaq/ItemFaq"
 import { Footer } from "@/components/Global/Footer/Footer"
@@ -11,6 +10,7 @@ import { Header } from "@/components/Global/Header/Header"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/components/Blog/BlogSection"
+import { GallerySection } from "@/components/Gallery/GallerySection"
 export default function Home() {
   return (
     <>
@@ -175,20 +175,7 @@ export default function Home() {
               Instagram - #hoteldaifa
             </span>
           </div>
-          <div className="mt-14 flex flex-wrap justify-between">
-            <div>
-              <GalleryImageColumn firstImage="01" secImage="02" />
-            </div>
-            <div>
-              <GalleryImageColumn firstImage="03" secImage="04" />
-            </div>
-            <div>
-              <GalleryImageColumn firstImage="05" secImage="06" />
-            </div>
-            <div>
-              <GalleryImageColumn firstImage="07" secImage="08" />
-            </div>
-          </div>
+          <GallerySection />
         </Container>
       </section>
 
