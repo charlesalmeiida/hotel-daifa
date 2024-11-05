@@ -20,7 +20,7 @@ export function CardPostMD({
   image,
 }: CardPostMDProps) {
   return (
-    <Link href={`blog/${slug}`} className="max-w-96">
+    <Link href={`/blog/${slug}`} className="max-w-96">
       <div className="overflow-hidden rounded-lg">
         {image && (
           <Image

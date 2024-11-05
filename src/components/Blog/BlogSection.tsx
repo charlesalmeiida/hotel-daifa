@@ -55,7 +55,7 @@ export function BlogSection() {
             />
           </div>
           <div className="flex flex-col gap-8 max-w-[529px]">
-            {allPosts.slice(0, 3).map((post) => (
+            {allPosts.slice(1, 3).map((post) => (
               <CardPostSM
                 key={post.data.slug}
                 date={post.data.datePost}

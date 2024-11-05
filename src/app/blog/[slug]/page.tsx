@@ -7,36 +7,55 @@ import { Header } from "@/components/Global/Header/Header"
 import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { RelatedPosts } from "@/components/Blog/RelatedPosts"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
-async function fetchPost(slug: string) {
+interface Post {
+  datePost: string
+  postTheme: string
+  title: string
+  subtitle: string
+  imagePrimary?: string
+  imageSecondary?: string
+  textBlock: string
+  textBlock2?: string
+}
+
+// Função para buscar o post usando o slug
+async function fetchPost(slug: string): Promise<Post | null> {
   const post = await builder.get("blog-post", {
     query: { "data.slug": slug },
   })
   return post ? post.data : null
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [post, setPost] = useState<any | null>(null)
+export default function BlogPost() {
+  const [post, setPost] = useState<Post | null>(null)
   const [loading, setLoading] = useState(true)
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const slug = searchParams.get("slug")
 
   useEffect(() => {
     async function getData() {
-      const post = await fetchPost(params.slug)
-      if (!post) {
+      if (!slug) return router.push("/404")
+      try {
+        const post = await fetchPost(slug)
+        if (!post) {
+          router.push("/404")
+        } else {
+          setPost(post)
+          setLoading(false)
+        }
+      } catch (error) {
+        console.error("Failed to fetch post:", error)
         router.push("/404")
-      } else {
-        setPost(post)
-        setLoading(false)
       }
     }
     getData()
-  }, [params.slug, router])
+  }, [slug, router])
 
   if (loading) {
     return <div>Carregando...</div>
@@ -81,10 +100,12 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 alt="Imagem do post do blog"
               />
             )}
-            <div
-              className="break-words text-wrap text-base opacity-80 font-mono"
-              dangerouslySetInnerHTML={{ __html: post.textBlock2 }}
-            />
+            {post.textBlock2 && (
+              <div
+                className="break-words text-wrap text-base opacity-80 font-mono"
+                dangerouslySetInnerHTML={{ __html: post.textBlock2 }}
+              />
+            )}
           </div>
         </Container>
       </section>
