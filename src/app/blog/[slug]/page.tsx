@@ -7,55 +7,44 @@ import { Header } from "@/components/Global/Header/Header"
 import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { RelatedPosts } from "@/components/Blog/RelatedPosts"
+import { use } from "react"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
-interface Post {
-  datePost: string
-  postTheme: string
-  title: string
-  subtitle: string
-  imagePrimary?: string
-  imageSecondary?: string
-  textBlock: string
-  textBlock2?: string
-}
-
-// Função para buscar o post usando o slug
-async function fetchPost(slug: string): Promise<Post | null> {
+async function fetchPost(slug: string) {
   const post = await builder.get("blog-post", {
     query: { "data.slug": slug },
   })
   return post ? post.data : null
 }
 
-export default function BlogPost() {
-  const [post, setPost] = useState<Post | null>(null)
+// Função para buscar o post específico pelo slug
+
+export default function BlogPost({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const { id } = use(params)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [post, setPost] = useState<any | null>(null)
   const [loading, setLoading] = useState(true)
   const router = useRouter()
-  const searchParams = useSearchParams()
-  const slug = searchParams.get("slug")
 
   useEffect(() => {
     async function getData() {
-      if (!slug) return router.push("/404")
-      try {
-        const post = await fetchPost(slug)
-        if (!post) {
-          router.push("/404")
-        } else {
-          setPost(post)
-          setLoading(false)
-        }
-      } catch (error) {
-        console.error("Failed to fetch post:", error)
+      const post = await fetchPost(id)
+      if (!post) {
         router.push("/404")
+      } else {
+        setPost(post)
+        setLoading(false)
       }
     }
     getData()
-  }, [slug, router])
+  }, [id, router])
 
   if (loading) {
     return <div>Carregando...</div>
@@ -64,7 +53,6 @@ export default function BlogPost() {
   if (!post) {
     return <div>Post não encontrado.</div>
   }
-
   return (
     <>
       <Header />
@@ -111,7 +99,6 @@ export default function BlogPost() {
       </section>
 
       <RelatedPosts />
-
       <Footer />
     </>
   )
