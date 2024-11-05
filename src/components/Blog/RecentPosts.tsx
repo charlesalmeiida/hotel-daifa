@@ -35,7 +35,7 @@ export function RecentPosts() {
 
   return (
     <div className="flex flex-wrap gap-y-14 justify-between">
-      {allPosts.slice(1, 3).map((post) => (
+      {allPosts.slice(1, 4).map((post) => (
         <CardPostMD
           key={post.data.slug}
           date={post.data.datePost}

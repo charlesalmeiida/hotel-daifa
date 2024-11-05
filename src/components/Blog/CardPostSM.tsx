@@ -22,7 +22,7 @@ export function CardPostSM({
         <div className="overflow-hidden rounded-lg">
           {image && (
             <Image
-              className="hover:scale-105 transition-all h-[166px] max-w-[166px] w-full object-cover rounded-lg"
+              className="hover:scale-105 transition-all h-[166px] max-w-52 w-full object-cover rounded-lg"
               src={image}
               width={208}
               height={166}
