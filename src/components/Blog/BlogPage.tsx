@@ -33,20 +33,20 @@ export function BlogPage() {
   }, [])
 
   if (allPosts.length === 0) {
-    return <div>Carregando...</div>
+    return <div className="h-lvh bg-white"></div>
   }
 
   return (
     <>
       <section>
         <Container>
-          <div className="pt-52">
-            <div className="flex items-end justify-between">
-              <div className="space-y-6">
-                <h2 className="text-orange">Blog</h2>
+          <div className="pt-28 lg:pt-40">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-start lg:items-end justify-between">
+              <div className="space-y-6 w-full lg:w-fit">
+                <h2 className="text-orange text-center lg:text-left">Blog</h2>
                 <InputSearchBlog />
               </div>
-              <span className="text-gray-900 block opacity-80 font-mono text-base max-w-md">
+              <span className="text-gray-900 text-center lg:text-left block opacity-80 font-mono text-base lg:max-w-md">
                 Garanta sua reserva com preços econômicos. Descubra todas as
                 comodidades que temos para lhe oferecer no Centro de
                 Florianópolis.
@@ -56,7 +56,7 @@ export function BlogPage() {
         </Container>
       </section>
 
-      <section className="pt-28">
+      <section className="pt-14">
         <Container>
           <CardPostLG
             date={allPosts[0].data.datePost}
@@ -69,7 +69,7 @@ export function BlogPage() {
         </Container>
       </section>
 
-      <section className="pt-14 pb-28">
+      <section className="pt-14 pb-14 lg:pb-28">
         <Container>
           <RecentPosts />
         </Container>

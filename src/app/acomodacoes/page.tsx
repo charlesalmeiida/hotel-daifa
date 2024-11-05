@@ -5,6 +5,7 @@ import { Header } from "@/components/Global/Header/Header"
 import { BtnRoom } from "@/components/Rooms/BtnRoom"
 import { useState } from "react"
 import roomsData from "@/app/data/roomsData.json"
+import { Footer } from "@/components/Global/Footer/Footer"
 
 export default function Rooms() {
   const [isActive, setIsActive] = useState(false)
@@ -30,21 +31,25 @@ export default function Rooms() {
           </section>
 
           <section className="pt-20 pb-28">
-            <div className="flex flex-col items-start gap-10">
-              `
-              {roomsData.map((room) => (
-                <BtnRoom
-                  key={room.title}
-                  handleClick={handleClick}
-                  isActive={isActive ? true : false}
-                >
-                  {room.title}
-                </BtnRoom>
-              ))}
+            <div className="flex gap-[102px] items-start">
+              <div className="flex flex-col items-start gap-10">
+                {roomsData.map((room) => (
+                  <BtnRoom
+                    key={room.title}
+                    handleClick={handleClick}
+                    isActive={isActive ? true : false}
+                  >
+                    {room.title}
+                  </BtnRoom>
+                ))}
+              </div>
+              <div className="w-px h-[456px] bg-gray-200"></div>
             </div>
           </section>
         </Container>
       </section>
+
+      <Footer />
     </>
   )
 }

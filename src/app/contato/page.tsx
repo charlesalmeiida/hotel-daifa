@@ -1,25 +1,34 @@
+"use client"
+
 import { ContactForm } from "@/components/Forms/ContactForm"
 import { Container } from "@/components/Global/Container"
 import { Contacts } from "@/components/Global/Footer/Contacts"
 import { Footer } from "@/components/Global/Footer/Footer"
 import { Header } from "@/components/Global/Header/Header"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
     <>
       <Header />
-      <section className="pt-32 lg:pt-[207px] pb-14 lg:pb-28">
+      <section className="pt-32 lg:pt-40 pb-14 lg:pb-28">
         <Container>
           <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-0 justify-between">
-            <div className="space-y-10">
+            <motion.div
+              className="space-y-10"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <div className="space-y-8">
                 <div className="space-y-4 max-w-lg">
-                  <h3>
+                  <h3 className="text-gray-950">
                     Tire todas as suas duvidas com nossa equipe, 24 horas por
                     dia!
                   </h3>
-                  <p className="max-w-[416px]">
+                  <p className="max-w-[416px] text-gray-800">
                     Entre em contato com nossa equipe, faça sua reserva e
                     aproveite o melhor custo benefício de Floripa!
                   </p>
@@ -28,7 +37,7 @@ export default function Contact() {
                   <Contacts color="secondary" />
                 </div>
               </div>
-              <p className="max-w-80">
+              <p className="max-w-80 text-gray-800">
                 Profa. Maria Júlia Franco, 294 – Prainha, Florianópolis – SC,
                 88020-280
               </p>
@@ -40,11 +49,16 @@ export default function Contact() {
                   reservas@hoteldaifa.com.br
                 </Link>
               </div>
-            </div>
-            <div className="p-6 w-full lg:max-w-[488px] rounded-[4px] space-y-6 border border-gray-200">
-              <h4>Entre em contato</h4>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="p-6 w-full lg:max-w-[488px] rounded-[4px] space-y-6 border border-gray-200"
+            >
+              <h4 className="text-gray-950">Entre em contato</h4>
               <ContactForm />
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>

@@ -27,7 +27,7 @@ export function ItemNav({
       href={link}
       className={`flex gap-2 ${
         color === "primary"
-          ? "text-gray-700, hover:text-orange"
+          ? "text-gray-700 hover:text-orange"
           : "text-gray-100"
       } ${bold ? "font-bold" : ""}  font-mono ${
         large ? "text-lg" : "text-base"

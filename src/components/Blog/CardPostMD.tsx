@@ -35,7 +35,7 @@ export function CardPostMD({
       <div className="pr-4">
         <div className="space-y-2">
           <DateAndTheme date={date} theme={theme} />
-          <h3 className="text-gray-700">{title}</h3>
+          <h3 className="text-gray-700 line-clamp-1">{title}</h3>
           <p className="text-gray-700 max-w-[367px] line-clamp-3">
             {description}
           </p>

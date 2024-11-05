@@ -23,7 +23,7 @@ export function CardPostLG({
     <>
       <Link
         href={`/blog/${slug}`}
-        className="flex items-center justify-between"
+        className="flex flex-col lg:flex-row items-center justify-between"
       >
         <div className="overflow-hidden rounded-lg">
           {image && (
