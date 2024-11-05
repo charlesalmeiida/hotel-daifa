@@ -20,14 +20,12 @@ async function fetchPost(slug: string) {
   return post ? post.data : null
 }
 
-// Função para buscar o post específico pelo slug
-
 export default function BlogPost({
   params,
 }: {
-  params: Promise<{ id: string }>
+  params: Promise<{ slug: string }>
 }) {
-  const { id } = use(params)
+  const { slug } = use(params)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [post, setPost] = useState<any | null>(null)
   const [loading, setLoading] = useState(true)
@@ -35,7 +33,7 @@ export default function BlogPost({
 
   useEffect(() => {
     async function getData() {
-      const post = await fetchPost(id)
+      const post = await fetchPost(slug)
       if (!post) {
         router.push("/404")
       } else {
@@ -44,7 +42,7 @@ export default function BlogPost({
       }
     }
     getData()
-  }, [id, router])
+  }, [slug, router])
 
   if (loading) {
     return <div>Carregando...</div>
