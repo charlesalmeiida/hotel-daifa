@@ -1,0 +1,16 @@
+[
+  {
+    "image": "/img/image-promotion-01.png",
+    "title": "Reveillon",
+    "description": "Já pensou em começar o ano na Ilha da Magia? E que tal ter essa vista privilegiada pra contagem regressiva?",
+    "package": "Pacote de 03 noites",
+    "date": "29/12 a 03/01/2025"
+  },
+  {
+    "image": "/img/image-promotion-02.png",
+    "title": "Carnaval 2025",
+    "description": "Pensou em folia, pensou no Hotel Daifa! Confira nossos pacotes e venha sambar conosco!",
+    "package": "Pacote de 03 noites",
+    "date": "28/02 a 05/03"
+  }
+]

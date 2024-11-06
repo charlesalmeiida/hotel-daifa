@@ -11,6 +11,7 @@ import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/components/Blog/BlogSection"
 import { GallerySection } from "@/components/Gallery/GallerySection"
+import { PromotionsSection } from "@/components/Promotions/PromotionsSection"
 
 export default function Home() {
   return (
@@ -68,7 +69,13 @@ export default function Home() {
         </Container>
       </section>
 
-      <section>
+      <section className="bg-promotions bg-no-repeat bg-cover bg-center bg-fixed py-14">
+        <Container>
+          <PromotionsSection />
+        </Container>
+      </section>
+
+      <section className="pt-28">
         <Container>
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="space-y-14 flex items-center flex-col-reverse lg:flex-col gap-6 lg:gap-0">

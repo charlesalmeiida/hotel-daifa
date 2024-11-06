@@ -25,6 +25,7 @@ const config: Config = {
       },
       backgroundImage: {
         hero: "url('/img/bg-hero.png')",
+        promotions: "url('/img/bg-promocoes.png')",
       },
     },
     screens: {
