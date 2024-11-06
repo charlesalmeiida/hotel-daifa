@@ -10,6 +10,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { RelatedPosts } from "@/components/Blog/RelatedPosts"
 import { use } from "react"
+import { motion } from "framer-motion"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
@@ -51,10 +52,17 @@ export default function BlogPost({
   if (!post) {
     return <div>Post não encontrado.</div>
   }
+
   return (
     <>
       <Header />
-      <section className="pt-40 pb-28">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="pt-20 pb-28"
+      >
         <Container>
           <div className="text-center flex flex-col items-center gap-6 mb-14">
             <DateAndTheme date={post.datePost} theme={post.postTheme} />
@@ -94,9 +102,16 @@ export default function BlogPost({
             )}
           </div>
         </Container>
-      </section>
+      </motion.section>
 
-      <RelatedPosts />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <RelatedPosts />
+      </motion.div>
       <Footer />
     </>
   )

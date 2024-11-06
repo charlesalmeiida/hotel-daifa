@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Header />
 
-      <section className="pt-[207px] pb-28">
+      <section className="pt-28 pb-28">
         <Container>
           <div className="flex justify-between">
             <div className="mt-4">

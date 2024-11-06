@@ -17,7 +17,7 @@ export default function Home() {
       <Header logo="white" color="secondary" btnColor="outlineWhite" />
 
       <main>
-        <section className="bg-hero bg-no-repeat bg-cover py-40 lg:py-52">
+        <section className="bg-hero -mt-[95px] bg-no-repeat bg-cover py-40 lg:py-52">
           <Container>
             <div className="space-y-6">
               <h1 className="text-center text-4xl lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto">

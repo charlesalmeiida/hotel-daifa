@@ -19,7 +19,7 @@ export default function Rooms() {
     <>
       <Header />
 
-      <section className="pt-52">
+      <section className="pt-28">
         <Container>
           <section className="text-center space-y-4">
             <h3 className="mx-auto text-gray-900">

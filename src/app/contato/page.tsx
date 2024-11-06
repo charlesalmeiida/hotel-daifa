@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <section className="pt-32 lg:pt-40 pb-14 lg:pb-28">
+      <section className="pt-20 pb-14 lg:pb-28">
         <Container>
           <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-0 justify-between">
             <motion.div
