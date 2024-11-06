@@ -4,12 +4,13 @@ import React from "react"
 
 interface BtnLinkProps {
   children: React.ReactNode
+  link: string
 }
 
-export function BtnLink({ children }: BtnLinkProps) {
+export function BtnLink({ children, link }: BtnLinkProps) {
   return (
     <Link
-      href="/"
+      href={link}
       className="flex w-fit items-center gap-3 transition-all hover:gap-4 uppercase font-mono text-base font-medium text-orange"
     >
       {children}

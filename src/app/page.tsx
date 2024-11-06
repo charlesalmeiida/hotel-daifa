@@ -61,7 +61,7 @@ export default function Home() {
                 Com vista panorâmica para a Baía Sul e Ponte Hercílio Luz,
                 cartão postal de Florianópolis.
               </h3>
-              <BtnLink>saiba mais</BtnLink>
+              <BtnLink link="/">saiba mais</BtnLink>
             </div>
           </div>
         </Container>
@@ -81,7 +81,7 @@ export default function Home() {
                     históricos de Floripa!
                   </h4>
                 </div>
-                <BtnLink>saiba mais</BtnLink>
+                <BtnLink link="/">saiba mais</BtnLink>
               </div>
               <Image
                 src={"/img/image-mercado.png"}
@@ -133,7 +133,7 @@ export default function Home() {
                   eventos!
                 </h3>
               </div>
-              <BtnLink>saiba mais</BtnLink>
+              <BtnLink link="/">saiba mais</BtnLink>
             </div>
           </div>
         </Container>
@@ -152,7 +152,7 @@ export default function Home() {
                 Hidromassagem! Única opção com hidromassagem no centro de
                 Florianópolis!
               </p>
-              <BtnLink>saiba mais</BtnLink>
+              <BtnLink link="/">saiba mais</BtnLink>
             </div>
           </div>
           <div className="mt-8 lg:mt-20">
@@ -197,7 +197,7 @@ export default function Home() {
                 No nosso FAQ disponibilizamos tudo o que você precisa saber para
                 se programar e evitar surpresas em sua viagem.
               </p>
-              <BtnLink>saiba mais</BtnLink>
+              <BtnLink link="/">saiba mais</BtnLink>
             </div>
             <div>
               <div className="space-y-6">
