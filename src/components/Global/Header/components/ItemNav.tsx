@@ -22,9 +22,8 @@ export function ItemNav({
 }: ItemNavProps) {
   return (
     <Link
-      onClick={handleModal}
-      onMouseOver={handleModal}
       href={link}
+      onMouseEnter={handleModal}
       className={`flex gap-2 ${
         color === "primary"
           ? "text-gray-700 hover:text-orange"

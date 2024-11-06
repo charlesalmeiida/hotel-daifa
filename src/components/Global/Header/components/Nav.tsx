@@ -38,11 +38,11 @@ export function NavList({
         <nav className="hidden lg:flex">
           <ul className="flex gap-16 relative">
             {isModalOpen && <ModalMenu handleModal={handleModal} />}
-            {ArrayNavLinks.map((item) => (
+            {ArrayNavLinks.map((item, index) => (
               <li key={item.page}>
                 <ItemNav
                   large
-                  handleModal={handleModal}
+                  handleModal={index === 0 ? handleModal : undefined}
                   color={color}
                   icon={item.icon}
                   link={item.link}
