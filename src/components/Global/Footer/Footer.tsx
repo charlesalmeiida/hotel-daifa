@@ -4,7 +4,7 @@ import { Contacts } from "./Contacts"
 import { Socials } from "./Socials"
 import { Copyright } from "./Copyright"
 import { ItemNav } from "../Header/components/ItemNav"
-import { ArrayLinks } from "./ArrayLinks"
+import LinksFooter from "@/app/data/LinksFooter.json"
 import { BtnWpp } from "../BtnWpp"
 
 export function Footer() {
@@ -31,7 +31,7 @@ export function Footer() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between mx-auto lg:mx-0 gap-10 lg:gap-14">
-            {ArrayLinks.map((section) => (
+            {LinksFooter.map((section) => (
               <div key={section.page} className="space-y-6">
                 <ItemNav color="secondary" bold link="/">
                   {section.page}

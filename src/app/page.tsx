@@ -11,6 +11,7 @@ import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/components/Blog/BlogSection"
 import { GallerySection } from "@/components/Gallery/GallerySection"
+
 export default function Home() {
   return (
     <>
