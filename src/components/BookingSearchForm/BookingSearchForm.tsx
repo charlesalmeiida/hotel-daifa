@@ -13,6 +13,19 @@ import { LabelForm } from "./LabelForm"
 export function BookSearchForm() {
   const [eventDate, setEventDate] = useState<DateRange | undefined>()
   const [isDateRangeOpen, setDateRangeOpen] = useState(false)
+  const [numberofGuests, setNumberofGuests] = useState({
+    adults: "",
+    children: "",
+  })
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target
+    setNumberofGuests((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+
   const handleDateRangeOpen = () => {
     setDateRangeOpen(!isDateRangeOpen)
   }
@@ -76,18 +89,38 @@ export function BookSearchForm() {
               <div className="w-px h-32 bg-gray-200"></div>
 
               <div className="flex justify-between gap-10">
-                <LabelForm icon="people" title="PESSOAS" />
+                <div className="flex flex-col justify-center gap-10">
+                  <LabelForm icon="people" title="PESSOAS" />
+                  <input
+                    onChange={handleChange}
+                    className="font-mono max-w-28 text-base text-gray-800 bg-transparent"
+                    type="number"
+                    name="adults"
+                    placeholder="2"
+                    id="adults"
+                  />
+                </div>
 
                 <div className="w-px h-32 bg-gray-200"></div>
 
-                <LabelForm icon="people" title="CRIANÇAS" />
+                <div className="flex flex-col justify-center gap-10">
+                  <LabelForm icon="people" title="CRIANÇAS" />
+                  <input
+                    onChange={handleChange}
+                    className="font-mono max-w-28 text-base text-gray-800 bg-transparent"
+                    type="number"
+                    name="children"
+                    placeholder="1"
+                    id="children"
+                  />
+                </div>
               </div>
             </div>
 
             <div className="w-full hidden h-px lg:w-px lg:h-32 bg-gray-200"></div>
 
             <Button
-              link={`https://reservas.desbravador.com.br/hotel-app/hotel-daifa/reservation?checkin=${checkinDate}&checkout=${checkoutDate}&guests=2&adults=2&child1=0&voucher=&origin=google&roomCode=&rateCode=&chdage=_`}
+              link={`https://reservas.desbravador.com.br/hotel-app/hotel-daifa/reservation?checkin=${checkinDate}&checkout=${checkoutDate}&adults=${numberofGuests.adults}&child1=${numberofGuests.children}&voucher=&origin=google&roomCode=&rateCode=&chdage=_`}
               color="fill"
               size="md"
             >

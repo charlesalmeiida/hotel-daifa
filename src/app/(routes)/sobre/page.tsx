@@ -1,3 +1,5 @@
+"use client"
+
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
@@ -6,16 +8,23 @@ import { Header } from "@/components/Global/Header/Header"
 import { TagSpan } from "@/components/Global/TagSpan"
 import { Location } from "@/components/Maps/Location"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
     <>
       <Header />
 
-      <section className="pt-28 pb-28">
+      <section className="pt-14 lg:pt-28 pb-28">
         <Container>
-          <div className="flex justify-between">
-            <div className="mt-4">
+          <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="mt-4"
+            >
               <h2>Hotel Daifa</h2>
               <div className="w-14 h-px bg-orange mt-2"></div>
               <p className="mt-6 max-w-[540px] text-gray-700">
@@ -39,32 +48,59 @@ export default function About() {
                 e muito próxima aos principais pontos turísticos, de eventos e
                 negócios da cidade.
               </p>
-            </div>
-            <Image
-              src={"/img/image-about-hotel.png"}
-              width={592}
-              height={562}
-              alt="Fotos da frente do Hotel Daifa"
-            />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src={"/img/image-about-hotel.png"}
+                width={592}
+                height={562}
+                alt="Fotos da frente do Hotel Daifa"
+              />
+            </motion.div>
           </div>
         </Container>
       </section>
 
-      <section className="pb-28">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="pb-14 lg:pb-28"
+      >
         <AmenitiesSection />
-      </section>
+      </motion.section>
 
-      <section className="pb-28">
+      <section className="pb-14 lg:pb-28">
         <Container>
-          <div className="flex items-center justify-around">
-            <Image
-              src={"/img/image-pet.png"}
-              width={488}
-              height={423}
-              alt="Foto de um pet na seção de pet friendly do Hotel Daifa"
-            />
-            <div className="space-y-6 max-w-[394px]">
-              <div className="space-y-4-">
+          <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-around">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="space-y-4-"
+            >
+              <Image
+                src={"/img/image-pet.png"}
+                width={488}
+                height={423}
+                alt="Foto de um pet na seção de pet friendly do Hotel Daifa"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="space-y-6 max-w-[394px]"
+            >
+              <div>
                 <TagSpan>PET-FRIENDLY</TagSpan>
                 <h3>Seu melhor amigo é bem-vindo em nosso Hotel!</h3>
               </div>
@@ -74,14 +110,20 @@ export default function About() {
                 cães e gatos no botão abaixo.
               </p>
               <BtnLink link="/">saiba mais</BtnLink>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>
 
-      <section className="pb-28">
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="pb-14 lg:pb-28"
+      >
         <Location />
-      </section>
+      </motion.section>
 
       <Footer />
     </>
