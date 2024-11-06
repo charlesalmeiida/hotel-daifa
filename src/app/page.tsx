@@ -69,11 +69,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-promotions bg-no-repeat bg-cover bg-center bg-fixed py-14">
-        <Container>
-          <PromotionsSection />
-        </Container>
-      </section>
+      <PromotionsSection />
 
       <section className="pt-28">
         <Container>

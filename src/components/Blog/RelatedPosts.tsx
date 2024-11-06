@@ -13,7 +13,6 @@ export function RelatedPosts() {
               <BtnLink link="/blog">VER MAIS PUBLICAÇÕES</BtnLink>
             </div>
           </div>
-
           <RecentPosts />
         </div>
       </Container>

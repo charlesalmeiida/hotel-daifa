@@ -6,7 +6,7 @@ export const ArrayNavLinks = [
   },
   {
     page: "Promoções",
-    link: "/",
+    link: "/promocoes",
   },
   {
     page: "Acomodações",
