@@ -24,23 +24,23 @@ export const ArrayLinks = [
     page: "Acomodações",
     links: [
       {
-        name: "Standart sem vista para o mar",
+        name: "Standard sem vista para a Baía Sul",
         link: "/",
       },
       {
-        name: "Standart com vista parcial da Baía Sul",
+        name: "Standard com vista parcial da Baía Sul",
         link: "/",
       },
       {
-        name: "Standart com vista da Baía Sul",
+        name: "Standard com vista para a Baía Sul",
         link: "/",
       },
       {
-        name: "Superior com vista e hidro single",
+        name: "Quarto superior com vista e hidromassagem single",
         link: "/",
       },
       {
-        name: "Deluxe com vista e hidro dupla",
+        name: "Quarto deluxe com vista e hidro dupla",
         link: "/",
       },
     ],
