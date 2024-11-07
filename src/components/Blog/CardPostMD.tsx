@@ -24,10 +24,10 @@ export function CardPostMD({
       <div className="overflow-hidden rounded-lg">
         {image && (
           <Image
-            className="hover:scale-105 transition-all object-cover rounded-lg"
+            className="hover:scale-105 max-h-52 transition-all object-cover rounded-lg"
             src={image}
             width={383}
-            height={216}
+            height={207}
             alt="Imagem do post do blog"
           />
         )}

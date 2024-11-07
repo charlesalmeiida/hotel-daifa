@@ -55,10 +55,10 @@ export function BlogPage() {
               </motion.div>
               <motion.span
                 initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 0.8, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-gray-900 text-center lg:text-left block opacity-80 font-mono text-base lg:max-w-md"
+                className="text-gray-900 text-center lg:text-left block font-mono text-base lg:max-w-md"
               >
                 Garanta sua reserva com preços econômicos. Descubra todas as
                 comodidades que temos para lhe oferecer no Centro de

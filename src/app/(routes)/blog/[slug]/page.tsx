@@ -61,7 +61,7 @@ export default function BlogPost({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="pt-20 pb-28"
+        className="pt-20 pb-20"
       >
         <Container>
           <div className="text-center flex flex-col items-center gap-6 mb-14">

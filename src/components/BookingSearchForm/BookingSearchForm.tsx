@@ -9,6 +9,7 @@ import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import "react-day-picker/dist/style.css"
 import { LabelForm } from "./LabelForm"
+import { InputGuests } from "./InputGuests"
 
 export function BookSearchForm() {
   const [eventDate, setEventDate] = useState<DateRange | undefined>()
@@ -18,7 +19,7 @@ export function BookSearchForm() {
     children: "",
   })
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const handleChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target
     setNumberofGuests((prevState) => ({
       ...prevState,
@@ -75,7 +76,7 @@ export function BookSearchForm() {
                 )}
               </div>
 
-              <div className="lg:block  w-px h-32 bg-gray-200"></div>
+              <div className="lg:block w-px h-32 bg-gray-200"></div>
 
               <div className="flex space-y-6 flex-col items-start gap-4 py-10">
                 <LabelForm icon="calendar" title="CHECK-OUT" />
@@ -89,31 +90,21 @@ export function BookSearchForm() {
               <div className="w-px h-32 bg-gray-200"></div>
 
               <div className="flex justify-between gap-10">
-                <div className="flex flex-col justify-center gap-10">
-                  <LabelForm icon="people" title="PESSOAS" />
-                  <input
-                    onChange={handleChange}
-                    className="font-mono max-w-28 text-base text-gray-800 bg-transparent"
-                    type="number"
-                    name="adults"
-                    placeholder="2"
-                    id="adults"
-                  />
-                </div>
+                <InputGuests
+                  title="PESSOAS"
+                  handleChange={handleChange}
+                  name="adults"
+                  placeholder="2"
+                />
 
                 <div className="w-px h-32 bg-gray-200"></div>
 
-                <div className="flex flex-col justify-center gap-10">
-                  <LabelForm icon="people" title="CRIANÇAS" />
-                  <input
-                    onChange={handleChange}
-                    className="font-mono max-w-28 text-base text-gray-800 bg-transparent"
-                    type="number"
-                    name="children"
-                    placeholder="1"
-                    id="children"
-                  />
-                </div>
+                <InputGuests
+                  title="CRIANÇAS"
+                  handleChange={handleChange}
+                  name="children"
+                  placeholder="1"
+                />
               </div>
             </div>
 

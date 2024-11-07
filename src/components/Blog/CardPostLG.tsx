@@ -41,7 +41,7 @@ export function CardPostLG({
             <DateAndTheme date={date} theme={theme} />
             <h2 className="text-gray-700">{title}</h2>
           </div>
-          <p className="line-clamp-3 mt-2 mb-8">{description}</p>
+          <p className="line-clamp-3 text-gray-700 mt-2 mb-8">{description}</p>
           <button className="flex w-fit items-center gap-3 transition-all hover:gap-4 uppercase font-mono text-base font-medium text-orange">
             LEIA MAIS!
             <Image
