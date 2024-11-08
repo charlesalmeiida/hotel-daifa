@@ -14,11 +14,11 @@ export function InputGuests({
   title,
 }: InputGuestsProps) {
   return (
-    <div className="flex flex-col justify-center gap-10">
+    <div className="flex flex-col mx-auto lg:mx-0 justify-center gap-10">
       <LabelForm icon="people" title={title} />
       <input
         onChange={handleChange}
-        className="font-mono max-w-28 text-base text-gray-800 bg-transparent"
+        className="font-mono text-center lg:text-left max-w-28 text-base text-gray-800 bg-transparent"
         type="number"
         name={name}
         placeholder={placeholder}
