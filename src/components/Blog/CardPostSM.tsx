@@ -34,7 +34,7 @@ export function CardPostSM({
           <span className="text-sm text-gray-800 opacity-80 font-mono">
             {date}
           </span>
-          <h4 className="my-2">{title}</h4>
+          <h4 className="my-2 text-wrap max-w-72 line-clamp-1">{title}</h4>
           <p className="line-clamp-3 opacity-80 max-w-[289px]">{description}</p>
         </div>
       </div>

@@ -71,7 +71,7 @@ export default function Home() {
 
       <PromotionsSection />
 
-      <section className="pt-28">
+      <section className="pt-14 lg:pt-28">
         <Container>
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="space-y-14 flex items-center flex-col-reverse lg:flex-col gap-6 lg:gap-0">

@@ -9,6 +9,7 @@ import "swiper/css/pagination"
 import { Pagination, Navigation } from "swiper/modules"
 import Image from "next/image"
 import { Container } from "../Global/Container"
+import { motion } from "framer-motion"
 
 export function PromotionsSection() {
   const [isClient, setIsClient] = useState(false)
@@ -26,14 +27,26 @@ export function PromotionsSection() {
       <Container>
         <div className="space-y-12">
           <div className="text-center text-gray-50 space-y-8">
-            <div className="space-y-6 mx-auto max-w-[455px]">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="space-y-6 mx-auto max-w-[455px]"
+            >
               <span className="font-mono text-base font-medium">PROMOÇÕES</span>
               <h2>Confira nossas ofertas e pacotes especiais</h2>
-            </div>
-            <p className="opacity-80 max-w-96 mx-auto">
+            </motion.div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="opacity-80 max-w-96 mx-auto"
+            >
               Temos o pacote ideal para você. Desfrute de experiências únicas
               com preços especiais e garanta sua reserva agora mesmo!
-            </p>
+            </motion.p>
           </div>
           <div className="flex justify-between items-center">
             <div className="flex">
@@ -56,33 +69,51 @@ export function PromotionsSection() {
             </div>
             <div className="custom-pagination flex justify-end"></div>
           </div>
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={32}
-            pagination={{
-              clickable: true,
-              el: ".custom-pagination",
-            }}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
           >
-            {promotionsData.map((promotion) => (
-              <SwiperSlide key={promotion.title}>
-                <CardPromotion
-                  key={promotion.title}
-                  image={promotion.image}
-                  title={promotion.title}
-                  description={promotion.description}
-                  packageProp={promotion.package}
-                  date={promotion.date}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={32}
+              pagination={{
+                clickable: true,
+                el: ".custom-pagination",
+              }}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1.1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              {promotionsData.map((promotion) => (
+                <SwiperSlide key={promotion.title}>
+                  <CardPromotion
+                    key={promotion.title}
+                    image={promotion.image}
+                    title={promotion.title}
+                    description={promotion.description}
+                    packageProp={promotion.package}
+                    date={promotion.date}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </motion.div>
           <style jsx global>{`
             .custom-pagination .swiper-pagination-bullet {
               width: 24px;

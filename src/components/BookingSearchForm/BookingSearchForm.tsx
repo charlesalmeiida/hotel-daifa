@@ -41,7 +41,7 @@ export function BookSearchForm() {
         <div className="flex shadow-shaddowShape justify-between items-center py-3 px-4 lg:px-14 bg-gray-50 rounded-[4px] -mt-10">
           <div className="flex flex-col lg:justify-between lg:items-center lg:flex-row w-full gap-6 lg:gap-14">
             <div className="flex flex-col lg:flex-row gap-10 justify-between">
-              <div className="flex flex-col lg:flex-row lg:gap-10 justify-center">
+              <div className="flex flex-col md:flex-row lg:gap-10 justify-center">
                 <div className="flex mx-auto lg:mx-0 space-y-6 flex-col items-start relative gap-4 py-10">
                   <div className="mx-auto lg:mx-0">
                     <LabelForm icon="calendar" title="CHECK-IN" />
@@ -93,7 +93,7 @@ export function BookSearchForm() {
 
               <div className="hidden lg:block w-px h-32 bg-gray-200"></div>
 
-              <div className="flex flex-col lg:flex-row justify-center gap-10">
+              <div className="flex flex-col md:flex-row justify-center gap-10">
                 <InputGuests
                   title="PESSOAS"
                   handleChange={handleChange}
