@@ -1,6 +1,6 @@
 import { GalleryImageColumn } from "./Gallery"
 
-export function GallerySection() {
+export function GalleryFeed() {
   return (
     <>
       <div className="mt-14 flex flex-wrap justify-between">

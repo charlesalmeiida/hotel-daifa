@@ -1,5 +1,5 @@
 import { ItemNav } from "./ItemNav"
-import { LinksModal } from "./ArrayLinksModal"
+import LinksModal from "@/app/data/linksModal.json"
 
 interface ModalMenuProps {
   handleModal: () => void

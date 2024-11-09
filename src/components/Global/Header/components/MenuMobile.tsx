@@ -1,11 +1,11 @@
 import { Button } from "@/components/Global/Button"
 import { ItemNav } from "./ItemNav"
-import { ArrayNavLinks } from "./ArrayNavLinks"
+import navLinksData from "@/app/data/navLinksData.json"
 
 export function MenuMobile() {
   return (
     <div className="flex lg:hidden flex-col gap-10 absolute z-10 inset-0 top-20 w-11/12 mx-auto rounded-[4px] items-center h-fit py-8 bg-blue">
-      {ArrayNavLinks.map((item) => (
+      {navLinksData.map((item) => (
         <ItemNav key={item.page} color="secondary" link={item.link}>
           {item.page}
         </ItemNav>

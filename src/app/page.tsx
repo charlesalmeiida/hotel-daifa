@@ -1,4 +1,5 @@
-import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
+"use client"
+
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
@@ -10,8 +11,10 @@ import { Header } from "@/components/Global/Header/Header"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/components/Blog/BlogSection"
-import { GallerySection } from "@/components/Gallery/GallerySection"
 import { PromotionsSection } from "@/components/Promotions/PromotionsSection"
+import { motion } from "framer-motion"
+import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
+import { GallerySlide } from "@/components/Gallery/GallerySlide"
 
 export default function Home() {
   return (
@@ -22,49 +25,86 @@ export default function Home() {
         <section className="bg-hero -mt-[95px] bg-no-repeat bg-cover py-40 lg:py-52">
           <Container>
             <div className="space-y-6">
-              <h1 className="text-center text-4xl lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto">
+              <motion.h1
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="text-center text-4xl lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto"
+              >
                 Hospede-se no Coração de Florianópolis com o Melhor
                 Custo-Benefício da Cidade
-              </h1>
-              <p className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-lg md:text-xl font-semibold">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-lg md:text-xl font-semibold"
+              >
                 No Hotel Daifa você encontra uma estrutura completa de hotel com
                 aconchego e descontração de uma pousada. Com localização
                 privilegiada, estamos situados em frente a Baia Sul e próximos
                 aos principais pontos da cidade.
-              </p>
+              </motion.p>
             </div>
           </Container>
         </section>
-        <BookSearchForm />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <BookSearchForm />
+        </motion.div>
       </main>
 
       <section className="py-14 lg:py-[120px]">
         <Container>
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-start lg:items-center justify-center">
-            <div className="hidden lg:block">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="hidden lg:block"
+            >
               <Image
                 src={"/img/baia-sul.png"}
                 width={696}
                 height={400}
                 alt="Vista da Baía Sul do Hotel Daifa"
               />
-            </div>
-            <div className="lg:hidden mx-auto">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="lg:hidden mx-auto"
+            >
               <Image
                 src={"/img/baia-sul-noblur.png"}
                 width={696}
                 height={400}
                 alt="Vista da Baía Sul do Hotel Daifa"
               />
-            </div>
-            <div className="space-y-4 lg:-ml-40">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="space-y-4 lg:-ml-40"
+            >
               <TagSpan>hotel</TagSpan>
               <h3 className=" lg:max-w-[472px] text-gray-900">
                 Com vista panorâmica para a Baía Sul e Ponte Hercílio Luz,
                 cartão postal de Florianópolis.
               </h3>
               <BtnLink link="/">saiba mais</BtnLink>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>
@@ -76,7 +116,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="space-y-14 flex items-center flex-col-reverse lg:flex-col gap-6 lg:gap-0">
               <div className="space-y-8 mt-4">
-                <div className="space-y-4">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="space-y-4"
+                >
                   <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
                   <h4 className="lg:max-w-[472px]">
                     Hotel próximo ao Centro da cidade, ao Mercado Público,
@@ -84,50 +130,89 @@ export default function Home() {
                     Aeroporto, Rodoviária e aos principais pontos turísticos e
                     históricos de Floripa!
                   </h4>
-                </div>
-                <BtnLink link="/">saiba mais</BtnLink>
+                  <BtnLink link="/">saiba mais</BtnLink>
+                </motion.div>
               </div>
-              <Image
-                src={"/img/image-mercado.png"}
-                width={488}
-                height={280}
-                alt="Foto do Mercado Público em Florianópolis"
-              />
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={"/img/image-mercado.png"}
+                  width={488}
+                  height={280}
+                  alt="Foto do Mercado Público em Florianópolis"
+                />
+              </motion.div>
             </div>
             <div className="hidden lg:block space-y-10">
-              <Image
-                src={"/img/image-ponte-hercilio.png"}
-                width={696}
-                height={400}
-                alt="Foto da Ponte Hercílio Luz em Florianópolis"
-              />
-              <Image
-                src={"/img/image-piscina.png"}
-                width={312}
-                height={295}
-                alt="Foto da piscina do Hotel Daifa em Floripa"
-              />
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={"/img/image-ponte-hercilio.png"}
+                  width={696}
+                  height={400}
+                  alt="Foto da Ponte Hercílio Luz em Florianópolis"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={"/img/image-piscina.png"}
+                  width={312}
+                  height={295}
+                  alt="Foto da piscina do Hotel Daifa em Floripa"
+                />
+              </motion.div>
             </div>
           </div>
         </Container>
       </section>
 
       <section className="py-14 lg:py-28">
-        <AmenitiesSection />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <AmenitiesSection />
+        </motion.div>
       </section>
 
       <section>
         <Container>
           <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-0 justify-between items-center">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <Image
                 src={"/img/image-hall.png"}
                 width={488}
                 height={423}
                 alt="Foto do Hall do Hotel Daifa em Florianópolis"
               />
-            </div>
-            <div className="lg:max-w-[579px] space-y-6">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="lg:max-w-[579px] space-y-6"
+            >
               <div className="space-y-4 text-gray-900">
                 <TagSpan>LAZER, EVENTOS E NEGÓCIOS</TagSpan>
                 <h3>
@@ -138,14 +223,20 @@ export default function Home() {
                 </h3>
               </div>
               <BtnLink link="/">saiba mais</BtnLink>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>
 
       <section className="py-14 lg:py-28">
         <Container>
-          <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row items-start justify-between lg:items-end">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row items-start justify-between lg:items-end"
+          >
             <div className="space-y-6 lg:max-w-[436px]">
               <TagSpan>ACOMODAÇÕES</TagSpan>
               <h2>Conforto e praticidade para sua estadia</h2>
@@ -158,15 +249,21 @@ export default function Home() {
               </p>
               <BtnLink link="/">saiba mais</BtnLink>
             </div>
-          </div>
-          <div className="mt-8 lg:mt-20">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="mt-8 lg:mt-20"
+          >
             <Image
               src={"/img/image-room.png"}
               width={1216}
               height={495}
               alt="Foto de um quarto no Hotel Daifa"
             />
-          </div>
+          </motion.div>
         </Container>
       </section>
 
@@ -179,7 +276,7 @@ export default function Home() {
               Instagram - #hoteldaifa
             </span>
           </div>
-          <GallerySection />
+          <GallerySlide />
         </Container>
       </section>
 

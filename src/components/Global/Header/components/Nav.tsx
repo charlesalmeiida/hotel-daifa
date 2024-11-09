@@ -6,7 +6,7 @@ import { ModalMenu } from "./ModalMenu"
 import Hamburger from "hamburger-react"
 import { MenuMobile } from "./MenuMobile"
 import { Button } from "../../Button"
-import { ArrayNavLinks } from "./ArrayNavLinks"
+import navLinksData from "@/app/data/navLinksData.json"
 
 interface NavListProps {
   color?: "primary" | "secondary"
@@ -38,7 +38,7 @@ export function NavList({
         <nav className="hidden lg:flex">
           <ul className="flex gap-16 relative">
             {isModalOpen && <ModalMenu handleModal={handleModal} />}
-            {ArrayNavLinks.map((item, index) => (
+            {navLinksData.map((item, index) => (
               <li key={item.page}>
                 <ItemNav
                   large
