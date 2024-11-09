@@ -5,7 +5,7 @@ import { ItemNav } from "./ItemNav"
 import { ModalMenu } from "./ModalMenu"
 import Hamburger from "hamburger-react"
 import { MenuMobile } from "./MenuMobile"
-import { Button } from "../../Button"
+import { Button } from "../../Global/Button"
 import navLinksData from "@/app/data/navLinksData.json"
 
 interface NavListProps {

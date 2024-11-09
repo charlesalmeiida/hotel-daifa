@@ -1,8 +1,8 @@
 "use client"
 
-import { InputSearchBlog } from "../Forms/InputSearchBlog"
-import { Container } from "../Global/Container"
-import { CardPostLG } from "./CardPostLG"
+import { InputSearchBlog } from "./InputSearchBlog"
+import { Container } from "../../../../components/Global/Container"
+import { CardPostLG } from "./CardPosts/CardPostLG"
 import { RecentPosts } from "./RecentPosts"
 import { builder } from "@builder.io/sdk"
 import { useEffect, useState } from "react"

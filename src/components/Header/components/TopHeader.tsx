@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { LinkLang } from "./LinkLang"
-import { Container } from "../../Container"
+import { Container } from "../../Global/Container"
 
 export function TopHeader() {
   return (

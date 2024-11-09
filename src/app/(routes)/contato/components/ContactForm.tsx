@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Input } from "./Input"
+import { Input } from "./Input";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({

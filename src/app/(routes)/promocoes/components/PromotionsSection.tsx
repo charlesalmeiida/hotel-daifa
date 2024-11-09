@@ -8,7 +8,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 import { Pagination, Navigation } from "swiper/modules"
 import Image from "next/image"
-import { Container } from "../Global/Container"
+import { Container } from "../../../../components/Global/Container"
 import { motion } from "framer-motion"
 
 export function PromotionsSection() {

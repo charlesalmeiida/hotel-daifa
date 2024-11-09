@@ -1,6 +1,6 @@
-import { Footer } from "@/components/Global/Footer/Footer"
-import { Header } from "@/components/Global/Header/Header"
-import { PromotionsSection } from "@/components/Promotions/PromotionsSection"
+import { Footer } from "@/components/Footer/Footer"
+import { Header } from "@/components/Header/Header"
+import { PromotionsSection } from "@/app/(routes)/promocoes/components/PromotionsSection"
 
 export default function Promotions() {
   return (

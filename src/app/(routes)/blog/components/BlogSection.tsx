@@ -1,9 +1,9 @@
 "use client"
 
-import { Container } from "../Global/Container"
-import { TagSpan } from "../Global/TagSpan"
-import { CardPostDefault } from "./CardPostDefault"
-import { CardPostSM } from "./CardPostSM"
+import { Container } from "../../../../components/Global/Container"
+import { TagSpan } from "../../../../components/Global/TagSpan"
+import { CardPostDefault } from "./CardPosts/CardPostDefault"
+import { CardPostSM } from "./CardPosts/CardPostSM"
 import { builder } from "@builder.io/sdk"
 import { useEffect, useState } from "react"
 

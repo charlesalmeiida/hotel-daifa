@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { DateAndTheme } from "./DateAndTheme"
+import { DateAndTheme } from "../DateAndTheme"
 
 interface CardPostDefaultProps {
   date: string

@@ -1,14 +1,14 @@
 "use client"
 
-import { DateAndTheme } from "@/components/Blog/DateAndTheme"
+import { DateAndTheme } from "@/app/(routes)/blog/components/DateAndTheme"
 import { Container } from "@/components/Global/Container"
-import { Footer } from "@/components/Global/Footer/Footer"
-import { Header } from "@/components/Global/Header/Header"
+import { Footer } from "@/components/Footer/Footer"
+import { Header } from "@/components/Header/Header"
 import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import { RelatedPosts } from "@/components/Blog/RelatedPosts"
+import { RelatedPosts } from "@/app/(routes)/blog/components/RelatedPosts"
 import { use } from "react"
 import { motion } from "framer-motion"
 

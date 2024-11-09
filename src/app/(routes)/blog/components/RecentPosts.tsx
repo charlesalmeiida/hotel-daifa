@@ -1,6 +1,6 @@
 "use client"
 
-import { CardPostMD } from "./CardPostMD"
+import { CardPostMD } from "./CardPosts/CardPostMD"
 import { builder } from "@builder.io/sdk"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"

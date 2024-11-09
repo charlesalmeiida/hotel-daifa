@@ -1,6 +1,6 @@
-import { BlogPage } from "@/components/Blog/BlogPage"
-import { Footer } from "@/components/Global/Footer/Footer"
-import { Header } from "@/components/Global/Header/Header"
+import { BlogPage } from "@/app/(routes)/blog/components/BlogPage"
+import { Footer } from "@/components/Footer/Footer"
+import { Header } from "@/components/Header/Header"
 
 export default function Blog() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "../Global/Button"
+import { Button } from "../../../../components/Global/Button"
 
 interface CardPromotionProps {
   image: string

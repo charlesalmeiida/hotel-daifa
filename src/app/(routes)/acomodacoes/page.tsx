@@ -1,11 +1,11 @@
 "use client"
 
 import { Container } from "@/components/Global/Container"
-import { Header } from "@/components/Global/Header/Header"
-import { BtnRoom } from "@/components/Rooms/BtnRoom"
+import { Header } from "@/components/Header/Header"
+import { BtnRoom } from "@/app/(routes)/acomodacoes/components/BtnRoom"
 import { useState } from "react"
 import roomsData from "@/app/data/roomsData.json"
-import { Footer } from "@/components/Global/Footer/Footer"
+import { Footer } from "@/components/Footer/Footer"
 import Image from "next/image"
 
 export default function Rooms() {

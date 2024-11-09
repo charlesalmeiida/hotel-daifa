@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { Container } from "../Container"
+import { Container } from "../Global/Container"
 import { Contacts } from "./Contacts"
 import { Socials } from "./Socials"
 import { Copyright } from "./Copyright"
-import { ItemNav } from "../Header/components/ItemNav"
 import LinksFooter from "@/app/data/LinksFooter.json"
-import { BtnWpp } from "../BtnWpp"
+import { BtnWpp } from "../Global/BtnWpp"
+import { ItemNav } from "../Header/components/ItemNav"
 
 export function Footer() {
   return (

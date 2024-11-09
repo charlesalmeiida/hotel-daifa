@@ -1,5 +1,5 @@
-import { BtnLink } from "../Global/BtnLink"
-import { Container } from "../Global/Container"
+import { BtnLink } from "../../../../components/Global/BtnLink"
+import { Container } from "../../../../components/Global/Container"
 import { RecentPosts } from "./RecentPosts"
 
 export function RelatedPosts() {

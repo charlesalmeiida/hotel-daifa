@@ -1,10 +1,10 @@
 "use client"
 
-import { ContactForm } from "@/components/Forms/ContactForm"
+import { ContactForm } from "@/app/(routes)/contato/components/ContactForm"
 import { Container } from "@/components/Global/Container"
-import { Contacts } from "@/components/Global/Footer/Contacts"
-import { Footer } from "@/components/Global/Footer/Footer"
-import { Header } from "@/components/Global/Header/Header"
+import { Contacts } from "@/components/Footer/Contacts"
+import { Footer } from "@/components/Footer/Footer"
+import { Header } from "@/components/Header/Header"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
