@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Standard sem vista para a Baía Sul",
     "image": "/img/rooms/room01.png",
     "description": "Quer economizar? Veja nossas melhores opções para hospedagens curtas e economicas",
@@ -18,7 +19,9 @@
     "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
   },
   {
+    "id": 2,
     "title": "Standard com vista parcial da Baía Sul",
+    "image": "/img/rooms/room02.png",
     "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
@@ -36,7 +39,9 @@
     "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
   },
   {
+    "id": 3,
     "title": "Standard com vista para a Baía Sul",
+    "image": "/img/rooms/room03.png",
     "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
@@ -54,7 +59,9 @@
     "beds": "Cama casal + Cama solteiro + Cama Baixa OU 04 camas de solteiro (uma baixa)"
   },
   {
+    "id": 4,
     "title": "Quarto superior com vista e hidromassagem single",
+    "image": "/img/rooms/room04.png",
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
@@ -73,7 +80,9 @@
     "beds": "Cama casal + Cama Baixa"
   },
   {
+    "id": 5,
     "title": "Quarto deluxe com vista e hidromassagem dupla",
+    "image": "/img/rooms/room05.png",
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
     "benefits": [
       "Ar-condicionado Quente e Frio",

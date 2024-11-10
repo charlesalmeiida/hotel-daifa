@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "contato@hoteldaifa.com.br",
+      to: "charlesalmeida844@gmail.com",
       subject: `Novo contato do website, mensagem de ${name}`,
       text: `Nome: ${name}\nTelefone: ${phone}\nE-mail: ${email}\nMensagem: ${message}`,
     })
@@ -32,3 +32,5 @@ export async function POST(req: NextRequest) {
     )
   }
 }
+
+// contato@hoteldaifa.com.br

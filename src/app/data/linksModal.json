@@ -9,10 +9,10 @@
   },
   {
     "page": "Localização",
-    "link": "/#localizacao"
+    "link": "/localizacao"
   },
   {
     "page": "FAQ",
-    "link": "/#faq"
+    "link": "/faq"
   }
 ]
