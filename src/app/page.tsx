@@ -269,27 +269,60 @@ export default function Home() {
 
       <section>
         <Container>
-          <div className="space-y-4 text-center mx-auto max-w-[497px]">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="space-y-4 text-center mx-auto max-w-[497px]"
+          >
             <TagSpan>GALERIA DE FOTOS</TagSpan>
             <h3>Descubra o Hotel Daifa: Conforto e Beleza em Imagens</h3>
             <span className="font-mono block text-base font-medium text-orange opacity-80">
               Instagram - #hoteldaifa
             </span>
-          </div>
-          <GallerySlide />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <GallerySlide />
+            </motion.div>
+          </motion.div>
         </Container>
       </section>
 
       <BlogSection />
 
       <section className="pt-14 lg:pt-28">
-        <Location />
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <Location />
+        </motion.div>
       </section>
 
       <section className="py-14 lg:py-28">
         <Container>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:gap-[72px] w-full">
-            <div className="lg:max-w-[420px]">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="lg:max-w-[420px]"
+            >
               <TagSpan>FAQ</TagSpan>
               <h2 className="mt-4 text-3xl lg:text-4xl mb-8">
                 Perguntas e respostas frequentes
@@ -299,8 +332,13 @@ export default function Home() {
                 se programar e evitar surpresas em sua viagem.
               </p>
               <BtnLink link="/">saiba mais</BtnLink>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <div className="space-y-6">
                 {itemsFaq.map((item, index) => (
                   <ItemFaq
@@ -311,7 +349,7 @@ export default function Home() {
                   />
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>

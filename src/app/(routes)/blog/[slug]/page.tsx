@@ -78,7 +78,7 @@ export default function BlogPost({
             />
           )}
           <div className="mt-14 space-y-8 max-w-[624px] mx-auto">
-            <h2 className="text-[32px] font-semibold text-gray-700">
+            <h2 className="text-3xl leading-[125%] lg:text-[32px] font-semibold text-gray-700">
               {post.subtitle}
             </h2>
             <div

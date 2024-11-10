@@ -6,6 +6,7 @@ import { CardPostDefault } from "./CardPosts/CardPostDefault"
 import { CardPostSM } from "./CardPosts/CardPostSM"
 import { builder } from "@builder.io/sdk"
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
@@ -44,7 +45,12 @@ export function BlogSection() {
           <h2>Posts recentes</h2>
         </div>
         <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <CardPostDefault
               date={allPosts[0].data.datePost}
               theme={allPosts[0].data.postTheme}
@@ -53,8 +59,14 @@ export function BlogSection() {
               image={allPosts[0].data.imageThumb}
               slug={allPosts[0].data.slug}
             />
-          </div>
-          <div className="flex flex-col gap-8 max-w-[529px]">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col gap-8 max-w-[529px]"
+          >
             {allPosts.slice(1, 4).map((post) => (
               <CardPostSM
                 key={post.data.slug}
@@ -65,7 +77,7 @@ export function BlogSection() {
                 slug={post.data.slug}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>

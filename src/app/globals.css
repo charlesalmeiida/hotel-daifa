@@ -51,3 +51,9 @@ p {
   opacity: 0.25;
   pointer-events: none;
 }
+
+.swiper-slide-prev.swiper-button-disabled,
+.swiper-slide-next.swiper-button-disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
