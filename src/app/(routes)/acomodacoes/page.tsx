@@ -7,6 +7,7 @@ import { useState } from "react"
 import roomsData from "@/app/data/roomsData.json"
 import { Footer } from "@/components/Footer/Footer"
 import { Rooms } from "./components/Rooms"
+import { motion } from "framer-motion"
 
 // Definindo a interface Room
 interface Room {
@@ -57,7 +58,9 @@ export default function RoomsPage() {
                 </div>
                 <div className="w-px h-[456px] bg-gray-200"></div>
               </div>
-              <Rooms room={roomsData[selectedRoomIndex] as Room} />
+              <motion.div>
+                <Rooms room={roomsData[selectedRoomIndex] as Room} />
+              </motion.div>
             </div>
           </section>
         </Container>

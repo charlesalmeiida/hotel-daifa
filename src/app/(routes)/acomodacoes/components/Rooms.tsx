@@ -1,7 +1,10 @@
+"use client"
+
 import { BtnLink } from "@/components/Global/BtnLink"
 import Image from "next/image"
 import { GuestAndBeds } from "./GuestsAndBeds"
 import { IconBenefits } from "./IconBenefits"
+import { motion } from "framer-motion"
 
 // Interface para a prop room
 interface Room {
@@ -20,7 +23,11 @@ interface RoomsProps {
 
 export function Rooms({ room }: RoomsProps) {
   return (
-    <div className="space-y-8">
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="space-y-8 opacity-0">
       <div>
         <div key={room.id}>
           <Image
@@ -39,6 +46,6 @@ export function Rooms({ room }: RoomsProps) {
         </div>
       </div>
       <BtnLink link="/">RESERVAR</BtnLink>
-    </div>
+    </motion.div>
   )
 }

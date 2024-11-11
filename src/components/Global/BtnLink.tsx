@@ -5,12 +5,14 @@ import React from "react"
 interface BtnLinkProps {
   children: React.ReactNode
   link: string
+  target?: "_blank" | "_self"
 }
 
-export function BtnLink({ children, link }: BtnLinkProps) {
+export function BtnLink({ children, link, target = "_self" }: BtnLinkProps) {
   return (
     <Link
       href={link}
+      target={target}
       className="flex w-fit items-center gap-3 transition-all hover:gap-4 uppercase font-mono text-base font-medium text-orange"
     >
       {children}

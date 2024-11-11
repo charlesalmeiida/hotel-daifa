@@ -102,7 +102,7 @@ export default function Home() {
                 Com vista panorâmica para a Baía Sul e Ponte Hercílio Luz,
                 cartão postal de Florianópolis.
               </h3>
-              <BtnLink link="/">saiba mais</BtnLink>
+              <BtnLink link="/sobre">saiba mais</BtnLink>
             </motion.div>
           </div>
         </Container>
@@ -129,7 +129,7 @@ export default function Home() {
                     Aeroporto, Rodoviária e aos principais pontos turísticos e
                     históricos de Floripa!
                   </h4>
-                  <BtnLink link="/">saiba mais</BtnLink>
+                  <BtnLink link="/localizacao">saiba mais</BtnLink>
                 </motion.div>
               </div>
               <motion.div
@@ -221,7 +221,12 @@ export default function Home() {
                   eventos!
                 </h3>
               </div>
-              <BtnLink link="/">saiba mais</BtnLink>
+              <BtnLink
+                target="_blank"
+                link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+              >
+                saiba mais
+              </BtnLink>
             </motion.div>
           </div>
         </Container>
