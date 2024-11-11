@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { inter, raleway } from "./utils/fonts"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { CookieModal } from "@/components/CookieModal"
 
 export const metadata: Metadata = {
   title: "Hotel Daifa - Florianópolis",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${inter} ${raleway} antialiased`}>
         {children}
         <SpeedInsights />
+        <CookieModal />
       </body>
     </html>
   )
