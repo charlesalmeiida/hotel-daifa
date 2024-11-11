@@ -38,7 +38,7 @@ export default function RoomsPage() {
               Escolha a acomodação ideal para sua necessidade
             </h3>
             <p className="text-gray-700 max-w-[373px] mx-auto">
-              {roomsData[0].description}
+              {roomsData[2].description}
             </p>
           </section>
 
