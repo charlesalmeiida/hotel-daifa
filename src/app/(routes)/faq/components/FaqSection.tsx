@@ -26,7 +26,12 @@ export function FaqSection() {
             No nosso FAQ disponibilizamos tudo o que você precisa saber para se
             programar e evitar surpresas em sua viagem.
           </p>
-          <BtnLink link="/">saiba mais</BtnLink>
+          <BtnLink
+            target="_blank"
+            link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+          >
+            saiba mais
+          </BtnLink>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}

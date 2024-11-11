@@ -251,7 +251,7 @@ export default function Home() {
                 Hidromassagem! Única opção com hidromassagem no centro de
                 Florianópolis!
               </p>
-              <BtnLink link="/">saiba mais</BtnLink>
+              <BtnLink link="/acomodacoes">saiba mais</BtnLink>
             </div>
           </motion.div>
           <motion.div
