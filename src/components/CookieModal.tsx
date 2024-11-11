@@ -22,7 +22,7 @@ export function CookieModal() {
   }
 
   return (
-    <div className="fixed bottom-10 w-full md:w-fit md:left-10 flex items-center justify-center z-50">
+    <div className="fixed bottom-10 w-[80%] md:w-fit md:left-10 flex items-center justify-center z-50">
       <div className="bg-white p-6 rounded-[4px] shadow-shaddowShape max-w-lg text-center">
         <h2 className="text-lg font-semibold mb-4">Política de Cookies</h2>
         <p className="text-gray-700 mb-6">
