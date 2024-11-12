@@ -19,10 +19,10 @@ export function FaqSection() {
           className="lg:max-w-[420px]"
         >
           <TagSpan>FAQ</TagSpan>
-          <h2 className="mt-4 text-3xl lg:text-4xl mb-8">
+          <h2 className="mt-4 text-gray-700 text-[32px] lg:text-[40px] mb-8">
             Perguntas e respostas frequentes
           </h2>
-          <p className="mb-10">
+          <p className="mb-10 text-gray-900 opacity-80">
             No nosso FAQ disponibilizamos tudo o que você precisa saber para se
             programar e evitar surpresas em sua viagem.
           </p>

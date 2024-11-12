@@ -29,7 +29,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="text-center text-4xl lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto"
+                className="text-center text-[32px] lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto"
               >
                 Hospede-se no Coração de Florianópolis com o Melhor
                 Custo-Benefício da Cidade
@@ -39,7 +39,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-lg md:text-xl font-semibold"
+                className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-base md:text-xl font-semibold"
               >
                 No Hotel Daifa você encontra uma estrutura completa de hotel com
                 aconchego e descontração de uma pousada. Com localização
@@ -123,7 +123,7 @@ export default function Home() {
                   className="space-y-4"
                 >
                   <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
-                  <h4 className="lg:max-w-[472px]">
+                  <h4 className="lg:max-w-[472px] text-gray-950">
                     Hotel próximo ao Centro da cidade, ao Mercado Público,
                     Centro Sul Eventos e à Ponte Hercílio Luz! Fácil acesso ao
                     Aeroporto, Rodoviária e aos principais pontos turísticos e
@@ -214,7 +214,7 @@ export default function Home() {
             >
               <div className="space-y-4 text-gray-900">
                 <TagSpan>LAZER, EVENTOS E NEGÓCIOS</TagSpan>
-                <h3>
+                <h3 className="text-2xl leading-[150%] lg:text-[32px  ] text-gray-950">
                   Seja a negócios ou lazer, o Hotel Daifa oferece o melhor
                   custo-beneficio da cidade! Localização privilegiada e tarifas
                   especiais para hóspedes a negócios ou participantes de
@@ -243,10 +243,12 @@ export default function Home() {
           >
             <div className="space-y-6 lg:max-w-[436px]">
               <TagSpan>ACOMODAÇÕES</TagSpan>
-              <h2>Conforto e praticidade para sua estadia</h2>
+              <h2 className="text-[32px] lg:text-[40px] text-gray-950">
+                Conforto e praticidade para sua estadia
+              </h2>
             </div>
             <div className="lg:max-w-96 space-y-6">
-              <p>
+              <p className="text-gray-800">
                 Opções de quartos econômicos, quartos com vista para Baia e com
                 Hidromassagem! Única opção com hidromassagem no centro de
                 Florianópolis!
@@ -281,7 +283,7 @@ export default function Home() {
             className="space-y-4 text-center mx-auto max-w-[497px]"
           >
             <TagSpan>GALERIA DE FOTOS</TagSpan>
-            <h3>Descubra o Hotel Daifa: Conforto e Beleza em Imagens</h3>
+            <h3 className="text-gray-900">Descubra o Hotel Daifa: Conforto e Beleza em Imagens</h3>
             <span className="font-mono block text-base font-medium text-orange opacity-80">
               Instagram - #hoteldaifa
             </span>
