@@ -33,7 +33,7 @@ export function Header({
     <>
       <TopHeader />
       <header
-        className={`sticky z-10 top-0 w-full py-4 border-b-[0.5px] transition-colors duration-300 ${
+        className={`sticky z-50 top-0 w-full py-4 border-b-[0.5px] transition-colors duration-300 ${
           isScrolled
             ? "bg-white border-b-gray-50 shadow-shaddowShape"
             : "bg-transparent"

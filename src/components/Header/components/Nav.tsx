@@ -2,11 +2,15 @@
 
 import { useState } from "react"
 import { ItemNav } from "./ItemNav"
-import { ModalMenu } from "./ModalMenu"
 import Hamburger from "hamburger-react"
 import { MenuMobile } from "./MenuMobile"
 import { Button } from "../../Global/Button"
 import navLinksData from "@/app/data/navLinksData.json"
+import dynamic from "next/dynamic"
+
+const ModalMenu = dynamic(() =>
+  import("./ModalMenu").then((mod) => mod.ModalMenu)
+)
 
 interface NavListProps {
   color?: "primary" | "secondary"

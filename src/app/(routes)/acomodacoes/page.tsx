@@ -8,8 +8,8 @@ import roomsData from "@/app/data/roomsData.json"
 import { Footer } from "@/components/Footer/Footer"
 import { Rooms } from "./components/Rooms"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
-// Definindo a interface Room
 interface Room {
   id: number
   title: string
@@ -22,16 +22,21 @@ interface Room {
 
 export default function RoomsPage() {
   const [selectedRoomIndex, setSelectedRoomIndex] = useState<number>(0)
+  const [isModalRoomsOpen, setModalRoomsOpen] = useState(false)
 
   const handleClick = (index: number) => {
     setSelectedRoomIndex(index)
+  }
+
+  const handleModal = () => {
+    setModalRoomsOpen(!isModalRoomsOpen)
   }
 
   return (
     <>
       <Header />
 
-      <section className="pt-28">
+      <section className="pt-14 lg:pt-28">
         <Container>
           <section className="text-center space-y-4">
             <h3 className="mx-auto text-gray-900">
@@ -42,9 +47,33 @@ export default function RoomsPage() {
             </p>
           </section>
 
+          <div className="text-center lg:hidden sticky top-[124px] z-10 mt-10 flex flex-col font-sans font-semibold text-base text-gray-800">
+            <button
+              onClick={handleModal}
+              className="border flex  items-center gap-4 rounded-[4px] bg-gray-50 w-fit mx-auto py-4 px-6"
+            >
+              {roomsData[selectedRoomIndex].title}
+              <Image
+                src={"/svg/chevron-down-gray.svg"}
+                width={12}
+                height={8}
+                alt="Seta para baixo"
+              />
+            </button>
+            {isModalRoomsOpen && (
+              <div className="flex py-6 px-4 bg-gray-50 flex-col gap-6">
+                {roomsData.map((room: Room, index: number) => (
+                  <button key={room.id} onClick={() => handleClick(index)}>
+                    {room.title}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
           <section className="pt-20 pb-28">
             <div className="flex justify-between">
-              <div className="flex gap-16 items-start">
+              <div className="hidden lg:flex gap-16 items-start">
                 <div className="flex flex-col items-start gap-10">
                   {roomsData.map((room: Room, index: number) => (
                     <BtnRoom
