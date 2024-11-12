@@ -11,21 +11,35 @@ export function TopHeader() {
           <div className="flex gap-2 items-center">
             <LinkLang />
           </div>
-          <Link
-            target="_blank"
-            href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
-            className="flex items-center gap-2"
-          >
-            <Image
-              src={"/svg/icon-whatsapp.svg"}
-              width={16}
-              height={17}
-              alt="Ícone do WhatsApp"
-            />
-            <span className="font-sans text-sm text-gray-300 font-semibold">
-              (48) 98864-3952
-            </span>
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link
+              target="_blank"
+              href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
+              className="flex items-center gap-2"
+            >
+              <Image
+                src={"/svg/icon-whatsapp.svg"}
+                width={16}
+                height={17}
+                alt="Ícone do WhatsApp"
+              />
+              <span className="font-sans text-sm text-gray-300 font-semibold">
+                (48) 98864-3952
+              </span>
+            </Link>
+            <Link
+              target="_blank"
+              href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
+              className="flex items-center gap-2"
+            >
+              <Image
+                src={"/svg/icon-instagram.svg"}
+                width={18}
+                height={18}
+                alt="Ícone do WhatsApp"
+              />
+            </Link>
+          </div>
         </div>
       </Container>
     </div>
