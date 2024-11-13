@@ -28,7 +28,7 @@ export default function Contact() {
                     Tire todas as suas duvidas com nossa equipe, 24 horas por
                     dia!
                   </h3>
-                  <p className="max-w-[416px] text-gray-800">
+                  <p className="max-w-[416px] text-gray-900 opacity-80">
                     Entre em contato com nossa equipe, faça sua reserva e
                     aproveite o melhor custo benefício de Floripa!
                   </p>
@@ -37,7 +37,7 @@ export default function Contact() {
                   <Contacts color="secondary" />
                 </div>
               </div>
-              <p className="max-w-80 text-gray-800">
+              <p className="max-w-80 text-gray-700">
                 Profa. Maria Júlia Franco, 294 – Prainha, Florianópolis – SC,
                 88020-280
               </p>

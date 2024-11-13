@@ -25,7 +25,7 @@ export default function About() {
               viewport={{ once: true }}
               className="mt-4"
             >
-              <h2>Hotel Daifa</h2>
+              <h2 className="text-gray-900">Hotel Daifa</h2>
               <div className="w-14 h-px bg-orange mt-2"></div>
               <p className="mt-6 max-w-[540px] text-gray-700">
                 O Hotel Daifa é um empreendimento hoteleiro que foi construído
@@ -100,11 +100,11 @@ export default function About() {
               viewport={{ once: true }}
               className="space-y-6 max-w-[394px]"
             >
-              <div>
+              <div className="space-y-4">
                 <TagSpan>PET-FRIENDLY</TagSpan>
-                <h3>Seu melhor amigo é bem-vindo em nosso Hotel!</h3>
+                <h3 className="text-gray-700">Seu melhor amigo é bem-vindo em nosso Hotel!</h3>
               </div>
-              <p>
+              <p className="text-gray-700">
                 Seu amiguinho poderá se hospedar com você e aproveitar todos os
                 encantos da Ilha da Magia. Veja nossas regras para hospedagem de
                 cães e gatos no botão abaixo.

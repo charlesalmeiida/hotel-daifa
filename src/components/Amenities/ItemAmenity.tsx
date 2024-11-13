@@ -17,8 +17,8 @@ export function ItemAmenity({ icon, title, description }: ItemAmenityProps) {
           height={24}
           alt="Ícone de carro representando o estacionamento"
         />
-        <h4>{title}</h4>
-        <p className="opacity-80">{description}</p>
+        <h4 className="text-gray-900">{title}</h4>
+        <p className="opacity-80 text-gray-900">{description}</p>
       </div>
     </div>
   )

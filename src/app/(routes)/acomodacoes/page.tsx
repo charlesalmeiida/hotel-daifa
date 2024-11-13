@@ -36,10 +36,10 @@ export default function RoomsPage() {
     <>
       <Header />
 
-      <section className="pt-14 lg:pt-28">
+      <section className="pt-14 lg:pt-20">
         <Container>
           <section className="text-center space-y-4">
-            <h3 className="mx-auto text-gray-900">
+            <h3 className="mx-auto max-w-[436px] text-gray-900">
               Escolha a acomodação ideal para sua necessidade
             </h3>
             <p className="text-gray-700 max-w-[373px] mx-auto">
@@ -61,7 +61,7 @@ export default function RoomsPage() {
               />
             </button>
             {isModalRoomsOpen && (
-              <div className="flex py-6 px-4 bg-gray-50 flex-col gap-6">
+              <div className="flex py-6 rounded-[4px] px-4 bg-gray-50 flex-col gap-8">
                 {roomsData.map((room: Room, index: number) => (
                   <button key={room.id} onClick={() => handleClick(index)}>
                     {room.title}

@@ -7,7 +7,7 @@ interface GuestsAndBedsProps {
 
 export function GuestAndBeds({ beds, guests }: GuestsAndBedsProps) {
   return (
-    <div className="flex mt-6 gap-3 items-center">
+    <div className="flex flex-col lg:flex-row items-start mt-6 gap-3 lg:items-center">
       <div className="flex gap-3 items-center">
         <Image
           src={"svg/icon-people-gray.svg"}
