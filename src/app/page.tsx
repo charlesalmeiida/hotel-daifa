@@ -161,6 +161,7 @@ export default function Home() {
                 />
               </motion.div>
               <motion.div
+                className="flex justify-between"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -170,7 +171,14 @@ export default function Home() {
                   src={"/img/image-piscina.png"}
                   width={312}
                   height={295}
-                  alt="Foto da piscina do Hotel Daifa em Floripa"
+                  alt="Foto do centro de convenções em Florianópolis"
+                />
+                <Image
+                  className="max-h-[186px]"
+                  src={"/img/image-ufsc.png"}
+                  width={312}
+                  height={186}
+                  alt="Foto da UFSC em Florianópolis"
                 />
               </motion.div>
             </div>
@@ -283,7 +291,9 @@ export default function Home() {
             className="space-y-4 text-center mx-auto max-w-[497px]"
           >
             <TagSpan>GALERIA DE FOTOS</TagSpan>
-            <h3 className="text-gray-900">Descubra o Hotel Daifa: Conforto e Beleza em Imagens</h3>
+            <h3 className="text-gray-900">
+              Descubra o Hotel Daifa: Conforto e Beleza em Imagens
+            </h3>
             <span className="font-mono block text-base font-medium text-orange opacity-80">
               Instagram - #hoteldaifa
             </span>
