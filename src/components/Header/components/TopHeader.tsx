@@ -19,8 +19,8 @@ export function TopHeader() {
             >
               <Image
                 src={"/svg/icon-whatsapp.svg"}
-                width={16}
-                height={17}
+                width={20}
+                height={20}
                 alt="Ícone do WhatsApp"
               />
               <span className="font-sans hidden lg:block text-sm text-gray-300 font-semibold">
