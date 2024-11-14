@@ -61,7 +61,7 @@ export function BookSearchForm() {
                     />
                   </button>
                   {isDateRangeOpen && (
-                    <div className="absolute top-0 bg-white p-4 rounded-[4px] shadow-lg z-10">
+                    <div className="absolute -left-[95px] lg:left-0 top-0 bg-white p-4 rounded-[4px] shadow-lg z-10">
                       <button
                         onClick={handleDateRangeOpen}
                         className="absolute top-2 right-2 text-lg text-blue font-sans"
@@ -69,7 +69,19 @@ export function BookSearchForm() {
                         X
                       </button>
                       <DayPicker
-                        className="font-mono selected:text-white"
+                        classNames={{
+                          months: "flex flex-col md:flex-row gap-6",
+                          month: "w-full md:w-1/2",
+                          day_button: "p-3",
+                          selected: "border-blue text-gray-50 rounded-full",
+                          range_start:
+                            "bg-blue text-gray-50 border-blue rounded-full",
+                          range_end:
+                            "bg-blue text-gray-50 border-blue rounded-full",
+                          range_middle: "bg-gray-200 text-gray-800",
+                        }}
+                        disabled={{ before: new Date() }}
+                        className="font-mono text-base text-gray-800"
                         mode="range"
                         locale={ptBR}
                         selected={eventDate}

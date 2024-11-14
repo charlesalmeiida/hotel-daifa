@@ -52,7 +52,7 @@ export function Rooms({ room }: RoomsProps) {
       transition={{ duration: 1 }}
       className="opacity-0 max-w-[696px] relative"
     >
-      <div className="flex z-40 w-[105%] -left-4 justify-between absolute top-[30%]">
+      <div className="flex z-40 w-[105%] -left-4 justify-between absolute top-20 lg:top-[30%]">
         <button className="swiper-button-prev">
           <Image
             className="rotate-180"
@@ -85,12 +85,23 @@ export function Rooms({ room }: RoomsProps) {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 1,
+              },
+            }}
           >
             {room.image.map((image, index) => (
               <SwiperSlide key={index}>
                 <div>
                   <Image
-                    className="rounded-[4px] max-h-[344px]"
+                    className="rounded-[4px] lg:max-w-full max-h-[344px]"
                     src={image}
                     width={699}
                     height={344}

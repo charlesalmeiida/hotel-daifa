@@ -63,7 +63,13 @@ export default function RoomsPage() {
             {isModalRoomsOpen && (
               <div className="flex py-6 rounded-[4px] px-4 bg-gray-50 flex-col gap-8">
                 {roomsData.map((room, index) => (
-                  <button key={room.id} onClick={() => handleClick(index)}>
+                  <button
+                    key={room.id}
+                    onClick={() => {
+                      handleClick(index)
+                      handleModal()
+                    }}
+                  >
                     {room.title}
                   </button>
                 ))}
@@ -87,7 +93,7 @@ export default function RoomsPage() {
                 </div>
                 <div className="w-px h-[456px] bg-gray-200"></div>
               </div>
-              <motion.div>
+              <motion.div className="max-w-full">
                 <Rooms room={roomsData[selectedRoomIndex] as Room} />
               </motion.div>
             </div>
