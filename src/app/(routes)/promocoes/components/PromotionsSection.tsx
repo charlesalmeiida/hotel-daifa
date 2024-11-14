@@ -67,7 +67,7 @@ export function PromotionsSection() {
                 />
               </button>
             </div>
-            <div className="custom-pagination flex justify-end"></div>
+            <div className="custom-pagination-promotion flex justify-end"></div>
           </div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -80,7 +80,7 @@ export function PromotionsSection() {
               spaceBetween={32}
               pagination={{
                 clickable: true,
-                el: ".custom-pagination",
+                el: ".custom-pagination-promotion",
               }}
               modules={[Pagination, Navigation]}
               className="mySwiper"
@@ -115,7 +115,7 @@ export function PromotionsSection() {
             </Swiper>
           </motion.div>
           <style jsx global>{`
-            .custom-pagination .swiper-pagination-bullet {
+            .custom-pagination-promotion .swiper-pagination-bullet {
               width: 24px;
               height: 2px;
               background-color: #ced4da;
@@ -124,7 +124,7 @@ export function PromotionsSection() {
               border-radius: 0;
               transition: all 0.3s ease;
             }
-            .custom-pagination .swiper-pagination-bullet-active {
+            .custom-pagination-promotion .swiper-pagination-bullet-active {
               background-color: #f8f9fa;
               opacity: 1;
               width: 28px;

@@ -1,4 +1,5 @@
 "use client"
+
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
@@ -72,7 +73,6 @@ export function GallerySlide() {
         ))}
       </Swiper>
 
-      {/* Contêiner para centralizar as thumbs */}
       <div className="flex justify-center mx-auto mt-8 max-w-[800px]">
         <Swiper
           onSwiper={setThumbsSwiper}

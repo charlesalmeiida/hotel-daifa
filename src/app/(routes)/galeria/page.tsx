@@ -1,7 +1,7 @@
 "use client"
 
 import { Footer } from "@/components/Footer/Footer"
-import { GallerySlide } from "@/components/Gallery/GallerySlide"
+import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import { Header } from "@/components/Header/Header"

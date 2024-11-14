@@ -13,7 +13,7 @@ import Image from "next/image"
 interface Room {
   id: number
   title: string
-  image: string
+  image: string[]
   beds: string
   hospeds: number
   benefits: string[]
@@ -62,7 +62,7 @@ export default function RoomsPage() {
             </button>
             {isModalRoomsOpen && (
               <div className="flex py-6 rounded-[4px] px-4 bg-gray-50 flex-col gap-8">
-                {roomsData.map((room: Room, index: number) => (
+                {roomsData.map((room, index) => (
                   <button key={room.id} onClick={() => handleClick(index)}>
                     {room.title}
                   </button>
@@ -75,7 +75,7 @@ export default function RoomsPage() {
             <div className="flex justify-between">
               <div className="hidden lg:flex gap-16 items-start">
                 <div className="flex flex-col items-start gap-10">
-                  {roomsData.map((room: Room, index: number) => (
+                  {roomsData.map((room, index) => (
                     <BtnRoom
                       key={room.id}
                       handleClick={() => handleClick(index)}

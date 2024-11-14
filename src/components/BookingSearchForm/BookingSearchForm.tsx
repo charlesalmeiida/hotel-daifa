@@ -69,6 +69,7 @@ export function BookSearchForm() {
                         X
                       </button>
                       <DayPicker
+                        className="font-mono selected:text-white"
                         mode="range"
                         locale={ptBR}
                         selected={eventDate}

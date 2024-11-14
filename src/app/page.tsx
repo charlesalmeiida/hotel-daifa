@@ -12,7 +12,7 @@ import { BlogSection } from "@/app/(routes)/blog/components/BlogSection"
 import { PromotionsSection } from "@/app/(routes)/promocoes/components/PromotionsSection"
 import { motion } from "framer-motion"
 import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
-import { GallerySlide } from "@/components/Gallery/GallerySlide"
+import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { FaqSection } from "./(routes)/faq/components/FaqSection"
 
 export default function Home() {
