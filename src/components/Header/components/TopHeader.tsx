@@ -23,7 +23,7 @@ export function TopHeader() {
                 height={17}
                 alt="Ícone do WhatsApp"
               />
-              <span className="font-sans text-sm text-gray-300 font-semibold">
+              <span className="font-sans hidden lg:block text-sm text-gray-300 font-semibold">
                 (48) 98864-3952
               </span>
             </Link>
