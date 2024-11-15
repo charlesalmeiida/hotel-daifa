@@ -6,7 +6,7 @@ export const itemsFaq = [
   {
     question: "Como faço para cancelar uma reserva no hotel?",
     answer: `O Direito de Arrependimento está assegurado pelo Código de Defesa do Consumidor, no artigo 49, com reembolso para reservas feitas fora do estabelecimento, num prazo de até 07 (sete) dias após a efetivação da mesma. Após esse período, consulte nossas políticas  `,
-    link: "/",
+    link: "/politicas-cancelamento.pdf",
   },
   {
     question: "Pode fumar em quarto de hotel?",
@@ -33,6 +33,18 @@ export const itemsFaq = [
     question: "Preciso apresentar documento no ato do check-in?",
     answer: `É obrigatória a apresentação de documento com foto no ato do check-in.
     É proibida a hospedagem de criança ou adolescente menor de 18 anos, sem autorização dos pais registrada em cartório e conforme a Lei 12.038 é obrigatória a apresentação de documento de identificação de crianças e adolescentes no momento do check-in.
+  `,
+  },
+  {
+    question:
+      "Devo pagar minha reserva antes de chegar no hotel e quais as formas de pagamento aceitas?",
+    answer: `Os pagamentos poderão ser em dinheiro, PIX ou cartão de crédito.
+    Para efetuar uma reserva solicitamos 50% de garantia do valor total da hospedagem (para hospedagem acima de duas diarias) e 100% de garantia antecipada para reservas de uma única diária. O eventual saldo remanescente do total das diárias será cobrado no check-in e os consumos extras serão pagos no check out. Aceitamos as bandeiras: Visa, MasterCard, Elo e American Express. Fique tranquilo que os dados pessoais e os detalhes cartão de crédito são criptografados. 
+  `,
+  },
+  {
+    question: "Posso me hospedar acompanhado de animais de estimação?",
+    answer: `Nosso hotel é Pet Friendly, e aceitamos no máximo 01 mascote (apenas cachorro ou gato) de pequeno porte até 3 quilos. O responsável deverá apresentar o cartão de vacinação atualizado no momento do check-in e o animalzinho não poderá frequentar áreas de alimentação e nem ficar sozinho no quarto. Será cobrada uma taxa de R$ 50 POR CADA DIARIA por mascote. O hospede ficara responsável por qualquer dano que o animal possa causar no mobiliário ou enxoval do quarto ou hotel. E obrigatório levar o mascote em braços ou com corrente quando estiver fora do quarto. O hotel reserva-se o direito de solicitar que o hóspede retire seu mascote do hotel caso o mesmo veja a causar barulho ou provoquem moléstias aos demais hospedes.
   `,
   },
 ]

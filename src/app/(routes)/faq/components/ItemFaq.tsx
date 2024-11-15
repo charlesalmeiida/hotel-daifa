@@ -24,7 +24,7 @@ export function ItemFaq({ answer, question, link }: ItemFaqProps) {
           onClick={handleFaq}
           className="flex text-left lg:text-center justify-between items-center w-full lg:w-[520px] max-w-lg py-5 px-6 bg-gray-50 border rounded-[4px] border-gray-400 transition duration-300"
         >
-          <span className="font-sans text-gray-900 text-base font-semibold">
+          <span className="font-sans text-left text-gray-900 text-base font-semibold">
             {question}
           </span>
           <Image
@@ -45,7 +45,7 @@ export function ItemFaq({ answer, question, link }: ItemFaqProps) {
           <span className="py-5 w-full px-6 block font-sans text-base max-w-lg text-gray-700 border rounded-[4px] bg-gray-100">
             {answer}
             {link && (
-              <Link className="underline" href={link}>
+              <Link className="underline" target="_blank" href={link}>
                 {" "}
                 clicando aqui
               </Link>

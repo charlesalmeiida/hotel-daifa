@@ -1,6 +1,7 @@
 [
   {
     "page": "O Hotel",
+    "link": "/sobre",
     "links": [
       {
         "name": "Sobre",
@@ -22,6 +23,7 @@
   },
   {
     "page": "Acomodações",
+    "link": "/acomodacoes",
     "links": [
       {
         "name": "Standard sem vista para a Baía Sul",
@@ -47,10 +49,12 @@
   },
   {
     "page": "Blog",
+    "link": "/blog",
     "links": []
   },
   {
     "page": "Contato",
+    "link": "/contato",
     "links": []
   }
 ]

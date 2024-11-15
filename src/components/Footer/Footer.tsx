@@ -33,7 +33,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between mx-auto lg:mx-0 gap-10 lg:gap-14">
             {LinksFooter.map((section) => (
               <div key={section.page} className="space-y-6">
-                <ItemNav color="secondary" bold link="/">
+                <ItemNav color="secondary" bold link={section.link}>
                   {section.page}
                 </ItemNav>
                 {section.links &&

@@ -40,7 +40,7 @@ export function FaqSection() {
           viewport={{ once: true }}
         >
           <div className="space-y-6">
-            {itemsFaq.map((item, index) => (
+            {itemsFaq.slice(0, 6).map((item, index) => (
               <ItemFaq
                 key={index}
                 question={item.question}
