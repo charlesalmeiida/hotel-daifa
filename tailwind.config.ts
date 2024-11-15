@@ -26,6 +26,7 @@ const config: Config = {
       backgroundImage: {
         hero: "url('/img/bg-hero.webp')",
         promotions: "url('/img/bg-promocoes.png')",
+        heroMobile: "url('/img/bg-hero-mobile.png')",
       },
     },
     screens: {
