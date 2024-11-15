@@ -39,7 +39,7 @@ export function BlogSection() {
 
   return (
     <section className="pt-14 lg:pt-28">
-      <Container>
+      <Container overflow>
         <div className="space-y-6 mb-8">
           <TagSpan>BLOG</TagSpan>
           <h2>Posts recentes</h2>

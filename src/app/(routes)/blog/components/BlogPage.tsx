@@ -51,7 +51,7 @@ async function fetchPosts(query = ""): Promise<Post[]> {
   return posts
     .filter((post) => post.data !== undefined)
     .map((post) => ({
-      id: post.id ?? "", 
+      id: post.id ?? "",
       data: {
         datePost: post.data?.datePost || "",
         postTheme: post.data?.postTheme || "",

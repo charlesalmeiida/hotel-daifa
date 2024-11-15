@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export function FaqSection() {
   return (
-    <Container>
+    <Container overflow>
       <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:gap-[72px] w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

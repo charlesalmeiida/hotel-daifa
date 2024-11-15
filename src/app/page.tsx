@@ -60,7 +60,7 @@ export default function Home() {
       </main>
 
       <section className="py-14 lg:py-[120px]">
-        <Container>
+        <Container overflow>
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-start lg:items-center justify-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Container>
+        <Container overflow>
           <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-0 justify-between items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
