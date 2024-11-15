@@ -21,7 +21,7 @@ export default function Home() {
       <Header logo="white" color="secondary" btnColor="outlineWhite" />
 
       <main>
-        <section className="bg-heroMobile lg:bg-hero -mt-[95px] bg-no-repeat bg-cover py-40 lg:py-52">
+        <section className="bg-heroMobile bg-center lg:bg-hero -mt-[95px] bg-no-repeat bg-cover py-40 lg:py-52">
           <Container>
             <div className="space-y-6">
               <motion.h1
