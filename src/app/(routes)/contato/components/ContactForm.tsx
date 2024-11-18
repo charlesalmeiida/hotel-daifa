@@ -61,7 +61,7 @@ export function ContactForm() {
         handleChange={handleChange}
         id="phone"
         placeholder="Celular"
-        type="number"
+        type="tel"
       />
       <Input
         handleChange={handleChange}

@@ -1,7 +1,7 @@
 interface InputProps {
   placeholder: string
   id: string
-  type: "text" | "email" | "textarea" | "number"
+  type: "text" | "email" | "textarea" | "tel"
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   handleChange: (e: { target: { id: any; value: any } }) => void
 }

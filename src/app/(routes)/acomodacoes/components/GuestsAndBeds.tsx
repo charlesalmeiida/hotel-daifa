@@ -19,7 +19,7 @@ export function GuestAndBeds({ beds, guests }: GuestsAndBedsProps) {
           Até {guests} hóspedes
         </span>
       </div>
-      <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
+      <div className="w-1 hidden lg:block h-1 bg-gray-500 rounded-full"></div>
       <div className="flex gap-3 items-center">
         <Image
           src={"svg/icon-bed.svg"}

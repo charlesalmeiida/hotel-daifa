@@ -13,7 +13,7 @@ export default function Contact() {
     <>
       <Header />
       <section className="pt-20 pb-14 lg:pb-28">
-        <Container>
+        <Container overflow>
           <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-0 justify-between">
             <motion.div
               className="space-y-10"

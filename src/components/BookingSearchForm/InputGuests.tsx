@@ -17,6 +17,7 @@ export function InputGuests({
     <div className="flex flex-col mx-auto lg:mx-0 justify-center gap-10">
       <LabelForm icon="people" title={title} />
       <input
+        min={0}
         onChange={handleChange}
         className="font-mono text-center lg:text-left max-w-28 text-base text-gray-800 bg-transparent"
         type="number"
