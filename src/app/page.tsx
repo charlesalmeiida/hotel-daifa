@@ -123,11 +123,11 @@ export default function Home() {
                   className="space-y-4"
                 >
                   <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
-                  <h4 className="lg:max-w-[472px] text-gray-950">
-                    Hotel próximo ao Centro da cidade, ao Mercado Público,
-                    CentroSul Eventos e à Ponte Hercílio Luz! Fácil acesso ao
-                    Aeroporto, Rodoviária e aos principais pontos turísticos e
-                    históricos de Floripa!
+                  <h4 className="lg:max-w-[489px] text-gray-950">
+                    Hotel próximo a pontos importantes, como Centro da cidade,
+                    Mercado Público, CentroSul Eventos e Ponte Hercílio Luz.
+                    Também oferece fácil acesso ao Aeroporto, Rodoviária e aos
+                    principais pontos turísticos e históricos de Floripa!
                   </h4>
                   <BtnLink link="/localizacao">saiba mais</BtnLink>
                 </motion.div>
