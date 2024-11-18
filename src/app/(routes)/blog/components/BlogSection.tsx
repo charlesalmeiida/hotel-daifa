@@ -52,12 +52,12 @@ export function BlogSection() {
             viewport={{ once: true }}
           >
             <CardPostDefault
-              date={allPosts[0].data.datePost}
-              theme={allPosts[0].data.postTheme}
-              title={allPosts[0].data.title}
-              description={allPosts[0].data.subtitle}
-              image={allPosts[0].data.imageThumb}
-              slug={allPosts[0].data.slug}
+              date={allPosts[1].data.datePost}
+              theme={allPosts[1].data.postTheme}
+              title={allPosts[1].data.title}
+              description={allPosts[1].data.subtitle}
+              image={allPosts[1].data.imageThumb}
+              slug={allPosts[1].data.slug}
             />
           </motion.div>
           <motion.div
@@ -67,7 +67,7 @@ export function BlogSection() {
             viewport={{ once: true }}
             className="flex flex-col gap-8 max-w-[529px]"
           >
-            {allPosts.slice(1, 4).map((post) => (
+            {allPosts.slice(0, 3).map((post) => (
               <CardPostSM
                 key={post.data.slug}
                 date={post.data.datePost}

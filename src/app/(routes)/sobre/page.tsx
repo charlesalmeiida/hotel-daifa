@@ -37,13 +37,14 @@ export default function About() {
                 metros do nosso hotel.
                 <br />
                 <br />
-                Mediterrâneo que remete as raízes do fundador, o Hotel Daifa é
-                dos mais tradicionais hotéis da cidade, que preserva um
+                Com uma localização privilegiada, em frente a Baia Sul e com
+                estilo Mediterrâneo que remete as raízes do fundador, o Hotel
+                Daifa é dos mais tradicionais hotéis da cidade, que preserva um
                 aconchego de pousada, com estrutura de hotel, com apenas 25
                 unidades, equipadas e completas, sendo em sua maioria, quartos
-                com vista para os cartões postais da cidade, como a Baia Sul e a
+                com vista para os cartões postais da cidade, como a Baía Sul e a
                 Ponte Hercílio Luz. No Hotel Daifa o ambiente familiar e a
-                entrega do melhor custo benefício, tornaram-se nossos
+                entrega do melhor custo-benefício, tornaram-se nossos
                 diferenciais, proporcionando uma estadia confortável, econômica
                 e muito próxima aos principais pontos turísticos, de eventos e
                 negócios da cidade.
@@ -102,7 +103,9 @@ export default function About() {
             >
               <div className="space-y-4">
                 <TagSpan>PET-FRIENDLY</TagSpan>
-                <h3 className="text-gray-700">Seu melhor amigo é bem-vindo em nosso Hotel!</h3>
+                <h3 className="text-gray-700">
+                  Seu melhor amigo é bem-vindo em nosso Hotel!
+                </h3>
               </div>
               <p className="text-gray-700">
                 Seu amiguinho poderá se hospedar com você e aproveitar todos os

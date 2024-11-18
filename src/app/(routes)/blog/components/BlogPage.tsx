@@ -130,12 +130,12 @@ export function BlogPage() {
             viewport={{ once: true }}
           >
             <CardPostLG
-              date={allPosts[0].data.datePost}
-              theme={allPosts[0].data.postTheme}
-              image={allPosts[0].data.imageThumb}
-              title={allPosts[0].data.title}
-              slug={allPosts[0].data.slug}
-              description={allPosts[0].data.subtitle}
+              date={allPosts[1].data.datePost}
+              theme={allPosts[1].data.postTheme}
+              image={allPosts[1].data.imageThumb}
+              title={allPosts[1].data.title}
+              slug={allPosts[1].data.slug}
+              description={allPosts[1].data.subtitle}
             />
           </motion.div>
         </Container>

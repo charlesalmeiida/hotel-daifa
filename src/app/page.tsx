@@ -43,7 +43,7 @@ export default function Home() {
               >
                 No Hotel Daifa você encontra uma estrutura completa de hotel com
                 aconchego e descontração de uma pousada. Com localização
-                privilegiada, estamos situados em frente a Baia Sul e próximos
+                privilegiada, estamos situados em frente a Baía Sul e próximos
                 aos principais pontos da cidade.
               </motion.p>
             </div>
@@ -125,7 +125,7 @@ export default function Home() {
                   <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
                   <h4 className="lg:max-w-[472px] text-gray-950">
                     Hotel próximo ao Centro da cidade, ao Mercado Público,
-                    Centro Sul Eventos e à Ponte Hercílio Luz! Fácil acesso ao
+                    CentroSul Eventos e à Ponte Hercílio Luz! Fácil acesso ao
                     Aeroporto, Rodoviária e aos principais pontos turísticos e
                     históricos de Floripa!
                   </h4>
