@@ -36,12 +36,12 @@ export function Footer() {
                 <ItemNav color="secondary" bold link={section.link}>
                   {section.page}
                 </ItemNav>
-                {/* {section.links &&
+                {section.links &&
                   section.links.map((item) => (
                     <ItemNav color="secondary" key={item.name} link={item.link}>
                       {item.name}
                     </ItemNav>
-                  ))} */}
+                  ))}
               </div>
             ))}
           </div>

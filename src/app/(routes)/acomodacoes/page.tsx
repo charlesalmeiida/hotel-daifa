@@ -75,7 +75,7 @@ export default function RoomsPage() {
             </div>
           )}
         </div>
-        
+
         <section className="pt-20 pb-28">
           <div className="flex justify-between">
             <div className="hidden lg:flex gap-16 items-start">
