@@ -27,23 +27,23 @@
     "links": [
       {
         "name": "Standard sem vista para a Baía Sul",
-        "link": "/"
+        "link": "/acomodacoes"
       },
       {
         "name": "Standard com vista parcial da Baía Sul",
-        "link": "/"
+        "link": "/acomodacoes"
       },
       {
         "name": "Standard com vista para a Baía Sul",
-        "link": "/"
+        "link": "/acomodacoes"
       },
       {
         "name": "Quarto superior com vista e hidromassagem single",
-        "link": "/"
+        "link": "/acomodacoes"
       },
       {
         "name": "Quarto deluxe com vista e hidro dupla",
-        "link": "/"
+        "link": "/acomodacoes"
       }
     ]
   },
