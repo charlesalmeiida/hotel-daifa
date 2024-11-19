@@ -14,6 +14,7 @@ import { motion } from "framer-motion"
 import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
 import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { FaqSection } from "./(routes)/faq/components/FaqSection"
+import { ModalPromotion } from "@/components/ModalPromotion"
 
 export default function Home() {
   return (
@@ -107,6 +108,15 @@ export default function Home() {
           </div>
         </Container>
       </section>
+      
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
+        <ModalPromotion />
+      </motion.div>
 
       <PromotionsSection />
 

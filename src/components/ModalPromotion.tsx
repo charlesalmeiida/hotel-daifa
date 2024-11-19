@@ -1,0 +1,38 @@
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
+
+export function ModalPromotion() {
+  const [isModalOpen, setIsModalOpen] = useState(true)
+
+  const handleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
+
+  return (
+    <>
+      {isModalOpen && (
+        <div className="fixed -bottom-2 left-6 z-30">
+          <button
+            onClick={handleModal}
+            className="font-mono absolute top-2 right-2 text-lg"
+          >
+            X
+          </button>
+          <Link
+            href={
+              "https://wa.me//5548988643952?text=Ol%C3%A1,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20reservas!"
+            }
+          >
+            <Image
+              src={"/img/image-modal.png"}
+              width={424}
+              height={393}
+              alt="Imagem da promoção"
+            />
+          </Link>
+        </div>
+      )}
+    </>
+  )
+}
