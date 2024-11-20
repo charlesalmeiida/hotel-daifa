@@ -12,7 +12,7 @@ export function ModalPromotion() {
   return (
     <>
       {isModalOpen && (
-        <div className="fixed -bottom-2 left-6 z-30">
+        <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-30">
           <button
             onClick={handleModal}
             className="font-mono absolute top-2 right-2 text-lg"

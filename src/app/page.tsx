@@ -60,6 +60,15 @@ export default function Home() {
         </motion.div>
       </main>
 
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        viewport={{ once: true }}
+      >
+        <ModalPromotion />
+      </motion.div>
+
       <section className="py-14 lg:py-[120px]">
         <Container overflow>
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-start lg:items-center justify-center">
@@ -108,15 +117,6 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      
-      <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        viewport={{ once: true }}
-      >
-        <ModalPromotion />
-      </motion.div>
 
       <PromotionsSection />
 
