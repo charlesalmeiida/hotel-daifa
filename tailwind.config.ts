@@ -24,9 +24,11 @@ const config: Config = {
         yellow: "#F3D500",
       },
       backgroundImage: {
-        hero: "url('/img/bg-hero.webp')",
         promotions: "url('/img/bg-promocoes.png')",
         heroMobile: "url('/img/bg-hero-mobile.png')",
+      },
+      video: {
+        hero: "url('/img/bg-hero.mp4')",
       },
     },
     screens: {

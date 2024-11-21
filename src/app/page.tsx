@@ -21,8 +21,25 @@ export default function Home() {
     <>
       <Header logo="white" color="secondary" btnColor="outlineWhite" />
 
-      <main>
-        <section className="bg-heroMobile bg-center lg:bg-hero -mt-[95px] bg-no-repeat bg-cover py-40 lg:py-52">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        viewport={{ once: true }}
+      >
+        <ModalPromotion />
+      </motion.div>
+
+      <main className="relative w-full">
+        <video
+          src="/img/bg-hero.mp4"
+          autoPlay
+          loop
+          muted
+          className="absolute h-[690px] top-0 left-0 w-full object-cover z-0"
+        />
+
+        <section className="relative z-10 -mt-[95px] py-40 lg:py-52 bg-black bg-opacity-50">
           <Container>
             <div className="space-y-6">
               <motion.h1
@@ -37,37 +54,30 @@ export default function Home() {
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                whileInView={{ opacity: 0.8 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-base md:text-xl font-semibold"
               >
                 No Hotel Daifa você encontra uma estrutura completa de hotel com
                 aconchego e descontração de uma pousada. Com localização
-                privilegiada, estamos situados em frente a Baía Sul e próximos
-                aos principais pontos da cidade.
+                privilegiada, estamos situados em frente à Baía Sul e próximos
+                aos principais pontos turísticos e de negócios da cidade.
               </motion.p>
             </div>
           </Container>
         </section>
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
+          className="relative z-10"
         >
           <BookSearchForm />
         </motion.div>
       </main>
-
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1 }}
-        viewport={{ once: true }}
-      >
-        <ModalPromotion />
-      </motion.div>
 
       <section className="py-14 lg:py-[120px]">
         <Container overflow>
@@ -135,9 +145,11 @@ export default function Home() {
                   <TagSpan>LOCALIZAÇÃO ESTRATÉGICA</TagSpan>
                   <h4 className="lg:max-w-[489px] text-gray-950">
                     Hotel próximo a pontos importantes, como Centro da cidade,
-                    Mercado Público, CentroSul Eventos e Ponte Hercílio Luz.
-                    Também oferece fácil acesso ao Aeroporto, Rodoviária e aos
-                    principais pontos turísticos e históricos de Floripa!
+                    Mercado Público, CentroSul Eventos, Hospitais de Caridade,
+                    Baía Sul, Assembleia Legislativa, Fórum e Ponte Hercílio
+                    Luz. Também oferece fácil acesso aos principais shoppings,
+                    Aeroporto, Rodoviária e aos principais pontos turísticos e
+                    históricos de Floripa!
                   </h4>
                   <BtnLink link="/localizacao">saiba mais</BtnLink>
                 </motion.div>

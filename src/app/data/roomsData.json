@@ -61,7 +61,8 @@
       "/img/rooms/standard-com-vista-parcial/02.png",
       "/img/rooms/standard-com-vista-parcial/03.png",
       "/img/rooms/standard-com-vista-parcial/04.png",
-      "/img/rooms/standard-com-vista-parcial/05.png"
+      "/img/rooms/standard-com-vista-parcial/05.png",
+      "/img/rooms/standard-com-vista-parcial/06.png"
     ],
     "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
     "benefits": [
@@ -80,17 +81,16 @@
     "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
   },
   {
-    "id": 4,
-    "title": "Quarto deluxe com vista e hidromassagem dupla",
+    "id": 5,
+    "title": "Quarto superior com vista e hidromassagem single",
     "image": [
-      "/img/rooms/deluxe-hidro-dupla/01.png",
-      "/img/rooms/deluxe-hidro-dupla/02.png",
-      "/img/rooms/deluxe-hidro-dupla/03.png",
-      "/img/rooms/deluxe-hidro-dupla/04.png",
-      "/img/rooms/deluxe-hidro-dupla/05.png",
-      "/img/rooms/deluxe-hidro-dupla/06.png",
-      "/img/rooms/deluxe-hidro-dupla/07.png",
-      "/img/rooms/deluxe-hidro-dupla/08.png"
+      "/img/rooms/superior-hidro-single/01.png",
+      "/img/rooms/superior-hidro-single/02.png",
+      "/img/rooms/superior-hidro-single/03.png",
+      "/img/rooms/superior-hidro-single/04.png",
+      "/img/rooms/superior-hidro-single/05.png",
+      "/img/rooms/superior-hidro-single/06.png",
+      "/img/rooms/superior-hidro-single/07.png"
     ],
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
     "benefits": [
@@ -110,14 +110,17 @@
     "beds": "Cama casal + Cama Baixa"
   },
   {
-    "id": 5,
-    "title": "Quarto superior com vista e hidromassagem single",
+    "id": 4,
+    "title": "Quarto deluxe com vista e hidromassagem dupla",
     "image": [
-      "/img/rooms/superior-hidro-single/01.png",
-      "/img/rooms/superior-hidro-single/02.png",
-      "/img/rooms/superior-hidro-single/03.png",
-      "/img/rooms/superior-hidro-single/04.png",
-      "/img/rooms/superior-hidro-single/05.png"
+      "/img/rooms/deluxe-hidro-dupla/01.png",
+      "/img/rooms/deluxe-hidro-dupla/02.png",
+      "/img/rooms/deluxe-hidro-dupla/03.png",
+      "/img/rooms/deluxe-hidro-dupla/04.png",
+      "/img/rooms/deluxe-hidro-dupla/05.png",
+      "/img/rooms/deluxe-hidro-dupla/06.png",
+      "/img/rooms/deluxe-hidro-dupla/07.png",
+      "/img/rooms/deluxe-hidro-dupla/08.png"
     ],
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
     "benefits": [
