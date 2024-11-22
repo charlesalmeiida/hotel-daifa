@@ -26,18 +26,19 @@ export function ModalPromotion() {
           >
             <Image
               src={"/img/image-modal.png"}
-              width={656}
-              height={293}
+              width={864}
+              height={386}
               alt="Imagem da promoção"
               className="hidden lg:block"
             />
-            <Image
-              src={"/img/image-modal-mobile.png"}
-              width={419}
-              height={524}
-              alt="Imagem da promoção"
-              className="lg:hidden"
-            />
+            <div className="w-[465px] max-w-80 lg:hidden">
+              <Image
+                src={"/img/image-modal-mobile.png"}
+                width={465}
+                height={581}
+                alt="Imagem da promoção"
+              />
+            </div>
           </Link>
         </div>
       )}
