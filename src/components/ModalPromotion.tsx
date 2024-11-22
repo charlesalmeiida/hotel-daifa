@@ -15,7 +15,7 @@ export function ModalPromotion() {
         <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-30">
           <button
             onClick={handleModal}
-            className="font-mono absolute top-2 right-2 text-lg"
+            className="font-mono bg-blue absolute text-gray-50 rounded-[4px] py-1 px-2 -top-6 right-2 text-base"
           >
             X
           </button>
