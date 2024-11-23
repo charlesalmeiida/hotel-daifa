@@ -12,22 +12,23 @@ export function ModalPromotion() {
   return (
     <>
       {isModalOpen && (
-        <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-30">
-          <button
-            onClick={handleModal}
-            className="font-mono bg-blue absolute text-gray-50 rounded-[4px] py-1 px-2 -top-6 right-2 text-base"
-          >
-            X
-          </button>
+        <div className="fixed w-full flex justify-center bottom-10 left-1/2 -translate-x-1/2 z-30">
           <Link
+          className="relative"
             href={
               "https://wa.me//5548988643952?text=Ol%C3%A1,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20reservas!"
             }
           >
+            <button
+              onClick={handleModal}
+              className="font-mono bg-blue absolute text-gray-50 rounded-[4px] py-1 px-2 -top-6 right-0 text-base"
+            >
+              X
+            </button>
             <Image
               src={"/img/image-modal.png"}
-              width={864}
-              height={386}
+              width={1108}
+              height={450}
               alt="Imagem da promoção"
               className="hidden lg:block"
             />

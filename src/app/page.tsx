@@ -39,7 +39,7 @@ export default function Home() {
           className="absolute h-[690px] top-0 left-0 w-full object-cover z-0"
         />
 
-        <section className="relative z-10 -mt-[95px] py-40 lg:py-52 bg-black bg-opacity-50">
+        <section className="relative z-10 -mt-[95px] py-40 lg:py-52 bg-black bg-opacity-[22%]">
           <Container>
             <div className="space-y-6">
               <motion.h1
