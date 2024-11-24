@@ -22,8 +22,8 @@ export default function Home() {
       <Header logo="white" color="secondary" btnColor="outlineWhite" />
 
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
         viewport={{ once: true }}
       >
