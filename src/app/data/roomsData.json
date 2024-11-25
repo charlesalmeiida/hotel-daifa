@@ -22,7 +22,8 @@
       "Cofre",
       "Banheiro privativo",
       "Com sacada",
-      "Vista de frente da Baía Sul e Ponte"
+      "Vista de frente da Baía Sul e Ponte",
+      "Com sacada ou varanda"
     ],
     "hospeds": 4,
     "beds": "Cama casal + Cama solteiro + Cama Baixa OU 04 camas de solteiro (uma baixa)"
@@ -104,7 +105,8 @@
       "Banheiro privativo",
       "Com sacada",
       "Vista de frente da Baía Sul e Ponte",
-      "Hidromassagem tamanho individual"
+      "Hidromassagem tamanho individual",
+      "Com sacada ou varanda"
     ],
     "hospeds": 3,
     "beds": "Cama casal + Cama Baixa"
@@ -134,7 +136,8 @@
       "Banheiro privativo",
       "Com sacada",
       "Vista de frente da Baía Sul e Ponte",
-      "Hidromassagem tamanho individual"
+      "Hidromassagem tamanho dupla",
+      "Com sacada ou varanda"
     ],
     "hospeds": 3,
     "beds": "Cama casal + Cama Baixa"

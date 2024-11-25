@@ -1,16 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
-import { LinkLang } from "./LinkLang"
+// import { LinkLang } from "./LinkLang"
 import { Container } from "../../Global/Container"
 
 export function TopHeader() {
   return (
-    <div className="bg-blue w-full">
+    <div className="bg-blue w-full py-3">
       <Container>
         <div className="flex-row-reverse flex lg:flex-row lg:flex justify-between lg:justify-end gap-0 lg:gap-20">
-          <div className="flex gap-2 items-center">
+          {/* <div className="flex gap-2 items-center">
             <LinkLang />
-          </div>
+          </div> */}
           <div className="flex items-center gap-6">
             <Link
               target="_blank"
