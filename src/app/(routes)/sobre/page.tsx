@@ -112,7 +112,7 @@ export default function About() {
                 encantos da Ilha da Magia. Veja nossas regras para hospedagem de
                 cães e gatos no botão abaixo.
               </p>
-              <BtnLink link="/">saiba mais</BtnLink>
+              <BtnLink link="/faq">saiba mais</BtnLink>
             </motion.div>
           </div>
         </Container>
