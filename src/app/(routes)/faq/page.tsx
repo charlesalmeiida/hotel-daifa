@@ -1,8 +1,8 @@
 import { Footer } from "@/components/Footer/Footer"
 import { Container } from "@/components/Global/Container"
-import { Header } from "@/components/Header/Header"
 import { itemsFaq } from "@/app/data/itemsFaq"
 import { ItemFaq } from "./components/ItemFaq"
+import { Header } from "@/components/Header"
 
 export default function FaqPage() {
   return (

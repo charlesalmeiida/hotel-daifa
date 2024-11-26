@@ -4,11 +4,11 @@ import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header"
 import { TagSpan } from "@/components/Global/TagSpan"
 import { Location } from "@/components/Maps/Location"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Header } from "@/components/Header"
 
 export default function About() {
   return (

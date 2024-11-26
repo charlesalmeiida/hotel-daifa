@@ -3,7 +3,6 @@
 import { DateAndTheme } from "@/app/(routes)/blog/components/DateAndTheme"
 import { Container } from "@/components/Global/Container"
 import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header"
 import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
@@ -11,6 +10,7 @@ import { useRouter } from "next/navigation"
 import { RelatedPosts } from "@/app/(routes)/blog/components/RelatedPosts"
 import { use } from "react"
 import { motion } from "framer-motion"
+import { Header } from "@/components/Header"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 

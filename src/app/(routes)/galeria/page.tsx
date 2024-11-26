@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer/Footer"
 import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
-import { Header } from "@/components/Header/Header"
 import { motion } from "framer-motion"
+import { Header } from "@/components/Header"
 
 export default function Gallery() {
   return (

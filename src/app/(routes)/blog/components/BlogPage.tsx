@@ -68,7 +68,6 @@ export function BlogPage() {
   const [searchTerm, setSearchTerm] = useState<string>("")
 
   useEffect(() => {
-    // Busca inicial de todos os posts
     async function getData() {
       const postsData = await fetchPosts()
       setAllPosts(postsData)

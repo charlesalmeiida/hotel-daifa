@@ -1,11 +1,10 @@
 "use client"
 
 import Image from "next/image"
-import { TopHeader } from "./components/TopHeader"
 import Link from "next/link"
 import { Container } from "../Global/Container"
-import { NavList } from "./components/Nav"
 import { useState, useEffect } from "react"
+import { NavList, TopHeader } from "./components"
 
 interface HeaderProps {
   logo?: "white" | "color"

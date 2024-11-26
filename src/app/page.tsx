@@ -1,11 +1,11 @@
 "use client"
 
+import { Header } from "@/components/Header"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/app/(routes)/blog/components/BlogSection"

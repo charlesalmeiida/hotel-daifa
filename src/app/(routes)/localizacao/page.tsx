@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header"
+import { Header } from "@/components/Header"
 import { Location } from "@/components/Maps/Location"
 
 export default function LocationPage() {
