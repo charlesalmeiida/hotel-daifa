@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "O Hotel Daifa combina o charme acolhedor de uma pousada com a estrutura completa de um hotel, oferecendo uma experiência única em Florianópolis. Localizado estrategicamente em frente à Baía Sul, o hotel proporciona fácil acesso aos principais pontos turísticos, eventos e áreas de negócios da cidade. Com apenas 25 unidades exclusivas, muitas com vistas deslumbrantes para cartões-postais como a Ponte Hercílio Luz, o Hotel Daifa é sinônimo de conforto e tradição. Sua arquitetura de estilo mediterrâneo reflete as raízes do fundador, enquanto o ambiente familiar e o excelente custo-benefício fazem dele a escolha perfeita tanto para lazer quanto para negócios.",
     images: [
       {
-        url: "https://hotel-daifa.vercel.app/img/thumb.png",
+        url: "https://www.hoteldaifa.com.br/img/thumb.png",
       },
     ],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "O Hotel Daifa combina o charme acolhedor de uma pousada com a estrutura completa de um hotel, oferecendo uma experiência única em Florianópolis. Localizado estrategicamente em frente à Baía Sul, o hotel proporciona fácil acesso aos principais pontos turísticos, eventos e áreas de negócios da cidade. Com apenas 25 unidades exclusivas, muitas com vistas deslumbrantes para cartões-postais como a Ponte Hercílio Luz, o Hotel Daifa é sinônimo de conforto e tradição. Sua arquitetura de estilo mediterrâneo reflete as raízes do fundador, enquanto o ambiente familiar e o excelente custo-benefício fazem dele a escolha perfeita tanto para lazer quanto para negócios.",
     images: [
       {
-        url: "https://hotel-daifa.vercel.app/img/thumb.png",
+        url: "https://www.hoteldaifa.com.br/img/thumb.png",
       },
     ],
   },
