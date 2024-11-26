@@ -7,6 +7,7 @@ interface CardPromotionProps {
   description: string
   packageProp: string
   date: string
+  promotion: string
 }
 
 export function CardPromotion({
@@ -15,6 +16,7 @@ export function CardPromotion({
   description,
   packageProp,
   date,
+  promotion,
 }: CardPromotionProps) {
   return (
     <div className="bg-gray-50 space-y-4 w-fit">
@@ -34,7 +36,7 @@ export function CardPromotion({
           </span>
         </div>
         <Button
-          link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+          link={`https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20${promotion}!`}
           color="outlineGray"
           size="lg"
         >

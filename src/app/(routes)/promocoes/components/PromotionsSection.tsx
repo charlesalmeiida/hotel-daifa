@@ -109,6 +109,7 @@ export function PromotionsSection() {
                     description={promotion.description}
                     packageProp={promotion.package}
                     date={promotion.date}
+                    promotion={promotion.title}
                   />
                 </SwiperSlide>
               ))}
