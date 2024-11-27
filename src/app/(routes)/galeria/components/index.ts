@@ -1,0 +1,1 @@
+export { GallerySlide } from "./GallerySlide"

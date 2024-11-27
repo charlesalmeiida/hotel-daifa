@@ -1,5 +1,6 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { Header } from "@/components/Header"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
@@ -7,14 +8,25 @@ import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
 import { Footer } from "@/components/Footer/Footer"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
-import { Location } from "@/components/Maps/Location"
 import { BlogSection } from "@/app/(routes)/blog/components/BlogSection"
 import { PromotionsSection } from "@/app/(routes)/promocoes/components/PromotionsSection"
 import { motion } from "framer-motion"
-import { BookSearchForm } from "@/components/BookingSearchForm/BookingSearchForm"
-import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { FaqSection } from "./(routes)/faq/components/FaqSection"
-import { ModalPromotion } from "@/components/ModalPromotion"
+import { BookSearchForm } from "@/components/BookingSearchForm"
+
+const Location = dynamic(() =>
+  import("@/components/Maps/Location").then((mod) => mod.Location)
+)
+
+const ModalPromotion = dynamic(() =>
+  import("@/components/ModalPromotion").then((mod) => mod.ModalPromotion)
+)
+
+const GallerySlide = dynamic(() =>
+  import("@/app/(routes)/galeria/components/GallerySlide").then(
+    (mod) => mod.GallerySlide
+  )
+)
 
 export default function Home() {
   return (
