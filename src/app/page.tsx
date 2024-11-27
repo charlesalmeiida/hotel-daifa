@@ -1,38 +1,42 @@
 "use client"
 
 import dynamic from "next/dynamic"
-import { Header } from "@/components/Header"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
 import Image from "next/image"
-import { Footer } from "@/components/Footer/Footer"
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { BlogSection } from "@/app/(routes)/blog/components/BlogSection"
 import { PromotionsSection } from "@/app/(routes)/promocoes/components/PromotionsSection"
 import { motion } from "framer-motion"
 import { FaqSection } from "./(routes)/faq/components/FaqSection"
-import { BookSearchForm } from "@/components/BookingSearchForm"
+import { Hero } from "@/components/Homepage"
 
-const Location = dynamic(() =>
-  import("@/components/Maps/Location").then((mod) => mod.Location)
+const Location = dynamic(
+  () => import("@/components/Maps/Location").then((mod) => mod.Location),
+  {
+    ssr: false,
+  }
 )
 
-const ModalPromotion = dynamic(() =>
-  import("@/components/ModalPromotion").then((mod) => mod.ModalPromotion)
+const ModalPromotion = dynamic(
+  () => import("@/components/ModalPromotion").then((mod) => mod.ModalPromotion),
+  {
+    ssr: false,
+  }
 )
 
-const GallerySlide = dynamic(() =>
-  import("@/app/(routes)/galeria/components/GallerySlide").then(
-    (mod) => mod.GallerySlide
-  )
+const GallerySlide = dynamic(
+  () =>
+    import("@/app/(routes)/galeria/components/GallerySlide").then(
+      (mod) => mod.GallerySlide
+    ),
+  { ssr: false }
 )
 
 export default function Home() {
   return (
     <>
-      <Header logo="white" color="secondary" btnColor="outlineWhite" />
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -42,54 +46,7 @@ export default function Home() {
         <ModalPromotion />
       </motion.div>
 
-      <main className="relative w-full">
-        <video
-          src="/img/bg-hero.mp4"
-          autoPlay
-          loop
-          muted
-          className="absolute h-[690px] top-0 left-0 w-full object-cover z-0"
-        />
-
-        <section className="relative z-10 -mt-[95px] py-40 lg:py-52 bg-black bg-opacity-[22%]">
-          <Container>
-            <div className="space-y-6">
-              <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                className="text-center text-[32px] lg:text-[46px] leading-[150%] text-gray-50 max-w-[893px] mx-auto"
-              >
-                Hospede-se no Coração de Florianópolis com o Melhor
-                Custo-Benefício da Cidade
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 0.8 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="text-gray-50 opacity-80 font-sans max-w-screen-sm mx-auto text-center text-base md:text-xl font-semibold"
-              >
-                No Hotel Daifa você encontra uma estrutura completa de hotel com
-                aconchego e descontração de uma pousada. Com localização
-                privilegiada, estamos situados em frente à Baía Sul e próximos
-                aos principais pontos turísticos e de negócios da cidade.
-              </motion.p>
-            </div>
-          </Container>
-        </section>
-
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="relative z-10"
-        >
-          <BookSearchForm />
-        </motion.div>
-      </main>
+      <Hero />
 
       <section className="py-14 lg:py-[120px]">
         <Container overflow>
@@ -366,8 +323,6 @@ export default function Home() {
       <section className="py-14 lg:py-28">
         <FaqSection />
       </section>
-
-      <Footer />
     </>
   )
 }

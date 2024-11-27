@@ -3,6 +3,8 @@ import "./globals.css"
 import { inter, raleway } from "./utils/fonts"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { CookieModal } from "@/components/CookieModal"
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer/Footer"
 
 export const metadata: Metadata = {
   title: "Hotel Daifa - Florianópolis",
@@ -53,9 +55,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={`${inter} ${raleway} antialiased`}>
+        <Header logo="white" color="secondary" btnColor="outlineWhite" />
         {children}
         <SpeedInsights />
         <CookieModal />
+        <Footer />
       </body>
     </html>
   )
