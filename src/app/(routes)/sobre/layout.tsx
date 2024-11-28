@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -12,10 +13,9 @@ export const metadata: Metadata = {
     images: "https://www.hoteldaifa.com.br/img/thumb.png",
   },
   twitter: {
-    title:
-      "Hotel Daifa - Acomodações com Conforto e Custo-Benefício em Florianópolis",
+    title: "Sobre o Hotel Daifa | História e Tradição em Florianópolis",
     description:
-      "Descubra as acomodações do Hotel Daifa em Florianópolis: conforto, vista para a Baía Sul e custo-benefício. Reserve já sua estadia no coração da cidade!",
+      "Conheça o Hotel Daifa: tradição, conforto e localização privilegiada em Florianópolis. Descubra nossa história e compromisso com a hospitalidade.",
     images: "https://www.hoteldaifa.com.br/img/thumb.png",
   },
 }
@@ -27,6 +27,8 @@ export default function AboutLayout({
 }) {
   return (
     <section>
+      {" "}
+      <Header />
       {children}
     </section>
   )
