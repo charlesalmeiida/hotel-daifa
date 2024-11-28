@@ -7,10 +7,12 @@ import { TagSpan } from "@/components/Global/TagSpan"
 import { Location } from "@/components/Maps/Location"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Header } from "@/components/Header"
 
 export default function About() {
   return (
     <>
+      <Header color="primary" btnColor="outlineGray" />
       <section className="pt-14 lg:pt-28 pb-28">
         <Container>
           <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">

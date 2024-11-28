@@ -11,6 +11,7 @@ import { PromotionsSection } from "@/app/(routes)/promocoes/components/Promotion
 import { motion } from "framer-motion"
 import { FaqSection } from "./(routes)/faq/components/FaqSection"
 import { Hero } from "@/components/Homepage"
+import { Header } from "@/components/Header"
 
 const Location = dynamic(
   () => import("@/components/Maps/Location").then((mod) => mod.Location),
@@ -37,6 +38,8 @@ const GallerySlide = dynamic(
 export default function Home() {
   return (
     <>
+      <Header logo="white" color="secondary" btnColor="outlineWhite" />
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
