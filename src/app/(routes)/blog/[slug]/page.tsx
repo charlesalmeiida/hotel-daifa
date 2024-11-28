@@ -2,7 +2,6 @@
 
 import { DateAndTheme } from "@/app/(routes)/blog/components/DateAndTheme"
 import { Container } from "@/components/Global/Container"
-import { Footer } from "@/components/Footer/Footer"
 import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
@@ -112,7 +111,6 @@ export default function BlogPost({
       >
         <RelatedPosts />
       </motion.div>
-      <Footer />
     </>
   )
 }
