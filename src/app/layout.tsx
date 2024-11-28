@@ -4,7 +4,7 @@ import { inter, raleway } from "./utils/fonts"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { CookieModal } from "@/components/CookieModal"
 import { Header } from "@/components/Header"
-import { Footer } from "@/components/Footer/Footer"
+import { Footer } from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Hotel Daifa - Florianópolis",

@@ -3,18 +3,14 @@
 import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
-import { Footer } from "@/components/Footer/Footer"
 import { TagSpan } from "@/components/Global/TagSpan"
 import { Location } from "@/components/Maps/Location"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Header } from "@/components/Header"
 
 export default function About() {
   return (
     <>
-      <Header />
-
       <section className="pt-14 lg:pt-28 pb-28">
         <Container>
           <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
@@ -127,8 +123,6 @@ export default function About() {
       >
         <Location />
       </motion.section>
-
-      <Footer />
     </>
   )
 }
