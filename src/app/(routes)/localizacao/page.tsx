@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer/Footer"
 import { Header } from "@/components/Header"
 import { Location } from "@/components/Maps/Location"
 
@@ -9,7 +8,6 @@ export default function LocationPage() {
       <section className="py-20">
         <Location />
       </section>
-      <Footer />
     </>
   )
 }

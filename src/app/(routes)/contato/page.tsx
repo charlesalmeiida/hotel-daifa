@@ -3,7 +3,6 @@
 import { ContactForm } from "@/app/(routes)/contato/components/ContactForm"
 import { Container } from "@/components/Global/Container"
 import { Contacts } from "@/components/Footer/Contacts"
-import { Footer } from "@/components/Footer/Footer"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Header } from "@/components/Header"
@@ -62,7 +61,6 @@ export default function Contact() {
           </div>
         </Container>
       </section>
-      <Footer />
     </>
   )
 }

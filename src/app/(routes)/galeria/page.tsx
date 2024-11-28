@@ -1,6 +1,5 @@
 "use client"
 
-import { Footer } from "@/components/Footer/Footer"
 import { GallerySlide } from "@/app/(routes)/galeria/components/GallerySlide"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
@@ -29,7 +28,6 @@ export default function Gallery() {
           <GallerySlide />
         </Container>
       </section>
-      <Footer />
     </>
   )
 }

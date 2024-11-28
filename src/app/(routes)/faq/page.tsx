@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer/Footer"
 import { Container } from "@/components/Global/Container"
 import { itemsFaq } from "@/app/data/itemsFaq"
 import { ItemFaq } from "./components/ItemFaq"
@@ -37,8 +36,6 @@ export default function FaqPage() {
           </div>
         </Container>
       </section>
-
-      <Footer />
     </>
   )
 }

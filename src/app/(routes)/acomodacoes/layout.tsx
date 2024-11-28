@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import type { Metadata } from "next"
 
@@ -33,7 +32,6 @@ export default function RoomsLayout({
     <section>
       <Header />
       {children}
-      <Footer />
     </section>
   )
 }
