@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation"
 import { RelatedPosts } from "@/app/(routes)/blog/components/RelatedPosts"
 import { use } from "react"
 import { motion } from "framer-motion"
-import { Header } from "@/components/Header"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
@@ -54,7 +53,6 @@ export default function BlogPost({
 
   return (
     <>
-      <Header />
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

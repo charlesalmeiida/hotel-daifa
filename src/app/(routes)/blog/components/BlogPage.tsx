@@ -3,10 +3,15 @@
 import { InputSearchBlog } from "./InputSearchBlog"
 import { Container } from "../../../../components/Global/Container"
 import { CardPostLG } from "./CardPosts/CardPostLG"
-import { RecentPosts } from "./RecentPosts"
 import { builder, BuilderContent } from "@builder.io/sdk"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import dynamic from "next/dynamic"
+
+const RecentPosts = dynamic(
+  () => import("./RecentPosts").then((mod) => mod.RecentPosts),
+  { ssr: false }
+)
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
@@ -25,42 +30,35 @@ interface Post {
   id: string
 }
 
-interface PostData {
-  datePost: string
-  postTheme: string
-  imageThumb: string
-  title: string
-  slug: string
-  subtitle: string
-}
-
-interface Post {
-  data: PostData
-  id: string
-}
-
 async function fetchPosts(query = ""): Promise<Post[]> {
-  const posts: BuilderContent[] = await builder.getAll("blog-post", {
-    limit: 10,
-    options: {
-      noCache: true,
-    },
-    query: query ? { title: { $regex: query, $options: "i" } } : {},
-  })
-
-  return posts
-    .filter((post) => post.data !== undefined)
-    .map((post) => ({
-      id: post.id ?? "",
-      data: {
-        datePost: post.data?.datePost || "",
-        postTheme: post.data?.postTheme || "",
-        imageThumb: post.data?.imageThumb || "",
-        title: post.data?.title || "",
-        slug: post.data?.slug || "",
-        subtitle: post.data?.subtitle || "",
+  try {
+    const posts: BuilderContent[] = await builder.getAll("blog-post", {
+      limit: 10,
+      options: {
+        noCache: true,
       },
-    }))
+      query: query ? { "data.title": { $regex: query, $options: "i" } } : {},
+    })
+
+    console.log("Posts recebidos:", posts) // Log para depuração
+
+    return posts
+      .filter((post) => post.data !== undefined)
+      .map((post) => ({
+        id: post.id ?? "",
+        data: {
+          datePost: post.data?.datePost || "",
+          postTheme: post.data?.postTheme || "",
+          imageThumb: post.data?.imageThumb || "",
+          title: post.data?.title || "",
+          slug: post.data?.slug || "",
+          subtitle: post.data?.subtitle || "",
+        },
+      }))
+  } catch (error) {
+    console.error("Erro ao buscar posts:", error)
+    return []
+  }
 }
 
 export function BlogPage() {
@@ -76,12 +74,19 @@ export function BlogPage() {
   }, [])
 
   const handleSearch = async () => {
-    const filteredPosts = await fetchPosts(searchTerm)
-    setAllPosts(filteredPosts)
+    if (searchTerm.trim() === "") {
+      const postsData = await fetchPosts()
+      setAllPosts(postsData)
+    } else {
+      const filteredPosts = await fetchPosts(searchTerm)
+      setAllPosts(filteredPosts)
+    }
   }
 
   if (allPosts.length === 0) {
-    return <div className="h-lvh bg-white"></div>
+    return (
+      <div className="h-lvh bg-white flex items-center justify-center"></div>
+    )
   }
 
   return (
@@ -122,21 +127,23 @@ export function BlogPage() {
 
       <section className="pt-14">
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <CardPostLG
-              date={allPosts[1].data.datePost}
-              theme={allPosts[1].data.postTheme}
-              image={allPosts[1].data.imageThumb}
-              title={allPosts[1].data.title}
-              slug={allPosts[1].data.slug}
-              description={allPosts[1].data.subtitle}
-            />
-          </motion.div>
+          {allPosts.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <CardPostLG
+                date={allPosts[0].data.datePost}
+                theme={allPosts[0].data.postTheme}
+                image={allPosts[0].data.imageThumb}
+                title={allPosts[0].data.title}
+                slug={allPosts[0].data.slug}
+                description={allPosts[0].data.subtitle}
+              />
+            </motion.div>
+          )}
         </Container>
       </section>
 
