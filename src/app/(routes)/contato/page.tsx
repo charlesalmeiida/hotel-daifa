@@ -5,12 +5,10 @@ import { Container } from "@/components/Global/Container"
 import { Contacts } from "@/components/Footer/Contacts"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Header } from "@/components/Header"
 
 export default function Contact() {
   return (
     <>
-      <Header />
       <section className="pt-20 pb-14 lg:pb-28">
         <Container overflow>
           <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-0 justify-between">
