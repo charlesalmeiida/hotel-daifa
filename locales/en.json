@@ -1,0 +1,89 @@
+{
+  "Hero": {
+    "h1": "Stay in the heart of Florianopolis with the best value for money in town",
+    "p": "At Hotel Daifa you'll find a complete hotel structure with the warmth and relaxation of a hostel. With a privileged location, we are situated opposite the South Bay and close to the city's main tourist and business attractions."
+  },
+  "SearchForm": {
+    "pessoas": "ADULTS",
+    "crianças": "CHILDREN",
+    "btn": "SEARCH",
+    "date": "Select the date:"
+  },
+  "TheHotel": {
+    "text": "With a panoramic views of the South Bay and the Hercilio Luz Bridge, a postcard of Florianopolis",
+    "textLink": "Learn more"
+  },
+  "Header": {
+    "btn": "RESERVE"
+  },
+  "Promotions": {
+    "title": "PROMOTIONS",
+    "h2": "Check out our special offers and packages",
+    "p": "We have the ideal package for you. Enjoy unique experiences at special prices and book now!"
+  },
+  "Location": {
+    "title": "STRATEGIC LOCATION",
+    "text": "Hotel close to important points such as the Florianopolis Downtown, Public Market, CentroSul Eventos, Hospital de Caridade, South Bay, Assembleia Legislativa, Forum and Hercílio Luz Bridge. It also offers easy access to the main shopping centers, the airport, the bus station and Floripa's main tourist and historical sites!",
+    "btn": "learn more"
+  },
+  "Business": {
+    "tag": "LEISURE, EVENTS AND BUSINESS",
+    "text": "Whether for business or pleasure, Hotel Daifa offers the best value for money in town! Privileged location and special rates for business guests or event participants!",
+    "btn": "learn more"
+  },
+  "Acomodations": {
+    "tag": "ACCOMMODATIONS",
+    "title": "Comfort and practicality for your stay",
+    "text": "Economy rooms, rooms overlooking the bay and rooms with hydromassage! The only option with a hydromassage in Florianópolis Downtown!",
+    "btn": "learn more"
+  },
+  "Gallery": {
+    "title": "PHOTO GALLERY",
+    "text": "Discover Hotel Daifa: Comfort and Beauty in Pictures"
+  },
+  "Contact": {
+    "title": "Ask all your questions to our team, 24 hours a day!",
+    "text": "Contact our team, make your reservation and enjoy the best value for money in Floripa!",
+    "formTitle": "Contact",
+    "name": "Enter your name",
+    "email": "Enter your e-mail",
+    "celular": "Cell phone",
+    "mensagem": "Message",
+    "btn": "send"
+  },
+  "Map": {
+    "tag": "LOCATION",
+    "text": "Close to everything Florianópolis has to offer"
+  },
+  "Amenities": {
+    "title": "Amenities"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "text": "We provide all the information you need to plan your trip and avoid surprises",
+    "btn": "Learn more",
+    "click": "clicking here"
+  },
+  "Footer": {
+    "text": "Hotel Daifa - Copyright © 2024 - All rights reserved",
+    "developed": "Developed by "
+  },
+  "Blog": {
+    "title": "Recent posts",
+    "text": "Guarantee your reservation with affordable prices. Discover all the comforts that we offer in the heart of Florianópolis.",
+    "search": "Search by topic, keyword or tag..."
+  },
+  "AcomodationsPage": {
+    "title": "Choose the ideal accommodation for your needs",
+    "btn": "reserve",
+    "ate": "Until",
+    "hospeds": "Guests"
+  },
+  "About": {
+    "text1": "Hotel Daifa is a hotel development that was built at a time when Florianópolis Downtown was being consolidated not only as a seasonal tourist destination, but also as an important business and events destination, especially after the inauguration of the Events Center, one of Florianópolis' largest event venues, which is 800 meters from our hotel.",
+    "text2": "With a privileged location in front of the South Bay and with a Mediterranean style that harks back to the founder's heritage, Hotel Daifa is one of the city's most traditional hotels. It preserves the cozy atmosphere of an guesthouse with the structure of a hotel, with only 25 fully-equipped units, most of which are rooms with views of the city's postcards, such as the South Bay and the Hercílio Luz Bridge. At Hotel Daifa, the family atmosphere and the best value for money have become our differentials, providing a comfortable, economical stay very close to the city's main tourist, event and business attractions",
+    "petTitle": "Your best friend is welcome at our hotel!",
+    "petText": "Your puppy can stay with you and enjoy all the charms of Ilha da Magia. See our rules ans policy for accommodating cats and dogs by clicking the button below.",
+    "btn": "Learn more"
+  }
+}

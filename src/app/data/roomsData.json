@@ -2,6 +2,8 @@
   {
     "id": 1,
     "title": "Standard com vista para a Baía Sul",
+    "titleEn": "Standard with a view of South Bay",
+    "titleEs": "Estándar con vista a la Bahía Sur",
     "image": [
       "/img/rooms/standard-com-vista/01.png",
       "/img/rooms/standard-com-vista/02.png",
@@ -12,6 +14,8 @@
       "/img/rooms/standard-com-vista/07.png"
     ],
     "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
+    "descriptionEn": "Looking for a low price but don't want to miss the charm of the sunset and the stunning view of South Bay? Choose one of these options!",
+    "descriptionEs": "¿Busca un precio bajo pero no quiere perder el encanto del atardecer y la impresionante vista de la Bahía Sur? ¡Elija una de estas opciones!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
       "Ventilador de teto",
@@ -24,12 +28,40 @@
       "Vista de frente da Baía Sul e Ponte",
       "Com sacada ou varanda"
     ],
+    "benefitsEn": [
+      "Hot and cold air conditioning",
+      "Ceiling fan",
+      "Flat-screen TV with local channels",
+      "Wi-Fi",
+      "Work desk",
+      "Minibar",
+      "Safe",
+      "Private bathroom",
+      "Front view of South Bay and Bridge",
+      "With balcony or terrace"
+    ],
+    "benefitsEs": [
+      "Aire acondicionado frío y caliente",
+      "Ventilador de techo",
+      "Televisor de pantalla plana con canales locales",
+      "Wi-Fi",
+      "Escritorio",
+      "Minibar",
+      "Caja fuerte",
+      "Baño privado",
+      "Vista frontal de la Bahía Sur y Puente",
+      "Con balcón o terraza"
+    ],
     "hospeds": 4,
-    "beds": "Cama casal + Cama solteiro + Cama Baixa OU 04 camas de solteiro (uma baixa)"
+    "beds": "Cama casal + Cama solteiro + Cama Baixa OU 04 camas de solteiro (uma baixa)",
+    "bedsEn": "Double bed + Single bed + Low bed OR 4 single beds (one low)",
+    "bedsEs": "Cama doble + Cama individual + Cama baja O 4 camas individuales (una baja)"
   },
   {
     "id": 2,
     "title": "Standard sem vista para a Baía Sul",
+    "titleEn": "Standard without a view of South Bay",
+    "titleEs": "Estándar sin vista a la Bahía Sur",
     "image": [
       "/img/rooms/standard-sem-vista/01.png",
       "/img/rooms/standard-sem-vista/02.png",
@@ -38,7 +70,9 @@
       "/img/rooms/standard-sem-vista/05.png",
       "/img/rooms/standard-sem-vista/06.png"
     ],
-    "description": "Quer economizar? Veja nossas melhores opções para hospedagens curtas e economicas",
+    "description": "Quer economizar? Veja nossas melhores opções para hospedagens curtas e econômicas.",
+    "descriptionEn": "Want to save money? Check out our best options for short and economical stays.",
+    "descriptionEs": "¿Quieres ahorrar dinero? Descubre nuestras mejores opciones para estancias cortas y económicas.",
     "benefits": [
       "Ar-condicionado Quente e Frio",
       "Ventilador de teto",
@@ -50,12 +84,38 @@
       "Banheiro privativo",
       "Sem sacada"
     ],
+    "benefitsEn": [
+      "Hot and cold air conditioning",
+      "Ceiling fan",
+      "Flat-screen TV with local channels",
+      "Wi-Fi",
+      "Work desk",
+      "Minibar",
+      "Safe",
+      "Private bathroom",
+      "No balcony"
+    ],
+    "benefitsEs": [
+      "Aire acondicionado frío y caliente",
+      "Ventilador de techo",
+      "Televisor de pantalla plana con canales locales",
+      "Wi-Fi",
+      "Escritorio",
+      "Minibar",
+      "Caja fuerte",
+      "Baño privado",
+      "Sin balcón"
+    ],
     "hospeds": 3,
-    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
+    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro",
+    "bedsEn": "Double bed + Single bed OR 3 single beds",
+    "bedsEs": "Cama doble + Cama individual O 3 camas individuales"
   },
   {
     "id": 3,
     "title": "Standard com vista parcial da Baía Sul",
+    "titleEn": "Standard with partial view of South Bay",
+    "titleEs": "Estándar con vista parcial a la Bahía Sur",
     "image": [
       "/img/rooms/standard-com-vista-parcial/01.png",
       "/img/rooms/standard-com-vista-parcial/02.png",
@@ -65,6 +125,8 @@
       "/img/rooms/standard-com-vista-parcial/06.png"
     ],
     "description": "Procura preço baixo, mas não quer perder o encanto do pôr do sol e o visual deslumbrante da Baía Sul? Escolha uma dessas opções!",
+    "descriptionEn": "Looking for a low price but don't want to miss the charm of the sunset and the stunning view of South Bay? Choose one of these options!",
+    "descriptionEs": "¿Busca un precio bajo pero no quiere perder el encanto del atardecer y la impresionante vista de la Bahía Sur? ¡Elija una de estas opciones!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
       "Ventilador de teto",
@@ -77,12 +139,40 @@
       "Sem sacada",
       "Vista lateral da Baía Sul e Ponte"
     ],
+    "benefitsEn": [
+      "Hot and cold air conditioning",
+      "Ceiling fan",
+      "Flat-screen TV with local channels",
+      "Wi-Fi",
+      "Work desk",
+      "Minibar",
+      "Safe",
+      "Private bathroom",
+      "No balcony",
+      "Side view of South Bay and Bridge"
+    ],
+    "benefitsEs": [
+      "Aire acondicionado frío y caliente",
+      "Ventilador de techo",
+      "Televisor de pantalla plana con canales locales",
+      "Wi-Fi",
+      "Escritorio",
+      "Minibar",
+      "Caja fuerte",
+      "Baño privado",
+      "Sin balcón",
+      "Vista lateral de la Bahía Sur y Puente"
+    ],
     "hospeds": 3,
-    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro"
+    "beds": "Cama casal + Cama solteiro OU 03 camas de solteiro",
+    "bedsEn": "Double bed + Single bed OR 3 single beds",
+    "bedsEs": "Cama doble + Cama individual O 3 camas individuales"
   },
   {
     "id": 5,
     "title": "Quarto superior com vista e hidromassagem single",
+    "titleEn": "Superior room with view and single hot tub",
+    "titleEs": "Habitación superior con vista y jacuzzi individual",
     "image": [
       "/img/rooms/superior-hidro-single/01.png",
       "/img/rooms/superior-hidro-single/02.png",
@@ -93,6 +183,8 @@
       "/img/rooms/superior-hidro-single/07.png"
     ],
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
+    "descriptionEn": "Want to stay without giving up comfort and special amenities? Our rooms with hot tubs are the perfect choice!",
+    "descriptionEs": "¿Quieres hospedarte sin renunciar al confort y las comodidades especiales? ¡Nuestras habitaciones con jacuzzi son la elección perfecta!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
       "Ventilador de teto",
@@ -106,12 +198,42 @@
       "Hidromassagem tamanho individual",
       "Com sacada ou varanda"
     ],
+    "benefitsEn": [
+      "Hot and cold air conditioning",
+      "Ceiling fan",
+      "Flat-screen TV with local channels",
+      "Wi-Fi",
+      "Work desk",
+      "Minibar",
+      "Safe",
+      "Private bathroom",
+      "Front view of South Bay and Bridge",
+      "Single-size hot tub",
+      "With balcony or terrace"
+    ],
+    "benefitsEs": [
+      "Aire acondicionado frío y caliente",
+      "Ventilador de techo",
+      "Televisor de pantalla plana con canales locales",
+      "Wi-Fi",
+      "Escritorio",
+      "Minibar",
+      "Caja fuerte",
+      "Baño privado",
+      "Vista frontal de la Bahía Sur y Puente",
+      "Jacuzzi individual",
+      "Con balcón o terraza"
+    ],
     "hospeds": 3,
-    "beds": "Cama casal + Cama Baixa"
+    "beds": "Cama casal + Cama Baixa",
+    "bedsEn": "Double bed + Low bed",
+    "bedsEs": "Cama doble + Cama baja"
   },
   {
     "id": 4,
     "title": "Quarto deluxe com vista e hidromassagem dupla",
+    "titleEn": "Deluxe room with view and double hot tub",
+    "titleEs": "Habitación deluxe con vista y jacuzzi doble",
     "image": [
       "/img/rooms/deluxe-hidro-dupla/01.png",
       "/img/rooms/deluxe-hidro-dupla/02.png",
@@ -123,6 +245,8 @@
       "/img/rooms/deluxe-hidro-dupla/08.png"
     ],
     "description": "Quer se hospedar sem abrir mão do conforto e de comodidades especiais? Nosso quartos com hidromassagem são a escolha certa!",
+    "descriptionEn": "Want to stay without giving up comfort and special amenities? Our rooms with hot tubs are the perfect choice!",
+    "descriptionEs": "¿Quieres hospedarte sin renunciar al confort y las comodidades especiales? ¡Nuestras habitaciones con jacuzzi son la elección perfecta!",
     "benefits": [
       "Ar-condicionado Quente e Frio",
       "Ventilador de teto",
@@ -136,7 +260,35 @@
       "Hidromassagem tamanho dupla",
       "Com sacada ou varanda"
     ],
+    "benefitsEn": [
+      "Hot and cold air conditioning",
+      "Ceiling fan",
+      "Flat-screen TV with local channels",
+      "Wi-Fi",
+      "Work desk",
+      "Minibar",
+      "Safe",
+      "Private bathroom",
+      "Front view of South Bay and Bridge",
+      "Double-size hot tub",
+      "With balcony or terrace"
+    ],
+    "benefitsEs": [
+      "Aire acondicionado frío y caliente",
+      "Ventilador de techo",
+      "Televisor de pantalla plana con canales locales",
+      "Wi-Fi",
+      "Escritorio",
+      "Minibar",
+      "Caja fuerte",
+      "Baño privado",
+      "Vista frontal de la Bahía Sur y Puente",
+      "Jacuzzi doble",
+      "Con balcón o terraza"
+    ],
     "hospeds": 3,
-    "beds": "Cama casal + Cama Baixa"
+    "beds": "Cama casal + Cama Baixa",
+    "bedsEn": "Double bed + Low bed",
+    "bedsEs": "Cama doble + Cama baja"
   }
 ]

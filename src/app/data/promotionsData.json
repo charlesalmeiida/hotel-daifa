@@ -2,22 +2,43 @@
   {
     "image": "/img/image-promotion-01.png",
     "title": "Reveillon",
+    "titleEn": "New Year's Eve",
+    "titleEs": "Fin de Año",
     "description": "Já pensou em começar o ano na Ilha da Magia? E que tal ter essa vista privilegiada pra contagem regressiva?",
+    "descriptionEn": "Have you ever thought about starting the year on Ilha da Magia? How about having this privileged view for the countdown?",
+    "descriptionEs": "Ya penso en comenzar el año nuevo en la isla de la magia ?  Y que tal tener esa vista privilegiada para la cuenta atras?",
     "package": "Pacote de 03 noites",
-    "date": "29/12 a 03/01/2025"
+    "packageEn": "Package of 03 nights",
+    "packageEs": "Pacote de 03 noches",
+    "date": "29/12 a 03/01/2025",
+    "dateEn": "12/29 to 01/03/2025"
   },
   {
     "image": "/img/image-promotion-02.png",
     "title": "Carnaval 2025",
+    "titleEn": "Carnival 2025",
+    "titleEs": "Carnaval 2025",
     "description": "Pensou em folia, pensou no Hotel Daifa! Confira nossos pacotes e venha sambar conosco!",
+    "descriptionEn": "If you think of revelry, think about Hotel Daifa! Check out our packages and come samba with us!",
+    "descriptionEs": "Penso en diversion, penso en el hotel daifa! Vea nuestros paquetes y venga a sambar con nosotros",
     "package": "Pacote de 03 noites",
-    "date": "28/02 a 05/03"
+    "packageEn": "Package of 03 nights",
+    "packageEs": "Pacote de 03 noches",
+    "date": "28/02 a 05/03",
+    "dateEn": "02/28 to 03/05"
   },
   {
     "image": "/img/image-promotion-03.png",
     "title": "Janeiro e fevereiro 2025",
+    "titleEn": "January and February 2025",
+    "titleEs": "Enero y Febrero 2025",
     "description": "Já pensou em curtir o verão em um dos melhores destinos do Brasil com preços super especiais?! O Hotel Daifa oferece as melhores condições",
+    "descriptionEn": "Have you ever thought about enjoying the summer in one of Brazil's best destinations at super special prices?! Hotel Daifa offers the best conditions",
+    "descriptionEs": "Ya penso en pasar el verano en uno de los mejores destinos de Brasil con precios super especiales ?  El hotel daifa le ofrece las mejores condiciones.",
     "package": "Pacote de 02 noites",
-    "date": ""
+    "packageEn": "Package of 02 nights",
+    "packageEs": "Pacote de 02 noches",
+    "date": "",
+    "dateEn": ""
   }
 ]

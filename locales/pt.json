@@ -1,0 +1,89 @@
+{
+  "Hero": {
+    "h1": "Hospede-se no Coração de Florianópolis com o Melhor Custo-Benefício da Cidade",
+    "p": "No Hotel Daifa você encontra uma estrutura completa de hotel com aconchego e descontração de uma pousada. Com localização privilegiada, estamos situados em frente à Baía Sul e próximos aos principais pontos turísticos e de negócios da cidade."
+  },
+  "SearchForm": {
+    "pessoas": "PESSOAS",
+    "crianças": "CRIANÇAS",
+    "btn": "PESQUISAR",
+    "date": "Selecione a data:"
+  },
+  "TheHotel": {
+    "text": "Com vista panorâmica para a Baía Sul e Ponte Hercílio Luz, cartão postal de Florianópolis.",
+    "textLink": "Saiba mais"
+  },
+  "Header": {
+    "btn": "RESERVAR"
+  },
+  "Promotions": {
+    "title": "PROMOÇÕES",
+    "h2": "Confira nossas ofertas e pacotes especiais",
+    "p": "Temos o pacote ideal para você. Desfrute deexperiências únicascom preços especiais e garanta sua reserva agora mesmo!"
+  },
+  "Location": {
+    "title": "LOCALIZAÇÃO ESTRATÉGICA",
+    "text": "Hotel próximo a pontos importantes, como Centro da cidade, Mercado Público, CentroSul Eventos, Hospitais de Caridade, Baía Sul, Assembleia Legislativa, Fórum e Ponte Hercílio Luz. Também oferece fácil acesso aos principais shoppings, Aeroporto, Rodoviária e aos principais pontos turísticos e históricos de Floripa!",
+    "btn": "saiba mais"
+  },
+  "Business": {
+    "tag": "LAZER, EVENTOS E NEGÓCIOS",
+    "text": "Seja a negócios ou lazer, o Hotel Daifa oferece o melhor custo-beneficio da cidade! Localização privilegiada e tarifas especiais para hóspedes a negócios ou participantes de eventos!",
+    "btn": "saiba mais"
+  },
+  "Acomodations": {
+    "tag": "ACOMODAÇÕES",
+    "title": "Conforto e praticidade para sua estadia",
+    "text": "Opções de quartos econômicos, quartos com vista para Baia e com Hidromassagem! Única opção com hidromassagem no centro de Florianópolis!",
+    "btn": "saiba mais"
+  },
+  "Gallery": {
+    "title": "GALERIA DE FOTOS",
+    "text": "Descubra o Hotel Daifa: Conforto e Beleza em Imagens"
+  },
+  "Contact": {
+    "title": "Tire todas as suas duvidas com nossa equipe, 24 horas por dia!",
+    "text": "Entre em contato com nossa equipe, faça sua reserva e aproveite o melhor custo benefício de Floripa!",
+    "formTitle": "Entre em contato",
+    "name": "Digite seu nome",
+    "email": "Digite seu e-mail",
+    "celular": "Celular",
+    "mensagem": "Mensagem",
+    "btn": "enviar"
+  },
+  "Map": {
+    "tag": "LOCALIZAÇÃO",
+    "text": "Perto de tudo o que Florianópolis oferece"
+  },
+  "Amenities": {
+    "title": "Comodidades"
+  },
+  "Faq": {
+    "title": "Perguntas e respostas frequentes",
+    "text": "No nosso FAQ disponibilizamos tudo o que você precisa saber para se programar e evitar surpresas em sua viagem.",
+    "btn": "saiba mais",
+    "click": "clicando aqui"
+  },
+  "Footer": {
+    "text": "Hotel Daifa - Copyright © 2024 - Todos os direitos reservados",
+    "developed": "Feito por "
+  },
+  "Blog": {
+    "title": "Posts recentes",
+    "text": "Garanta sua reserva com preços econômicos. Descubra todas as comodidades que temos para lhe oferecer no Centro de Florianópolis.",
+    "search": "Pesquisar por tema, palavra-chave ou tag..."
+  },
+  "AcomodationsPage": {
+    "title": "Escolha a acomodação ideal para sua necessidade",
+    "btn": "reservar",
+    "ate": "Até",
+    "hospeds": "Hospedes"
+  },
+  "About": {
+    "text1": "O Hotel Daifa é um empreendimento hoteleiro que foi construído em uma época que em que o centro de Florianópolis foi se consolidando não apenas como um destino turístico de temporada, mas também como um importante destino de negócios e eventos, especialmente após a inauguração do Centro de Eventos, um dos maiores palcos de eventos de Florianópolis, que fica a 800 metros do nosso hotel.",
+    "text2": " Com uma localização privilegiada, em frente a Baia Sul e com estilo Mediterrâneo que remete as raízes do fundador, o Hotel Daifa é dos mais tradicionais hotéis da cidade, que preserva um aconchego de pousada, com estrutura de hotel, com apenas 25 unidades, equipadas e completas, sendo em sua maioria, quartos com vista para os cartões postais da cidade, como a Baía Sul e a Ponte Hercílio Luz. No Hotel Daifa o ambiente familiar e a entrega do melhor custo-benefício, tornaram-se nossos diferenciais, proporcionando uma estadia confortável, econômica e muito próxima aos principais pontos turísticos, de eventos e negócios da cidade.",
+    "petTitle": "Seu melhor amigo é bem-vindo em nosso Hotel!",
+    "petText": "Seu amiguinho poderá se hospedar com você e aproveitar todos os encantos da Ilha da Magia. Veja nossas regras para hospedagem de cães e gatos no botão abaixo.",
+    "btn": "saiba mais"
+  }
+}

@@ -1,32 +1,56 @@
 [
   {
-    "icon": "svg/icon-park.svg",
+    "icon": "/svg/icon-park.svg",
     "title": "Estacionamento",
-    "description": "Nossos hóspedes tem estacionamento cortesia em nosso hotel"
+    "titleEn": "Parking",
+    "titleEs": "Estacionamiento",
+    "description": "Nossos hóspedes tem estacionamento cortesia em nosso hotel",
+    "descriptionEn": "Our guests have free parking at our hotel",
+    "descriptionEs": "Nuestros huéspedes disfrutan de estacionamiento gratis en nuestro hotel"
   },
   {
-    "icon": "svg/icon-network.svg",
+    "icon": "/svg/icon-network.svg",
     "title": "Wi-fi",
-    "description": "Internet de alta velocidade sem custo e disponível em todas as áreas do hotel"
+    "titleEn": "Wifi",
+    "titleEs": "Wifi",
+    "description": "Internet de alta velocidade sem custo e disponível em todas as áreas do hotel",
+    "descriptionEn": "Free high-speed internet available in all areas of the hotel",
+    "descriptionEs": "Internet de alta velocidad sin costo y disponible en todos los ambientes del hotel"
   },
   {
-    "icon": "svg/icon-elevator.svg",
+    "icon": "/svg/icon-elevator.svg",
     "title": "Elevador",
-    "description": "Elevador para acesso a todos os andares do hotel"
+    "titleEn": "Elevator",
+    "titleEs": "Ascensor",
+    "description": "Elevador para acesso a todos os andares do hotel",
+    "descriptionEn": "Elevator for access to all floors of the hotel",
+    "descriptionEs": "Ascensor con acceso a todos los pisos del hotel"
   },
   {
-    "icon": "svg/icon-bed.svg",
+    "icon": "/svg/icon-bed.svg",
     "title": "Quartos com vista",
-    "description": "Opções de quartos com vista privilegiada para a Baia Sul e Ponte Hercílio Luz"
+    "titleEn": "Rooms with a view",
+    "titleEs": "Cuartos con vista",
+    "description": "Opções de quartos com vista privilegiada para a Baia Sul e Ponte Hercílio Luz",
+    "descriptionEn": "Room options with a privileged view of the South Bay and the Hercílio Luz Bridge",
+    "descriptionEs": "Opciones de cuarto con vista privilegiada para la Baia Sul y Ponte Hercílio Luz"
   },
   {
-    "icon": "svg/icon-coffee.svg",
+    "icon": "/svg/icon-coffee.svg",
     "title": "Café da manhã",
-    "description": "Diária com café da manhã cortesia e com vista privilegiada para a Baia Sul"
+    "titleEn": "Breakfast",
+    "titleEs": "Desayuno",
+    "description": "Diária com café da manhã cortesia e com vista privilegiada para a Baia Sul",
+    "descriptionEn": "Complimentary breakfast with a privileged view of the South Bay",
+    "descriptionEs": "Hospedaje con desayuno gratis y con vista privilegiada para la baia sur"
   },
   {
-    "icon": "svg/icon-bath.svg",
+    "icon": "/svg/icon-bath.svg",
     "title": "Jacuzzi XXL",
-    "description": "Jacuzzi no terraço com uma vista espetacular"
+    "titleEn": "Jacuzzi XXL",
+    "titleEs": "Jacuzzi XXL",
+    "description": "Jacuzzi no terraço com uma vista espetacular",
+    "descriptionEn": "Jacuzzi on the terrace with a spectacular view to the Bay",
+    "descriptionEs": "Jacuzzi en la terraza del edificio con vista espectacular"
   }
 ]

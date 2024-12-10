@@ -1,16 +1,31 @@
 import Image from "next/image"
 import Link from "next/link"
-// import { LinkLang } from "./LinkLang"
 import { Container } from "../../Global/Container"
+import { LinkLang } from "./LinkLang"
+import { useLocale } from "next-intl"
 
 export function TopHeader() {
+  const locale = useLocale()
+
   return (
-    <div className="bg-blue w-full py-3">
+    <div className="bg-blue w-full">
       <Container>
         <div className="flex-row-reverse flex lg:flex-row lg:flex justify-between lg:justify-end gap-0 lg:gap-20">
-          {/* <div className="flex gap-2 items-center">
-            <LinkLang />
-          </div> */}
+          <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
+              <LinkLang active={locale === "pt"} lang="pt">
+                PT
+              </LinkLang>
+              <span className="text-gray-50 py-3">|</span>
+              <LinkLang active={locale === "en"} lang="en">
+                EN
+              </LinkLang>
+              <span className="text-gray-50 py-3">|</span>
+              <LinkLang active={locale === "es"} lang="es">
+                ES
+              </LinkLang>
+            </div>
+          </div>
           <div className="flex items-center gap-6">
             <Link
               target="_blank"

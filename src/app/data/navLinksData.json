@@ -1,23 +1,33 @@
 [
   {
     "page": "O Hotel",
+    "pageEn": "The Hotel",
+    "pageEs": "El Hotel",
     "icon": true,
     "link": "/sobre"
   },
   {
     "page": "Promoções",
+    "pageEn": "Promotions",
+    "pageEs": "Promociones",
     "link": "/promocoes"
   },
   {
     "page": "Acomodações",
+    "pageEn": "Rooms",
+    "pageEs": "Habitaciones",
     "link": "/acomodacoes"
   },
   {
     "page": "Blog",
+    "pageEn": "Blog",
+    "pageEs": "Blog",
     "link": "/blog"
   },
   {
     "page": "Contato",
+    "pageEn": "Contact",
+    "pageEs": "Contacto",
     "link": "/contato"
   }
 ]

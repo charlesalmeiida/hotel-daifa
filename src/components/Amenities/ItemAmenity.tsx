@@ -2,8 +2,8 @@ import Image from "next/image"
 
 interface ItemAmenityProps {
   icon: string
-  title: string
-  description: string
+  title: string 
+  description: string 
 }
 
 export function ItemAmenity({ icon, title, description }: ItemAmenityProps) {

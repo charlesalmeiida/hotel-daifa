@@ -10,8 +10,11 @@ import "react-day-picker/dist/style.css"
 import { LabelForm } from "./LabelForm"
 import { InputGuests } from "./InputGuests"
 import { Container } from "../Global/Container"
+import { useTranslations } from "next-intl"
 
 export function BookSearchForm() {
+  const t = useTranslations("SearchForm")
+
   const [eventDate, setEventDate] = useState<DateRange | undefined>()
   const [isDateRangeOpen, setDateRangeOpen] = useState(false)
   const [numberofGuests, setNumberofGuests] = useState({
@@ -52,7 +55,7 @@ export function BookSearchForm() {
                   >
                     {eventDate?.from
                       ? `${format(eventDate.from, "dd/MM/yyyy")}`
-                      : "Selecione a data:"}
+                      : t("date")}
                     <Image
                       src={"svg/chevron-down-gray.svg"}
                       width={12}
@@ -99,7 +102,7 @@ export function BookSearchForm() {
                   <p className="font-mono text-center lg:text-left text-base text-gray-800">
                     {eventDate?.to
                       ? `${format(eventDate.to, "dd/MM/yyyy")}`
-                      : "Selecione a data:"}
+                      : t("date")}
                   </p>
                 </div>
               </div>
@@ -108,7 +111,7 @@ export function BookSearchForm() {
 
               <div className="flex flex-col md:flex-row justify-center gap-10">
                 <InputGuests
-                  title="PESSOAS"
+                  title={t("pessoas")}
                   handleChange={handleChange}
                   name="adults"
                   placeholder="2"
@@ -117,7 +120,7 @@ export function BookSearchForm() {
                 <div className="hidden lg:block w-px h-32 bg-gray-200"></div>
 
                 <InputGuests
-                  title="CRIANÇAS"
+                  title={t("crianças")}
                   handleChange={handleChange}
                   name="children"
                   placeholder="1"
@@ -132,7 +135,7 @@ export function BookSearchForm() {
               color="fill"
               size="md"
             >
-              PESQUISAR
+              {t("btn")}
             </Button>
           </div>
         </div>

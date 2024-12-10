@@ -6,8 +6,11 @@ import { Copyright } from "./Copyright"
 import LinksFooter from "@/app/data/LinksFooter.json"
 import { BtnWpp } from "../Global/BtnWpp"
 import { ItemNav } from "../Header/components/ItemNav"
+import { useLocale } from "next-intl"
 
 export function Footer() {
+  const locale = useLocale()
+
   return (
     <footer className="bg-blue pt-14 lg:pt-20 pb-4">
       <Container>
@@ -34,12 +37,12 @@ export function Footer() {
             {LinksFooter.map((section) => (
               <div key={section.page} className="space-y-6">
                 <ItemNav color="secondary" bold link={section.link}>
-                  {section.page}
+                  {locale === "en" ? section.pageEn : locale === "es" ? section.pageEs : section.page}
                 </ItemNav>
                 {section.links &&
                   section.links.map((item) => (
                     <ItemNav color="secondary" key={item.name} link={item.link}>
-                      {item.name}
+                      {locale === "en" ? item.nameEn : locale === "es" ? item.nameEs : item.name}
                     </ItemNav>
                   ))}
               </div>

@@ -6,6 +6,7 @@ import Hamburger from "hamburger-react"
 import { Button } from "../../Global/Button"
 import navLinksData from "@/app/data/navLinksData.json"
 import dynamic from "next/dynamic"
+import { useLocale, useTranslations } from "next-intl"
 
 const ModalMenu = dynamic(() =>
   import("./ModalMenu").then((mod) => mod.ModalMenu)
@@ -26,10 +27,13 @@ export function NavList({
 }: NavListProps) {
   const [isModalOpen, setModalOpen] = useState(false)
   const [isOpen, setOpen] = useState(false)
+  const t = useTranslations("Header")
 
   const handleModal = () => {
     setModalOpen(!isModalOpen)
   }
+
+  const locale = useLocale()
 
   return (
     <>
@@ -54,7 +58,11 @@ export function NavList({
                   icon={item.icon}
                   link={item.link}
                 >
-                  {item.page}
+                  {locale === "pt"
+                    ? item.page
+                    : locale === "en"
+                    ? item.pageEn
+                    : item.pageEs}
                 </ItemNav>
               </li>
             ))}
@@ -67,7 +75,7 @@ export function NavList({
             size="sm"
             icon
           >
-            RESERVAR
+            {t("btn")}
           </Button>
         </div>
       </div>

@@ -1,18 +1,26 @@
 [
   {
     "page": "Sobre",
+    "pageEn": "About",
+    "pageEs": "Sobre",
     "link": "/sobre"
   },
   {
     "page": "Galeria",
+    "pageEn": "Gallery",
+    "pageEs": "Galería",
     "link": "/galeria"
   },
   {
     "page": "Localização",
+    "pageEn": "Location",
+    "pageEs": "Localización",
     "link": "/localizacao"
   },
   {
     "page": "FAQ",
+    "pageEn": "FAQ",
+    "pageEs": "FAQ",
     "link": "/faq"
   }
 ]

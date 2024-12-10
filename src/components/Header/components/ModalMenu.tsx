@@ -1,11 +1,14 @@
 import { ItemNav } from "./ItemNav"
 import LinksModal from "@/app/data/linksModal.json"
+import { useLocale } from "next-intl"
 
 interface ModalMenuProps {
   handleModal: () => void
 }
 
 export function ModalMenu({ handleModal }: ModalMenuProps) {
+  const locale = useLocale()
+
   return (
     <div
       onClick={handleModal}
@@ -14,7 +17,11 @@ export function ModalMenu({ handleModal }: ModalMenuProps) {
     >
       {LinksModal.map((item) => (
         <ItemNav key={item.page} color="secondary" link={item.link}>
-          {item.page}
+          {locale === "en"
+            ? item.pageEn
+            : locale === "es"
+            ? item.pageEs
+            : item.page}
         </ItemNav>
       ))}
     </div>

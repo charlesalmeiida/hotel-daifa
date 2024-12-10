@@ -1,59 +1,85 @@
 [
   {
     "page": "O Hotel",
+    "pageEn": "The Hotel",
+    "pageEs": "El Hotel",
     "link": "/sobre",
     "links": [
       {
         "name": "Sobre",
+        "nameEn": "About",
+        "nameEs": "Sobre",
         "link": "/sobre"
       },
       {
         "name": "Galeria",
+        "nameEn": "Gallery",
+        "nameEs": "Galería",
         "link": "/galeria"
       },
       {
         "name": "Localização",
+        "nameEn": "Location",
+        "nameEs": "Localización",
         "link": "/localizacao"
       },
       {
         "name": "FAQ",
+        "nameEn": "FAQ",
+        "nameEs": "FAQ",
         "link": "/faq"
       }
     ]
   },
   {
     "page": "Acomodações",
+    "pageEn": "Rooms",
+    "pageEs": "Habitaciones",
     "link": "/acomodacoes",
     "links": [
       {
         "name": "Standard sem vista para a Baía Sul",
+        "nameEn": "Standard without South Bay view",
+        "nameEs": "Estándar sin vista a la Bahía Sur",
         "link": "/acomodacoes"
       },
       {
         "name": "Standard com vista parcial da Baía Sul",
+        "nameEn": "Standard with partial South Bay view",
+        "nameEs": "Estándar con vista parcial a la Bahía Sur",
         "link": "/acomodacoes"
       },
       {
         "name": "Standard com vista para a Baía Sul",
+        "nameEn": "Standard with South Bay view",
+        "nameEs": "Estándar con vista a la Bahía Sur",
         "link": "/acomodacoes"
       },
       {
         "name": "Quarto superior com vista e hidromassagem single",
+        "nameEn": "Superior room with view and single whirlpool",
+        "nameEs": "Habitación superior con vista y jacuzzi individual.",
         "link": "/acomodacoes"
       },
       {
         "name": "Quarto deluxe com vista e hidro dupla",
+        "nameEn": "Deluxe room with view and double whirlpool",
+        "nameEs": "Habitación deluxe con vista y jacuzzi doble.",
         "link": "/acomodacoes"
       }
     ]
   },
   {
     "page": "Blog",
+    "pageEn": "Blog",
+    "pageEs": "Blog",
     "link": "/blog",
     "links": []
   },
   {
     "page": "Contato",
+    "pageEn": "Contact",
+    "pageEs": "Contacto",
     "link": "/contato",
     "links": []
   }
