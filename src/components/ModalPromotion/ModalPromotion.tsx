@@ -1,9 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { useLocale } from "next-intl"
 
 export function ModalPromotion() {
   const [isModalOpen, setIsModalOpen] = useState(true)
+  const locale = useLocale()
 
   const handleModal = () => {
     setIsModalOpen(!isModalOpen)
@@ -33,7 +35,7 @@ export function ModalPromotion() {
               }
             >
               <Image
-                src={"/img/image-modal.png"}
+                src={locale === "en" ? '/img/image-modal-en.png' : locale === "es" ? '/img/image-modal-es.png' : '/img/image-modal.png'}
                 width={1108}
                 height={450}
                 alt="Imagem da promoção"
