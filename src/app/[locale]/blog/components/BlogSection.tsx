@@ -9,7 +9,7 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 
-builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!)
 
 async function fetchAllPosts() {
   const posts = await builder.getAll("blog-post", {

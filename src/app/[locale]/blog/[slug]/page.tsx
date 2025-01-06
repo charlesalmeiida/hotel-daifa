@@ -1,7 +1,6 @@
 "use client"
 
 import { Container } from "@/components/Global/Container"
-import Image from "next/image"
 import { builder } from "@builder.io/react"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
@@ -10,7 +9,9 @@ import { motion } from "framer-motion"
 import { DateAndTheme } from "../components/DateAndTheme"
 import { RelatedPosts } from "../components/RelatedPosts"
 
-builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
+import Image from "next/image"
+
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!)
 
 async function fetchPost(slug: string) {
   const post = await builder.get("blog-post", {

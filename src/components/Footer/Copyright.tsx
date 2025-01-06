@@ -9,8 +9,12 @@ export function Copyright() {
       <span className="block">{t("text")}</span>
       <span className="block">
         {t("developed")}{" "}
-        <Link className="underline" href={"/"}>
-          Flid Marketing
+        <Link
+          className="underline"
+          target="_blank"
+          href={"https://portfolio-charlesalmeiida.vercel.app/pt"}
+        >
+          Charles 
         </Link>
       </span>
     </div>
