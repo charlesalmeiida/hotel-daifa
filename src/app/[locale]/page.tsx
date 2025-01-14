@@ -27,28 +27,12 @@ const Location = dynamic(
   }
 )
 
-const ModalPromotion = dynamic(
-  () => import("@/components/ModalPromotion").then((mod) => mod.ModalPromotion),
-  {
-    ssr: false,
-  }
-)
-
 export default function Home() {
   const t = useTranslations("TheHotel")
 
   return (
     <>
       <Header logo="white" color="secondary" btnColor="outlineWhite" />
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        viewport={{ once: true }}
-      >
-        <ModalPromotion />
-      </motion.div>
 
       <Hero />
 
