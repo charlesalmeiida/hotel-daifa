@@ -27,6 +27,7 @@ const Location = dynamic(
   }
 )
 
+//teste de commit
 export default function Home() {
   const t = useTranslations("TheHotel")
 
