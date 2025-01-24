@@ -69,7 +69,7 @@ export function BlogSection() {
             viewport={{ once: true }}
             className="flex flex-col gap-8 max-w-[529px]"
           >
-            {allPosts.slice(0, 3).map((post) => (
+            {allPosts.slice(1, 4).map((post) => (
               <CardPostSM
                 key={post.data.slug}
                 date={post.data.datePost}
