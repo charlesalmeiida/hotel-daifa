@@ -54,12 +54,12 @@ export function BlogSection() {
             viewport={{ once: true }}
           >
             <CardPostDefault
-              date={allPosts[1].data.datePost}
-              theme={allPosts[1].data.postTheme}
-              title={allPosts[1].data.title}
-              description={allPosts[1].data.subtitle}
-              image={allPosts[1].data.imageThumb}
-              slug={allPosts[1].data.slug}
+              date={allPosts[0].data.datePost}
+              theme={allPosts[0].data.postTheme}
+              title={allPosts[0].data.title}
+              description={allPosts[0].data.subtitle}
+              image={allPosts[0].data.imageThumb}
+              slug={allPosts[0].data.slug}
             />
           </motion.div>
           <motion.div
