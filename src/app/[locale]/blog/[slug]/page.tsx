@@ -68,7 +68,7 @@ export default function BlogPost({
           </div>
           {post.imagePrimary && (
             <Image
-              className="mx-auto h-48 object-cover lg:h-[351px]"
+              className="mx-auto h-48 object-cover lg:h-[351px] rounded-[4px]"
               src={post.imagePrimary}
               width={1216}
               height={351}
