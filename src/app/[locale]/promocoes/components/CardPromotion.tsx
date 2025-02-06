@@ -20,12 +20,15 @@ export function CardPromotion({
 }: CardPromotionProps) {
   return (
     <div className="bg-gray-50 space-y-4 w-fit">
-      <Image
-        src={image}
-        width={384}
-        height={242}
-        alt="Foto de promoção da seção promocional"
-      />
+      <div className="relative max-h-[242px] overflow-hidden">
+        <Image
+          src={image}
+          width={384}
+          height={242}
+          alt="Foto de promoção da seção promocional"
+          className="object-cover"
+        />
+      </div>
       <div className="space-y-4 px-4 pb-4">
         <h6 className="text-gray-900">{title}</h6>
         <p className="max-w-[352px] opacity-80">{description}</p>

@@ -13,6 +13,7 @@
     "date": "28/02 a 05/03",
     "dateEn": "02/28 to 03/05"
   },
+
   {
     "image": "/img/image-promotion-03.png",
     "title": "Janeiro e fevereiro 2025",
@@ -26,5 +27,19 @@
     "packageEs": "Pacote de 02 noches",
     "date": "",
     "dateEn": ""
+  },
+  {
+    "image": "/img/image-promotion-04.png",
+    "title": "Vai participar de algum Evento em Floripa?",
+    "titleEn": "Are you going to participate in any Event in Floripa?",
+    "titleEs": "Vas a participar en algun evento en Floripa?",
+    "description": "Confira nossas tarifas especiais e garanta sua hospedagem na localização mais estratégica de Florianópolis",
+    "descriptionEn": "Check out our special rates and guarantee your accommodation in the most strategic location in Florianópolis",
+    "descriptionEs": "Vea nuestras tarifas especiales y garantice su alojamiento en la ubicacion mas estrategica de Florianopolis",
+    "package": "Pacote de 02 noites",
+    "packageEn": "Package of 02 nights",
+    "packageEs": "Pacote de 02 noches",
+    "date": "março a junho/2025",
+    "dateEn": "March to June/2025"
   }
 ]
