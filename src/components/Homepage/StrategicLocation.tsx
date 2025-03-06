@@ -1,11 +1,13 @@
+"use client"
+
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Container } from "../Global/Container"
 import { TagSpan } from "../Global/TagSpan"
 import { BtnLink } from "../Global/BtnLink"
 import { useTranslations } from "next-intl"
+import { Container } from "../Global/Container"
 
-export function StrategicLocation() {
+export default function StrategicLocation() {
   const t = useTranslations("Location")
 
   return (

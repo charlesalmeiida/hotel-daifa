@@ -1,18 +1,12 @@
-import { Container } from "../Global/Container"
-import { motion } from "framer-motion"
-import { TagSpan } from "../Global/TagSpan"
-import dynamic from "next/dynamic"
+"use client"
+
 import { useTranslations } from "next-intl"
+import { motion } from "framer-motion"
+import { Container } from "../Global/Container"
+import { GallerySlide } from "@/app/[locale]/galeria/components"
+import { TagSpan } from "../Global/TagSpan"
 
-const GallerySlide = dynamic(
-  () =>
-    import("@/app/[locale]/galeria/components/GallerySlide").then(
-      (mod) => mod.GallerySlide
-    ),
-  { ssr: false }
-)
-
-export function GallerySection() {
+export default function GallerySection() {
   const t = useTranslations("Gallery")
 
   return (

@@ -1,7 +1,9 @@
+'use client'
+
+import { useTranslations } from "next-intl"
+import { motion } from "framer-motion"
 import { BookSearchForm } from "../BookingSearchForm"
 import { Container } from "../Global/Container"
-import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
 
 export function Hero() {
   const t = useTranslations("Hero")

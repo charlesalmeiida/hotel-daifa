@@ -1,11 +1,14 @@
+"use client"
+
 import Image from "next/image"
-import { Container } from "../Global/Container"
+
+import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
+import { Container } from "../Global/Container"
 import { TagSpan } from "../Global/TagSpan"
 import { BtnLink } from "../Global/BtnLink"
-import { useTranslations } from "next-intl"
 
-export function Business() {
+export default function Business() {
   const t = useTranslations("Business")
 
   return (

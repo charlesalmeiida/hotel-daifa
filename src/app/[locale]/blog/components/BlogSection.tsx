@@ -1,13 +1,14 @@
 "use client"
 
-import { Container } from "../../../../components/Global/Container"
-import { TagSpan } from "../../../../components/Global/TagSpan"
-import { CardPostDefault } from "./CardPosts/CardPostDefault"
-import { CardPostSM } from "./CardPosts/CardPostSM"
-import { builder } from "@builder.io/sdk"
 import { useEffect, useState } from "react"
+
+import { builder } from "@builder.io/sdk"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import { Container } from "@/components/Global/Container"
+import { TagSpan } from "@/components/Global/TagSpan"
+import { CardPostDefault } from "./CardPosts/CardPostDefault"
+import { CardPostSM } from "./CardPosts/CardPostSM"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!)
 
@@ -22,7 +23,7 @@ async function fetchAllPosts() {
   return posts
 }
 
-export function BlogSection() {
+export default function BlogSection() {
   const t = useTranslations("Blog")
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [allPosts, setAllPosts] = useState<any[]>([])

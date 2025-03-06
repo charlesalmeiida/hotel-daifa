@@ -1,11 +1,14 @@
-import { Container } from "../Global/Container"
-import { motion } from "framer-motion"
-import { TagSpan } from "../Global/TagSpan"
-import { BtnLink } from "../Global/BtnLink"
-import Image from "next/image"
-import { useTranslations } from "next-intl"
+"use client"
 
-export function AcomodationSection() {
+import Image from "next/image"
+
+import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
+import { Container } from "../Global/Container"
+import { BtnLink } from "../Global/BtnLink"
+import { TagSpan } from "../Global/TagSpan"
+
+export default function AcomodationSection() {
   const t = useTranslations("Acomodations")
 
   return (

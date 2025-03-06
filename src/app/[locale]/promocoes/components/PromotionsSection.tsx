@@ -1,18 +1,22 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { Container } from "@/components/Global/Container"
 import { CardPromotion } from "./CardPromotion"
+
 import promotionsData from "@/app/data/promotionsData.json"
+
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
 import { Pagination, Navigation } from "swiper/modules"
+
 import Image from "next/image"
-import { Container } from "../../../../components/Global/Container"
+
 import { motion } from "framer-motion"
 import { useTranslations, useLocale } from "next-intl"
+import { useEffect, useState } from "react"
 
-export function PromotionsSection() {
+export default function PromotionsSection() {
   const [isClient, setIsClient] = useState(false)
   const t = useTranslations("Promotions")
   const locale = useLocale()
