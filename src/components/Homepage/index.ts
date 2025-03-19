@@ -1,5 +1,1 @@
 export { Hero } from "./Hero"
-export { StrategicLocation } from "./StrategicLocation"
-export { Business } from "./Business"
-export { AcomodationSection } from "./AcomodationSection"
-export { GallerySection } from "./GallerySection"

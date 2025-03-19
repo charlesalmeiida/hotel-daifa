@@ -1,13 +1,13 @@
 "use client"
 
-import { AmenitiesSection } from "@/components/Amenities/Amenities"
 import { BtnLink } from "@/components/Global/BtnLink"
 import { Container } from "@/components/Global/Container"
 import { TagSpan } from "@/components/Global/TagSpan"
-import { Location } from "@/components/Maps/Location"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import AmenitiesSection from "@/components/Amenities/Amenities"
+import Location from "@/components/Maps/Location"
 
 export default function About() {
   const t = useTranslations("About")

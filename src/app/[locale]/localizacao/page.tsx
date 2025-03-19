@@ -1,4 +1,4 @@
-import { Location } from "@/components/Maps/Location"
+import Location from "@/components/Maps/Location"
 
 export default function LocationPage() {
   return (
