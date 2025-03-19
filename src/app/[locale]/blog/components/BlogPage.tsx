@@ -16,7 +16,6 @@ const RecentPosts = dynamic(
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
-// Interface para os dados do post
 interface PostData {
   datePost: string
   postTheme: string
@@ -41,7 +40,7 @@ async function fetchPosts(query = ""): Promise<Post[]> {
       query: query ? { "data.title": { $regex: query, $options: "i" } } : {},
     })
 
-    console.log("Posts recebidos:", posts) 
+    console.log("Posts recebidos:", posts)
 
     return posts
       .filter((post) => post.data !== undefined)

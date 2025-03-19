@@ -42,7 +42,7 @@ export function RecentPosts() {
       viewport={{ once: true }}
       className="flex flex-wrap flex-col lg:flex-row gap-y-14 items-center justify-between"
     >
-      {allPosts.slice(0, 3).map((post) => (
+      {allPosts.map((post) => (
         <CardPostMD
           key={post.data.slug}
           date={post.data.datePost}
