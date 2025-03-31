@@ -19,7 +19,7 @@ export function CardPromotion({
   promotion,
 }: CardPromotionProps) {
   return (
-    <div className="bg-gray-50 space-y-4 w-fit">
+    <div className="bg-gray-50 space-y-4 w-fit min-h-[550px] relative">
       <div className="relative max-h-[242px] overflow-hidden">
         <Image
           src={image}
@@ -38,13 +38,15 @@ export function CardPromotion({
             {date}
           </span>
         </div>
-        <Button
-          link={`https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20"${promotion}"!`}
-          color="outlineGray"
-          size="lg"
-        >
-          RESERVAR
-        </Button>
+        <div className="absolute bottom-4 w-[352px]">
+          <Button
+            link={`https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20"${promotion}"!`}
+            color="outlineGray"
+            size="lg"
+          >
+            RESERVAR
+          </Button>
+        </div>
       </div>
     </div>
   )
