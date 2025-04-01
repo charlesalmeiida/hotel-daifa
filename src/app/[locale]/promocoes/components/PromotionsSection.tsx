@@ -8,7 +8,7 @@ import promotionsData from "@/app/data/promotionsData.json"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
-import { Pagination, Navigation } from "swiper/modules"
+import { Pagination, Navigation, Autoplay } from "swiper/modules"
 
 import Image from "next/image"
 
@@ -90,12 +90,17 @@ export default function PromotionsSection() {
                 clickable: true,
                 el: ".custom-pagination-promotion",
               }}
-              modules={[Pagination, Navigation]}
+              modules={[Pagination, Navigation, Autoplay]}
               className="mySwiper"
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
               breakpoints={{
                 320: {
                   slidesPerView: 1.1,
