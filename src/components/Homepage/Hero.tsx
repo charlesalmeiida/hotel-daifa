@@ -1,9 +1,10 @@
-'use client'
+"use client"
 
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import { BookSearchForm } from "../BookingSearchForm"
 import { Container } from "../Global/Container"
+import { BannersWifi } from "../banners-wifi"
 
 export function Hero() {
   const t = useTranslations("Hero")
@@ -40,6 +41,8 @@ export function Hero() {
               {t("p")}
             </motion.p>
           </div>
+
+          <BannersWifi />
         </Container>
       </section>
 
