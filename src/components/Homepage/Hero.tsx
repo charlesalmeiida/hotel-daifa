@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import { BookSearchForm } from "../BookingSearchForm"
 import { Container } from "../Global/Container"
-import { BannersWifi } from "../banners-wifi"
 
 export function Hero() {
   const t = useTranslations("Hero")
@@ -19,7 +18,7 @@ export function Hero() {
         className="absolute h-[680px] top-0 left-0 w-full object-cover z-0"
       />
 
-      <section className="relative z-10 -mt-[95px] py-40 lg:py-52 bg-black h-[680px] bg-opacity-[22%]">
+      <section className="z-10 -mt-[95px] py-40 lg:py-52 bg-black h-[680px] bg-opacity-[22%]">
         <Container>
           <div className="space-y-6">
             <motion.h1
@@ -41,8 +40,6 @@ export function Hero() {
               {t("p")}
             </motion.p>
           </div>
-
-          <BannersWifi />
         </Container>
       </section>
 

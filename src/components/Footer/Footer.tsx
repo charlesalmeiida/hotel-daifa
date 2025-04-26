@@ -7,6 +7,7 @@ import LinksFooter from "@/app/data/LinksFooter.json"
 import { BtnWpp } from "../Global/BtnWpp"
 import { ItemNav } from "../Header/components/ItemNav"
 import { useLocale } from "next-intl"
+import { BannersWifi } from "../banners-wifi"
 
 export function Footer() {
   const locale = useLocale()
@@ -37,12 +38,20 @@ export function Footer() {
             {LinksFooter.map((section) => (
               <div key={section.page} className="space-y-6">
                 <ItemNav color="secondary" bold link={section.link}>
-                  {locale === "en" ? section.pageEn : locale === "es" ? section.pageEs : section.page}
+                  {locale === "en"
+                    ? section.pageEn
+                    : locale === "es"
+                    ? section.pageEs
+                    : section.page}
                 </ItemNav>
                 {section.links &&
                   section.links.map((item) => (
                     <ItemNav color="secondary" key={item.name} link={item.link}>
-                      {locale === "en" ? item.nameEn : locale === "es" ? item.nameEs : item.name}
+                      {locale === "en"
+                        ? item.nameEn
+                        : locale === "es"
+                        ? item.nameEs
+                        : item.name}
                     </ItemNav>
                   ))}
               </div>
@@ -51,6 +60,7 @@ export function Footer() {
         </div>
         <Copyright />
       </Container>
+      <BannersWifi />
       <BtnWpp />
     </footer>
   )
