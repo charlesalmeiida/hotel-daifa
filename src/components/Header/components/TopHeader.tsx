@@ -26,7 +26,7 @@ export function TopHeader() {
               </LinkLang>
             </div>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
             <Link
               target="_blank"
               href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
@@ -37,6 +37,7 @@ export function TopHeader() {
                 width={20}
                 height={20}
                 alt="Ícone do WhatsApp"
+                className="flex-shrink-0"
               />
               <span className="font-sans hidden lg:block text-sm text-gray-300 font-semibold">
                 (48) 98864-3952
@@ -51,8 +52,15 @@ export function TopHeader() {
                 src={"/svg/icon-instagram.svg"}
                 width={18}
                 height={18}
-                alt="Ícone do WhatsApp"
+                alt="Ícone do Instagram"
               />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
+              className="flex items-center gap-2 bg-white p-1 font-mono text-sm rounded-md"
+            >
+              Reservar agora
             </Link>
           </div>
         </div>
