@@ -57,8 +57,8 @@ export function TopHeader() {
             </Link>
             <Link
               target="_blank"
-              href="https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20reservas!"
-              className="flex items-center gap-2 bg-white p-1 font-mono text-sm rounded-md"
+              href="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+              className="flex md:hidden items-center gap-2 bg-white p-1 font-mono text-sm rounded-md"
             >
               Reservar agora
             </Link>
