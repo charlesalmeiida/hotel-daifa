@@ -7,7 +7,7 @@ import { Button } from "../../Global/Button"
 import navLinksData from "@/app/data/navLinksData.json"
 import dynamic from "next/dynamic"
 import { useLocale, useTranslations } from "next-intl"
-import Link from "next/link"
+
 
 const ModalMenu = dynamic(() =>
   import("./ModalMenu").then((mod) => mod.ModalMenu)
