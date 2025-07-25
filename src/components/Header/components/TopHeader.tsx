@@ -55,13 +55,7 @@ export function TopHeader() {
                 alt="Ícone do Instagram"
               />
             </Link>
-            <Link
-              target="_blank"
-              href="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
-              className="flex md:hidden items-center gap-2 bg-white p-1 font-mono text-sm rounded-md"
-            >
-              Reservar agora
-            </Link>
+            
           </div>
         </div>
       </Container>

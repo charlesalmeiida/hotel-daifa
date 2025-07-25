@@ -7,6 +7,7 @@ import { Button } from "../../Global/Button"
 import navLinksData from "@/app/data/navLinksData.json"
 import dynamic from "next/dynamic"
 import { useLocale, useTranslations } from "next-intl"
+import Link from "next/link"
 
 const ModalMenu = dynamic(() =>
   import("./ModalMenu").then((mod) => mod.ModalMenu)
@@ -37,7 +38,17 @@ export function NavList({
 
   return (
     <>
-      <div className="flex items-center gap-16">
+      <div className="flex items-center gap-4">
+        <div className="md:hidden">
+          <Button
+            link="https://reservas.desbravador.com.br/hotel-app/hotel-daifa"
+            color={btnColor}
+            size="sm"
+            icon
+          >
+            {t("btn")}
+          </Button>
+        </div>
         <div className="lg:hidden">
           <Hamburger
             color={`${color === "secondary" ? "#F9FAFB" : "#111827"}`}
