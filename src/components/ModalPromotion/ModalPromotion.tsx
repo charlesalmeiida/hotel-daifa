@@ -14,7 +14,7 @@ export function ModalPromotion() {
   return (
     <>
       {isModalOpen && (
-        <div className="fixed inset-0 z-30 flex justify-center items-end md:items-center pb-4 md:p-4">
+        <div className="fixed inset-0 z-30 flex justify-center items-end md:items-center pb-2 md:p-4">
           <div
             className="absolute inset-0 bg-black bg-opacity-50"
             onClick={handleModal}
@@ -100,31 +100,29 @@ export function ModalPromotion() {
               {/* Mobile Layout */}
               <div className="md:hidden">
                 {/* Texto */}
-                <div className="bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] text-white p-6 text-center">
-                  <h2 className="text-2xl font-bold mb-3 leading-tight">
-                    PROMOÇÃO<br />TEMPORADA 2026
+                <div className="bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] text-white p-4 text-center">
+                  <h2 className="text-xl font-bold mb-2 leading-tight">
+                    PROMOÇÃO TEMPORADA 2026
                   </h2>
-                  <p className="text-base font-semibold mb-2">
-                    Antecipe sua reserva com 7% de desconto*
+                  <p className="text-sm font-semibold mb-2">
+                    Antecipe sua reserva com 7% de desconto
                   </p>
-                  <p className="text-xs opacity-90 mb-4">
-                    Garanta seu verão com valores especiais por tempo limitado!
+                  <p className="text-xs opacity-90 mb-3">
+                    Garanta seu verão com valores especiais!
                   </p>
 
-                  <span className="font-mono text-xs mb-8">*Consulte as condições da promoção</span>
-
-
+                  <span className="font-mono text-xs">*Consulte as condições da promoção</span>
                   <Image
                     src="/svg/logo-white.svg"
                     alt="Hotel Daifa"
-                    width={90}
-                    height={45}
+                    width={80}
+                    height={40}
                     className="mx-auto"
                   />
                 </div>
 
                 {/* Imagem Principal */}
-                <div className="relative h-40">
+                <div className="relative h-32">
                   <Image
                     src="/img/baia-sul-noblur.png"
                     alt="Praia de Florianópolis"
@@ -135,10 +133,9 @@ export function ModalPromotion() {
                   />
                 </div>
 
-
                 {/* Grid de Imagens */}
                 <div className="grid grid-cols-2">
-                  <div className="relative h-28">
+                  <div className="relative h-24">
                     <Image
                       src="/img/image-piscina.png"
                       alt="Piscina do Hotel Daifa"
@@ -147,7 +144,7 @@ export function ModalPromotion() {
                       sizes="50vw"
                     />
                   </div>
-                  <div className="relative h-28">
+                  <div className="relative h-24">
                     <Image
                       src="/img/gallery/image-gallery-03.png"
                       alt="Quarto do Hotel Daifa"
