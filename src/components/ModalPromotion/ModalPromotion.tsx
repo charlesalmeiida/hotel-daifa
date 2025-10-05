@@ -105,7 +105,7 @@ export function ModalPromotion() {
                     PROMOÇÃO TEMPORADA 2026
                   </h2>
                   <p className="text-sm font-semibold mb-2">
-                    Antecipe sua reserva com 7% de desconto
+                    Antecipe sua reserva com 7% de desconto*
                   </p>
                   <p className="text-xs opacity-90 mb-3">
                     Garanta seu verão com valores especiais!
