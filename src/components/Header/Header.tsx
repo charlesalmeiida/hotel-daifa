@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Container } from "../Global/Container"
-import { useState, useEffect } from "react"
-import { NavList, TopHeader } from "./components"
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "../Global/Container";
+import { useState, useEffect } from "react";
+import { NavList, TopHeader } from "./components";
 
 interface HeaderProps {
-  logo?: "white" | "color"
-  btnColor?: "fill" | "outlineWhite" | "outlineGray"
-  color?: "primary" | "secondary"
+  logo?: "white" | "color";
+  btnColor?: "fill" | "outlineWhite" | "outlineGray";
+  color?: "primary" | "secondary";
 }
 
 export function Header({
@@ -17,25 +17,23 @@ export function Header({
   color = "primary",
   btnColor = "outlineGray",
 }: HeaderProps) {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY >= 80)
-    }
+      setIsScrolled(window.scrollY >= 80);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       <TopHeader />
       <header
-        className={`sticky z-50 top-0 w-full py-4 border-b-[0.5px] transition-colors duration-300 ${
-          isScrolled
-            ? "bg-white border-b-gray-50 shadow-shaddowShape"
-            : "bg-transparent"
+        className={`sticky z-50 top-0 w-full py-4 transition-colors duration-300 ${
+          isScrolled ? "bg-white shadow-shaddowShape" : "bg-transparent"
         }`}
       >
         <Container>
@@ -60,5 +58,5 @@ export function Header({
         </Container>
       </header>
     </>
-  )
+  );
 }
