@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Homepage";
-import { ModalPromotion, SimpleImageModal } from "@/components/ModalPromotion";
+import { SimpleImageModal } from "@/components/ModalPromotion";
 
 const TheHotel = dynamic(() => import("@/components/Homepage/the-hotel"));
 const PromotionsSection = dynamic(
