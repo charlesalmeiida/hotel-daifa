@@ -65,11 +65,6 @@ export default function Home() {
             imageAlt: "Promoção temporada 7% OFF",
             link: "https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20Verão!",
           },
-          {
-            imageSrc: "/img/popups/banner-florianopolis.png",
-            imageAlt: "Últimas reservas 10% OFF",
-            link: "https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%2010%20OFF!",
-          },
         ]}
       />
     </>
