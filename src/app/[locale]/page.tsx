@@ -58,6 +58,7 @@ export default function Home() {
 
       {/** <ModalPromotion/> **/}
 
+      {/*
       <SimpleImageModal
         images={[
           {
@@ -67,6 +68,7 @@ export default function Home() {
           },
         ]}
       />
+      */}
     </>
   );
 }
