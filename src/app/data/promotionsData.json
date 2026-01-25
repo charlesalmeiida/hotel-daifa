@@ -1,6 +1,6 @@
 [
   {
-    "image": "/img/image-promotion-01.png",
+    "image": "/img/image-promotion-06.jpeg",
     "title": "Viagem a negócios",
     "titleEn": "Business trip",
     "titleEs": "Viaje de negocios",
@@ -14,45 +14,19 @@
     "dateEn": ""
   },
   {
-    "image": "/img/image-promotion-02.png",
-    "title": "Outono/inverno",
-    "titleEn": "Autumn/winter",
-    "titleEs": "Otono/invierno",
-    "description": "Florianópolis é encantadora em todas as estações! Hospede-se no HOTEL DAIFA com condições especiais e aproveite o melhor do outono e inverno na ilha com conforto, praticidade e economia.",
-    "descriptionEn": "Florianopolis is enchanting in all seasons! Stay at HOTEL DAIFA with special conditions and enjoy the best of autumn and winter on the island with comfort, convenience and economy.",
-    "descriptionEs": "Florianopolis es encantadora en todas las estaciones! Hospedese en el HOTEL DAIFA con condiciones especiales y disfrute del mejor de otono y invierno en la isla con confort, praticidad y economia.",
+    "image": "/img/image-promotion-07.png",
+    "title": "Pacote Especial para 3 Dias de Folia",
+    "titleEn": "Special Package for 3 Days of Festivities",
+    "titleEs": "Paquete Especial para 3 Días de Fiesta",
+    "description": "Está na hora de aproveitar o melhor do Carnaval com a gente, em uma localização privilegiada! 😍 Nosso hotel fica próximo à Passarela Nego Quirido, no coração da folia de Floripa. 🎉✨",
+    "descriptionEn": "It’s time to enjoy the best of Carnival with us, in a prime location! 😍 Our hotel is close to the Nego Quirido Walkway, in the heart of Floripa’s festivities. 🎉✨",
+    "descriptionEs": "¡Es hora de disfrutar de lo mejor del Carnaval con nosotros, en una ubicación privilegiada! 😍 Nuestro hotel está cerca de la Pasarela Nego Quirido, en el corazón de la fiesta de Floripa. 🎉✨",
     "package": "",
     "packageEn": "",
     "packageEs": "",
     "date": "",
     "dateEn": ""
-  },
-  {
-    "image": "/img/image-promotion-03.png",
-    "title": "Folianópolis 2025",
-    "titleEn": "Folianopolis 2025",
-    "titleEs": "Folianopolis 2025",
-    "description": "Nos dias 20, 21 e 22 de Novembro de 2025, a magia do Folianópolis invade a Ilha da Magia! E se você quer curtir a maior micareta do Sul do Brasil com estilo, praticidade e conforto, o HOTEL DAIFA é o seu destino ideal!",
-    "descriptionEn": "On November 20, 21, and 22, 2025, the magic of Folianópolis invades the Island of Magic! And if you want to enjoy the largest micareta in southern Brazil with style, practicality, and comfort, HOTEL DAIFA is your ideal destination!",
-    "descriptionEs": "Los días 20, 21 y 22 de noviembre de 2025, la magia de Folianópolis invade la Isla de la Magia. Y si quieres disfrutar de la mayor micareta del sur de Brasil con estilo, practicidad y comodidad, el HOTEL DAIFA es tu destino ideal.",
-    "package": "Pacote de 03 noites",
-    "packageEn": "3 nights package",
-    "packageEs": "Paquete de 03 noches",
-    "date": "",
-    "dateEn": ""
-  },
-  {
-    "image": "/img/image-promotion-04.png",
-    "title": "Réveillon 2026 em Florianópolis",
-    "titleEn": "Reveillon 2026 in Florianopolis",
-    "titleEs": "Reveillon 2026 en Florianopolis",
-    "description": "O destino mais desejado do Brasil para o Ano Novo te espera de braços abertos. O HOTEL DAIFA é o lugar ideal para celebrar a chegada de 2026 com conforto, estilo e uma vista simplesmente espetacular!",
-    "descriptionEn": "The most desired destination in Brazil for New Year's Eve awaits you with open arms. HOTEL DAIFA is the ideal place to celebrate the arrival of 2026 with comfort, style, and simply spectacular views!",
-    "descriptionEs": "El destino más deseado de Brasil para la Nochevieja te espera con los brazos abiertos. El HOTEL DAIFA es el lugar ideal para celebrar la llegada de 2026 con comodidad, estilo y vistas simplemente espectaculares.",
-    "package": "Pacote de 04 noites",
-    "packageEn": "04 nights package",
-    "packageEs": "Paquete de 04 noches",
-    "date": "",
-    "dateEn": ""
   }
+
+  
 ]
