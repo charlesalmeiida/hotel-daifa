@@ -15,9 +15,25 @@ const config: Config = {
       fontFamily: {
         mono: ["var(--font-inter)"],
         sans: ["var(--font-raleway)"],
+        // Pilha de fontes do sistema (igual à LP original em Kimi_Agent_Venda Hotel Daifa)
+        sansSystem: [
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          '"Helvetica Neue"',
+          "Arial",
+          "sans-serif",
+        ],
+      },
+      fontWeight: {
+        black: "900",
       },
       colors: {
         blue: "#2E376A",
+        blueLP: "#2563eb",
         blueLight: "#16A0C7",
         red: "#BF1717",
         orange: "#EF6926",

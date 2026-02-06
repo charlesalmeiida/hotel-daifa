@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { inter, raleway } from "../utils/fonts";
-import { CookieModal } from "@/components/CookieModal";
-import { Footer } from "@/components/Footer";
+import { LayoutSwitcher } from "@/components/LayoutSwitcher";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -100,9 +99,7 @@ export default async function LocaleLayout({
       <body className={`${inter} ${raleway} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <GoogleTagManager gtmId="GTM-5LFDLZND" />
-          {children}
-          <CookieModal />
-          <Footer />
+          <LayoutSwitcher>{children}</LayoutSwitcher>
         </NextIntlClientProvider>
       </body>
     </html>
