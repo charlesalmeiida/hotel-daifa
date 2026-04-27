@@ -141,6 +141,7 @@ export default function PromotionsSection() {
                     }
                     date={locale === "en" ? promotion.dateEn : promotion.date}
                     promotion={promotion.title}
+                    link={promotion.link}
                   />
                 </SwiperSlide>
               ))}
