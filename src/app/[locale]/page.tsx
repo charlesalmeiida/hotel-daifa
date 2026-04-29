@@ -63,7 +63,7 @@ export default function Home() {
           {
             imageSrc: "/img/popups/pacote_promocional_de_inverno.jpeg",
             imageAlt: "Pacote promocional de inverno",
-            link: "https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20Pacote%20Promocional%20de%20Inverno.",
+            link: "https://wa.me//5548988643952?text=Olá,%20vim%20pelo%20website%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20Tarifa%20Promocional%20de%20Inverno.",
           },
           {
             imageSrc: "/img/popups/pacote_para_folianopolis.jpeg",
